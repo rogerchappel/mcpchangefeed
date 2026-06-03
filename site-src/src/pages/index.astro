@@ -1,0 +1,142 @@
+---
+import SponsorSlot from "../components/SponsorSlot.astro";
+import ServerCard from "../components/ServerCard.astro";
+import Base from "../layouts/Base.astro";
+import { categorySlug, formatCategory, getChanges, getServers } from "../lib/site-data";
+
+const servers = await getServers();
+const changes = await getChanges();
+const categories = [...new Set(servers.map((server) => server.category))].sort();
+const featured = servers.slice(0, 3);
+const latest = servers.slice(0, 9);
+const warningCount = servers.reduce((total, server) => total + server.warnings.length, 0);
+---
+
+<Base title="MCP Changefeed - Track MCP server launches and registry changes" description="A public changefeed for Model Context Protocol server launches, metadata changes, freshness signals, and install commands.">
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+        <p class="eyebrow">MCP ecosystem changefeed</p>
+          <h1>Find MCP servers worth trusting.</h1>
+          <p class="lead">A public MCP directory with change tracking, freshness signals, install commands, and transparent sponsorship built in from day one.</p>
+          <form class="search-shell" role="search" onsubmit="return false">
+            <label class="sr-only" for="server-search">Search MCP servers</label>
+            <input id="server-search" type="search" placeholder="Search servers, tags, or categories" autocomplete="off" />
+            <a class="button" href="/changes/">Latest changes</a>
+          </form>
+          <div class="quick-links" aria-label="Popular categories">
+            {categories.map((category) => <a href={`/categories/${categorySlug(category)}/`}>{formatCategory(category)}</a>)}
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="metric-grid">
+            <div>
+              <strong>{servers.length}</strong>
+              <span>tracked servers</span>
+            </div>
+            <div>
+              <strong>{changes.added.length}</strong>
+              <span>new in latest diff</span>
+            </div>
+            <div>
+              <strong>{changes.changed.length}</strong>
+              <span>metadata changes</span>
+            </div>
+            <div>
+              <strong>{warningCount}</strong>
+              <span>warnings to review</span>
+            </div>
+          </div>
+          <SponsorSlot />
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap section-head">
+        <div>
+          <p class="eyebrow">Featured MCPs</p>
+          <h2>High-signal servers, scored out of 100.</h2>
+        </div>
+        <a class="text-link" href="/data/servers.json">Download JSON</a>
+      </div>
+      <div class="wrap server-grid featured-grid">
+        {featured.map((server) => <ServerCard server={server} />)}
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap section-head">
+        <div>
+          <p class="eyebrow">Directory</p>
+          <h2>Browse tracked servers</h2>
+        </div>
+        <span class="result-count" data-result-count>{latest.length} visible</span>
+      </div>
+      <div class="wrap server-grid" data-server-list>
+        {latest.map((server) => <ServerCard server={server} />)}
+        <p class="empty-state" data-empty-state hidden>No matching MCP servers in this snapshot.</p>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">Change intelligence</p>
+          <h2>More useful than a static awesome list.</h2>
+          <p class="muted">The site separates launches, metadata edits, install command changes, and stale signals so teams can spot ecosystem movement before dependencies drift.</p>
+          <a class="button button-light" href="/changes/">Review the latest diff</a>
+        </div>
+        <div class="change-strip">
+          <div>
+            <strong class="change-added">{changes.added.length}</strong>
+            <span>added</span>
+          </div>
+          <div>
+            <strong>{changes.changed.length}</strong>
+            <span>changed</span>
+          </div>
+          <div>
+            <strong class="change-removed">{changes.removed.length}</strong>
+            <span>removed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap section-head">
+        <div>
+          <p class="eyebrow">Explore</p>
+        <h2>Categories</h2>
+        </div>
+        <a class="text-link" href="/blog/">Blog and analysis</a>
+      </div>
+      <div class="wrap">
+        <div class="pill-row">
+          {categories.map((category) => <a class="pill" href={`/categories/${categorySlug(category)}/`}>{formatCategory(category)}</a>)}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const input = document.querySelector<HTMLInputElement>("#server-search");
+    const cards = [...document.querySelectorAll<HTMLElement>("[data-server-card]")];
+    const resultCount = document.querySelector<HTMLElement>("[data-result-count]");
+    const emptyState = document.querySelector<HTMLElement>("[data-empty-state]");
+
+    input?.addEventListener("input", () => {
+      const query = input.value.trim().toLowerCase();
+      let visible = 0;
+      for (const card of cards) {
+        const matches = !query || (card.dataset.search ?? "").includes(query);
+        card.hidden = !matches;
+        if (matches) visible += 1;
+      }
+      if (resultCount) resultCount.textContent = `${visible} visible`;
+      if (emptyState) emptyState.hidden = visible !== 0;
+    });
+  </script>
+</Base>

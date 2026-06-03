@@ -1,0 +1,80 @@
+---
+import ServerCard from "../../components/ServerCard.astro";
+import Base from "../../layouts/Base.astro";
+import { getChanges, serverSlug } from "../../lib/site-data";
+
+const changes = await getChanges();
+---
+
+<Base title="MCP server changes - MCP Changefeed" description="Latest public registry diff for tracked MCP servers.">
+  <main>
+    <section class="hero compact-hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Latest diff</p>
+          <h1>Registry changes, packaged for review.</h1>
+          <p class="lead">Added servers, removed listings, and metadata changes with the same trust signals used across the directory.</p>
+        </div>
+        <div class="hero-panel metric-grid">
+          <div>
+            <strong>{changes.added.length}</strong>
+            <span>added</span>
+          </div>
+          <div>
+            <strong>{changes.changed.length}</strong>
+            <span>changed</span>
+          </div>
+          <div>
+            <strong>{changes.removed.length}</strong>
+            <span>removed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band-tight">
+      <div class="wrap change-columns">
+        <section class="change-column">
+          <h2 class="change-added">Added</h2>
+          <div class="stack">
+            {changes.added.map((server) => <ServerCard server={server as any} compact />)}
+          </div>
+        </section>
+        <section class="change-column">
+          <h2>Changed</h2>
+          <div class="stack">
+            {changes.changed.map((entry) => (
+              <article class="server-card compact">
+                <div class="server-card__top">
+                  <div>
+                    <a class="server-card__title" href={`/servers/${serverSlug(entry.after)}/`}>{entry.after.name}</a>
+                    <p>Registry metadata updated.</p>
+                  </div>
+                  <div class="score-badge">
+                    <strong>{entry.fields.length}</strong>
+                    <span>fields</span>
+                  </div>
+                </div>
+                <div class="signal-row">
+                  {entry.fields.map((field) => <span class="chip">{field}</span>)}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+        <section class="change-column">
+          <h2 class="change-removed">Removed</h2>
+          <div class="stack">
+            {changes.removed.length === 0 && <p class="muted">No removals in this snapshot.</p>}
+            {changes.removed.map((server) => (
+              <article class="server-card compact">
+                <h3>{server.name}</h3>
+                <p class="muted">{server.description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+</Base>

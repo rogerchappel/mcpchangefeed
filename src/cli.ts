@@ -9,7 +9,7 @@ async function main() {
   const [command, ...rest] = process.argv.slice(2);
   const args = parseArgs(rest);
 
-  if (!command || args.help) {
+  if (!command || command === "--help" || command === "-h" || args.help) {
     help();
     return;
   }
@@ -70,7 +70,7 @@ function parseArgs(args: string[]): Args {
 }
 
 function help() {
-  console.log(`mcpwatch
+  console.log(`mcpfeed / mcpchangefeed
 
 Commands:
   top --input data/latest/servers.json --limit 10

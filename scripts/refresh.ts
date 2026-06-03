@@ -8,7 +8,7 @@ const args = parseArgs(process.argv.slice(2));
 const out = args.out ?? "data/latest/servers.json";
 const history = args.history ?? "data/history";
 const registryUrl = args.registryUrl ?? "https://prod.registry.modelcontextprotocol.io/v0/servers";
-const live = process.env.MCPWATCH_LIVE === "1" || args.live === "true";
+const live = process.env.MCPCHANGEFEED_LIVE === "1" || args.live === "true";
 
 const servers = live ? await fetchOfficialRegistry(registryUrl) : await readFixture();
 const validated = validateServers(servers).sort((a, b) => a.name.localeCompare(b.name));
@@ -29,7 +29,7 @@ async function readFixture() {
 }
 
 async function fetchOfficialRegistry(url: string): Promise<McpServer[]> {
-  const response = await fetch(url, { headers: { accept: "application/json", "user-agent": "mcpwatch/0.1" } });
+  const response = await fetch(url, { headers: { accept: "application/json", "user-agent": "mcpchangefeed/0.1" } });
   if (!response.ok) {
     throw new Error(`Registry fetch failed: ${response.status} ${response.statusText}`);
   }

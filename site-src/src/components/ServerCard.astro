@@ -1,0 +1,44 @@
+---
+import { categorySlug, formatCategory, formatDate, formatNumber, freshnessLabel, serverSlug } from "../lib/site-data";
+import type { ScoredServer } from "../../../src/lib/types";
+
+type Props = {
+  server: ScoredServer;
+  compact?: boolean;
+};
+
+const { server, compact = false } = Astro.props;
+const freshnessDate = server.signals.lastPublishedAt ?? server.signals.lastCommitAt;
+const searchText = `${server.name} ${server.description} ${server.category} ${server.tags.join(" ")}`.toLowerCase();
+const warnings = server.warnings ?? [];
+---
+
+<article class:list={["server-card", { compact }]} data-server-card data-search={searchText}>
+  <div class="server-card__top">
+    <div>
+      <a class="server-card__title" href={`/servers/${serverSlug(server)}/`}>{server.name}</a>
+      <p>{server.description}</p>
+    </div>
+    <div class="score-badge" aria-label={`Trust score ${server.score ?? "unscored"} out of 100`}>
+      <strong>{server.score ?? "New"}</strong>
+      <span>/100</span>
+    </div>
+  </div>
+
+  <div class="signal-row">
+    <a class="chip" href={`/categories/${categorySlug(server.category)}/`}>{formatCategory(server.category)}</a>
+    <span class="chip chip-good">{freshnessLabel(freshnessDate)}</span>
+    {server.packageRegistry && <span class="chip">{server.packageRegistry}</span>}
+    {warnings.length > 0 && <span class="chip chip-warn">{warnings.length} warning{warnings.length === 1 ? "" : "s"}</span>}
+  </div>
+
+  {!compact && (
+    <div class="server-card__meta">
+      <span>{formatNumber(server.signals.stars)} stars</span>
+      <span>{formatNumber(server.signals.downloads)} downloads</span>
+      <span>{formatDate(freshnessDate)}</span>
+    </div>
+  )}
+
+  {server.install && !compact && <code class="install-line">{server.install}</code>}
+</article>

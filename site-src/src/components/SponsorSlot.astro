@@ -1,0 +1,19 @@
+---
+import { getSponsors } from "../lib/site-data";
+
+const sponsors = await getSponsors();
+const sponsor = sponsors[0];
+---
+
+{
+  sponsor && (
+    <aside class="sponsor">
+      <div>
+        <p class="eyebrow">{sponsor.label}</p>
+        <h3>{sponsor.name}</h3>
+        <p>{sponsor.copy}</p>
+      </div>
+      <a class="button button-light" href={sponsor.href}>Visit sponsor</a>
+    </aside>
+  )
+}

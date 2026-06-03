@@ -1,0 +1,62 @@
+---
+import ServerCard from "../../components/ServerCard.astro";
+import Base from "../../layouts/Base.astro";
+import { categorySlug, formatCategory, getServers } from "../../lib/site-data";
+
+export async function getStaticPaths() {
+  const servers = await getServers();
+  const categories = [...new Set(servers.map((server) => server.category))];
+  return categories.map((category) => ({
+    params: { slug: categorySlug(category) },
+    props: { category, servers: servers.filter((server) => server.category === category) }
+  }));
+}
+
+const { category, servers } = Astro.props;
+const averageScore = Math.round(servers.reduce((total, server) => total + (server.score ?? 0), 0) / Math.max(servers.length, 1));
+const freshCount = servers.filter((server) => {
+  const lastSeen = server.signals.lastPublishedAt ?? server.signals.lastCommitAt;
+  if (!lastSeen) return false;
+  return Date.now() - new Date(lastSeen).getTime() <= 60 * 86_400_000;
+}).length;
+---
+
+<Base title={`${formatCategory(category)} MCP servers - MCP Changefeed`} description={`Tracked ${formatCategory(category)} MCP servers, install commands, and freshness signals.`}>
+  <main>
+    <section class="hero compact-hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+        <p class="eyebrow">Category</p>
+        <h1>{formatCategory(category)} MCP servers</h1>
+        <p class="lead">Ranked by public metadata, install clarity, maintenance signals, and documentation signals.</p>
+      </div>
+        <div class="hero-panel">
+          <div class="metric-grid">
+            <div>
+              <strong>{servers.length}</strong>
+              <span>tracked servers</span>
+            </div>
+            <div>
+              <strong>{averageScore}</strong>
+              <span>average trust /100</span>
+            </div>
+            <div>
+              <strong>{freshCount}</strong>
+              <span>fresh or active</span>
+            </div>
+            <div>
+              <strong>{servers.filter((server) => server.install).length}</strong>
+              <span>with install command</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap server-grid">
+        {servers.map((server) => <ServerCard server={server} />)}
+      </div>
+    </section>
+  </main>
+</Base>

@@ -1,24 +1,24 @@
-# mcpwatch
+# mcpchangefeed
 
-Public directory, leaderboard, CLI, and static site for MCP servers and agent tools.
+Public changefeed, CLI, and static site for MCP servers and agent tools.
 
-`mcpwatch` tracks public Model Context Protocol servers from registry-style data, normalizes metadata, scores practical usefulness signals, and publishes both a CLI and a crawlable static site.
+`mcpchangefeed` tracks public Model Context Protocol servers from registry-style data, normalizes metadata, detects meaningful changes, scores freshness/usefulness signals, and publishes both a CLI and a crawlable static site.
 
 ## Why
 
-MCP discovery is fragmented. A useful directory needs more than a searchable list:
+MCP discovery is fragmented, but directory space is already crowded. The useful angle is knowing what changed:
 
-- install commands
-- package metadata
-- maintenance signals
-- categories
-- changed metadata
+- new servers
+- removed servers
+- renamed packages and repositories
+- changed install commands
+- changed categories and tags
 - stale or missing documentation warnings
-- leaderboard views for popular, maintained, and fast-moving tools
+- freshness views for maintained and fast-moving tools
 
 ## CLI
 
-Yes, this should be a CLI as well as a site. The CLI makes the repo useful even before SEO compounds: developers can query the same normalized dataset locally, compare snapshots in CI, and script checks around MCP server freshness.
+The CLI makes the repo useful even before SEO compounds: developers can query the same normalized dataset locally, compare snapshots in CI, and script checks around MCP server freshness.
 
 ```sh
 pnpm install
@@ -31,9 +31,9 @@ node dist-cli/cli.js diff --before fixtures/servers-before.json --after fixtures
 Planned package usage:
 
 ```sh
-npx mcpwatch top
-npx mcpwatch search github
-npx mcpwatch diff --before old.json --after new.json
+npx mcpchangefeed top
+mcpfeed search github
+mcpfeed diff --before old.json --after new.json
 ```
 
 ## Data Sources

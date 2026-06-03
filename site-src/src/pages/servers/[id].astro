@@ -1,0 +1,73 @@
+---
+import SponsorSlot from "../../components/SponsorSlot.astro";
+import Base from "../../layouts/Base.astro";
+import { categorySlug, formatCategory, formatDate, formatNumber, freshnessLabel, getServers, serverSlug } from "../../lib/site-data";
+
+export async function getStaticPaths() {
+  const servers = await getServers();
+  return servers.map((server) => ({
+    params: { id: serverSlug(server) },
+    props: { server }
+  }));
+}
+
+const { server } = Astro.props;
+const freshnessDate = server.signals.lastPublishedAt ?? server.signals.lastCommitAt;
+---
+
+<Base title={`${server.name} MCP Server - MCP Changefeed`} description={server.description}>
+  <main>
+    <section class="hero compact-hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+        <p class="eyebrow">{formatCategory(server.category)}</p>
+        <h1>{server.name}</h1>
+        <p class="lead">{server.description}</p>
+        <div class="pill-row">
+          {server.tags.map((tag) => <span class="pill">{tag}</span>)}
+        </div>
+      </div>
+        <div class="hero-panel metric-grid">
+          <div>
+            <strong>{server.score}</strong>
+            <span>trust score /100</span>
+          </div>
+          <div>
+            <strong>{freshnessLabel(freshnessDate)}</strong>
+            <span>{formatDate(freshnessDate)}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap detail-grid">
+        <section class="panel install-panel">
+          <h2>Install</h2>
+          <p><code>{server.install ?? "Unknown"}</code></p>
+          <p class="muted">{server.packageName ?? "No package name recorded"} {server.version ? `- ${server.version}` : ""}</p>
+        </section>
+        <section class="panel">
+          <h2>Signals</h2>
+          <dl class="signal-list">
+            <div><dt>Stars</dt><dd>{formatNumber(server.signals.stars)}</dd></div>
+            <div><dt>Forks</dt><dd>{formatNumber(server.signals.forks)}</dd></div>
+            <div><dt>Downloads</dt><dd>{formatNumber(server.signals.downloads)}</dd></div>
+            <div><dt>License</dt><dd>{server.license ?? "Unknown"}</dd></div>
+          </dl>
+        </section>
+        <section class="panel">
+          <h2>Links</h2>
+          <p>{server.homepage ? <a href={server.homepage}>Homepage</a> : <span class="muted">No homepage recorded</span>}</p>
+          <p>{server.repository ? <a href={server.repository}>Repository</a> : <span class="muted">No repository recorded</span>}</p>
+          <p><a href={`/categories/${categorySlug(server.category)}/`}>{formatCategory(server.category)} category</a></p>
+        </section>
+        <SponsorSlot />
+        <section class="panel">
+          <h2>Warnings</h2>
+          {server.warnings.length === 0 ? <p class="muted">No current warnings.</p> : <ul>{server.warnings.map((warning) => <li>{warning}</li>)}</ul>}
+        </section>
+      </div>
+    </section>
+  </main>
+</Base>

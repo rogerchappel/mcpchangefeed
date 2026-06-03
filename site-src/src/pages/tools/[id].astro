@@ -1,0 +1,28 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getServers, serverSlug } from "../../lib/site-data";
+
+export async function getStaticPaths() {
+  const servers = await getServers();
+  return servers.map((server) => ({
+    params: { id: serverSlug(server) },
+    props: { server }
+  }));
+}
+
+const { server } = Astro.props;
+const target = `/servers/${serverSlug(server)}/`;
+---
+
+<Base title={`${server.name} moved - MCP Changefeed`} description={`${server.name} now lives at ${target}`}>
+  <meta http-equiv="refresh" content={`0; url=${target}`} slot="head" />
+  <main>
+    <section class="wrap hero">
+      <div>
+        <p class="eyebrow">Moved</p>
+        <h1>{server.name}</h1>
+        <p class="lead">This page moved to <a href={target}>{target}</a>.</p>
+      </div>
+    </section>
+  </main>
+</Base>
