@@ -1,0 +1,47 @@
+[
+  {
+    "id": "filesystem",
+    "name": "Filesystem MCP Server",
+    "description": "Read allowed local files through Model Context Protocol tools.",
+    "category": "developer-tools",
+    "homepage": "https://modelcontextprotocol.io",
+    "repository": "https://github.com/modelcontextprotocol/servers",
+    "packageName": "@modelcontextprotocol/server-filesystem",
+    "packageRegistry": "npm",
+    "version": "1.0.1",
+    "license": "MIT",
+    "install": "npx @modelcontextprotocol/server-filesystem",
+    "tags": ["filesystem", "files", "reference"],
+    "signals": {
+      "stars": 62000,
+      "forks": 7000,
+      "downloads": 100000,
+      "lastPublishedAt": "2026-05-01T00:00:00.000Z",
+      "lastCommitAt": "2026-05-02T00:00:00.000Z",
+      "hasReadme": true,
+      "hasExamples": true,
+      "hasLicense": true
+    }
+  },
+  {
+    "id": "browser",
+    "name": "Browser MCP Server",
+    "description": "Automate browser sessions and inspect web pages through MCP.",
+    "category": "browser-automation",
+    "repository": "https://github.com/modelcontextprotocol/servers",
+    "packageName": "@modelcontextprotocol/server-puppeteer",
+    "packageRegistry": "npm",
+    "version": "0.4.0",
+    "install": "npx @modelcontextprotocol/server-puppeteer",
+    "tags": ["browser", "automation", "puppeteer"],
+    "signals": {
+      "stars": 65000,
+      "forks": 7200,
+      "downloads": 85000,
+      "lastPublishedAt": "2026-04-15T00:00:00.000Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": true
+    }
+  }
+]

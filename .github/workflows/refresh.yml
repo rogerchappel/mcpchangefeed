@@ -1,0 +1,50 @@
+name: Refresh MCPWatch data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */4 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: MCPWATCH_LIVE=1 pnpm run refresh
+      - run: pnpm run validate:data
+      - run: pnpm run build:site
+      - run: |
+          mkdir -p reports
+          {
+            echo "# MCPWatch refresh"
+            echo
+            echo "- Generated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+            echo "- Records: $(node -e "console.log(JSON.parse(require('fs').readFileSync('data/latest/servers.json','utf8')).length)")"
+          } > reports/latest-refresh.md
+      - name: Commit data changes
+        run: |
+          git config user.name "mcpwatch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/latest data/history
+          git diff --cached --quiet || git commit -m "Refresh MCP registry data"
+      - name: Commit site changes
+        run: |
+          git add site
+          git diff --cached --quiet || git commit -m "Rebuild public MCPWatch site"
+      - name: Commit refresh report
+        run: |
+          git add reports/latest-refresh.md
+          git diff --cached --quiet || git commit -m "Update MCPWatch refresh report"
+      - name: Push generated commits
+        run: git push
