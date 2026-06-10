@@ -1,89 +1,573 @@
 [
   {
-    "id": "filesystem",
-    "name": "Filesystem MCP Server",
-    "description": "Read and write allowed local files through Model Context Protocol tools.",
-    "category": "developer-tools",
-    "homepage": "https://modelcontextprotocol.io",
-    "repository": "https://github.com/modelcontextprotocol/servers",
-    "packageName": "@modelcontextprotocol/server-filesystem",
+    "id": "ai-adeu-adeu",
+    "name": "ai.adeu/adeu",
+    "description": "Automated DOCX Redlining Engine",
+    "category": "agent-tools",
+    "homepage": "https://github.com/dealfluence/adeu",
+    "repository": "https://github.com/dealfluence/adeu",
+    "packageName": "@adeu/mcp-server",
     "packageRegistry": "npm",
-    "version": "1.0.2",
-    "license": "MIT",
-    "install": "npx @modelcontextprotocol/server-filesystem",
+    "version": "1.7.1",
+    "install": "npx @adeu/mcp-server",
     "tags": [
-      "filesystem",
-      "files",
-      "reference"
+      "adeu",
+      "automated",
+      "docx",
+      "redlining",
+      "engine"
     ],
     "signals": {
-      "stars": 65000,
-      "forks": 7200,
-      "downloads": 120000,
-      "lastPublishedAt": "2026-05-20T00:00:00.000Z",
-      "lastCommitAt": "2026-05-22T00:00:00.000Z",
-      "hasReadme": true,
-      "hasExamples": true,
-      "hasLicense": true
-    },
-    "score": 100,
-    "warnings": []
-  },
-  {
-    "id": "github",
-    "name": "GitHub MCP Server",
-    "description": "Explore repositories, issues, pull requests, and code through MCP.",
-    "category": "developer-tools",
-    "homepage": "https://github.com/github/github-mcp-server",
-    "repository": "https://github.com/github/github-mcp-server",
-    "packageRegistry": "other",
-    "version": "0.6.1",
-    "license": "MIT",
-    "install": "docker run ghcr.io/github/github-mcp-server",
-    "tags": [
-      "github",
-      "repositories",
-      "issues",
-      "pull-requests"
-    ],
-    "signals": {
-      "stars": 15000,
-      "forks": 1100,
-      "downloads": 0,
-      "lastPublishedAt": "2026-05-28T00:00:00.000Z",
-      "lastCommitAt": "2026-05-29T00:00:00.000Z",
-      "hasReadme": true,
-      "hasExamples": true,
-      "hasLicense": true
-    },
-    "score": 87,
-    "warnings": []
-  },
-  {
-    "id": "browser",
-    "name": "Browser MCP Server",
-    "description": "Automate browser sessions and inspect web pages through MCP.",
-    "category": "browser-automation",
-    "repository": "https://github.com/modelcontextprotocol/servers",
-    "packageName": "@modelcontextprotocol/server-puppeteer",
-    "packageRegistry": "npm",
-    "version": "0.4.0",
-    "install": "npx @modelcontextprotocol/server-puppeteer",
-    "tags": [
-      "browser",
-      "automation",
-      "puppeteer"
-    ],
-    "signals": {
-      "stars": 65000,
-      "forks": 7200,
-      "downloads": 85000,
-      "lastPublishedAt": "2026-04-15T00:00:00.000Z",
+      "lastPublishedAt": "2026-05-16T13:54:48.18266Z",
+      "lastCommitAt": "2026-05-16T13:54:48.18266Z",
       "hasReadme": true,
       "hasExamples": false,
-      "hasLicense": true
+      "hasLicense": false
     },
-    "score": 86,
-    "warnings": []
+    "score": 55,
+    "warnings": [
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-agenttrust-mcp-server",
+    "name": "AgentTrust — Identity & Trust for A2A Agents",
+    "description": "Identity, trust, and A2A orchestration for autonomous AI agents. Official A2A partner.",
+    "category": "agent-tools",
+    "homepage": "https://agenttrust.ai",
+    "repository": "https://github.com/agenttrust/mcp-server",
+    "packageName": "@agenttrust/mcp-server",
+    "packageRegistry": "npm",
+    "version": "1.1.1",
+    "install": "npx @agenttrust/mcp-server",
+    "tags": [
+      "agenttrust",
+      "identity",
+      "trust",
+      "orchestration",
+      "autonomous",
+      "agents",
+      "official",
+      "partner"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-03-06T11:23:10.721165Z",
+      "lastCommitAt": "2026-03-06T11:23:10.721165Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 50,
+    "warnings": [
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-agenticterminal-directory",
+    "name": "Agentic Terminal Directory",
+    "description": "Verified merchants accepting agentic payments on Lightning/L402/BOLT12/USDT — search, verify, pay.",
+    "category": "search",
+    "homepage": "https://agenticterminal.ai",
+    "repository": "https://github.com/observer-protocol/at-directory",
+    "version": "1.0.0",
+    "tags": [
+      "agenticterminal",
+      "directory",
+      "verified",
+      "merchants",
+      "accepting",
+      "agentic",
+      "payments",
+      "lightning"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-05-19T15:17:01.794422Z",
+      "lastCommitAt": "2026-05-19T15:17:01.794422Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 48,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-abmeter-abmeter",
+    "name": "ABMeter",
+    "description": "Feature flagging and A/B testing platform with AI-first experimentation workflows.",
+    "category": "agent-tools",
+    "homepage": "https://abmeter.ai",
+    "repository": "https://github.com/abmeter/abmeter",
+    "version": "0.1.0",
+    "tags": [
+      "abmeter",
+      "feature",
+      "flagging",
+      "testing",
+      "platform",
+      "first",
+      "experimentation",
+      "workflows"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-04-19T18:11:04.905549Z",
+      "lastCommitAt": "2026-04-19T18:11:04.905549Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 43,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ac-tandem-docs-mcp",
+    "name": "ac.tandem/docs-mcp",
+    "description": "Remote MCP server for Tandem docs, install guides, SDKs, workflows, and agent setup help.",
+    "category": "agent-tools",
+    "homepage": "https://tandem.ac/docs-mcp",
+    "repository": "https://github.com/frumu-ai/tandem",
+    "version": "0.3.2",
+    "tags": [
+      "tandem",
+      "docs",
+      "remote",
+      "install",
+      "guides",
+      "sdks",
+      "workflows",
+      "agent"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-04-22T21:06:34.500049Z",
+      "lastCommitAt": "2026-04-22T21:06:34.500049Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 43,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "agency-lona-trading",
+    "name": "agency.lona/trading",
+    "description": "AI-powered trading strategy development: backtesting, market data, and portfolio analysis",
+    "category": "agent-tools",
+    "homepage": "https://lona.agency",
+    "repository": "https://github.com/mindsightventures/lona",
+    "version": "2.0.0",
+    "tags": [
+      "agency",
+      "lona",
+      "trading",
+      "powered",
+      "strategy",
+      "development",
+      "backtesting",
+      "market"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-02-24T00:07:27.525636Z",
+      "lastCommitAt": "2026-02-24T00:07:27.525636Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 43,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-agentdm-agentdm",
+    "name": "AgentDM: Agent to Agent Communication Platform",
+    "description": "Agent communication platform for agent to agent messaging via MCP. Messages, channels, skills.",
+    "category": "agent-tools",
+    "homepage": "https://agentdm.ai",
+    "repository": "https://github.com/agentdmai/agentdm",
+    "version": "2.0.0",
+    "tags": [
+      "agentdm",
+      "agent",
+      "communication",
+      "platform",
+      "messaging",
+      "messages",
+      "channels",
+      "skills"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-05-10T02:12:16.907792Z",
+      "lastCommitAt": "2026-05-10T02:12:16.907792Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 43,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-agentic-news-mcp",
+    "name": "Agentic News",
+    "description": "AI-powered news intelligence — 21 tools for personalized monitoring, briefings, and semantic search",
+    "category": "search",
+    "homepage": "https://agentic-news.ai/mcp",
+    "repository": "https://github.com/u00dxk2/agentic-news",
+    "version": "1.0.0",
+    "tags": [
+      "agentic",
+      "news",
+      "powered",
+      "intelligence",
+      "tools",
+      "personalized",
+      "monitoring",
+      "briefings"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-04-06T18:34:53.583541Z",
+      "lastCommitAt": "2026-04-06T18:34:53.583541Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 43,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-agenticshelf-mcp",
+    "name": "Agentic Shelf",
+    "description": "Hosted MCP for e-commerce: live product catalog, stock, and pricing for AI agents.",
+    "category": "agent-tools",
+    "homepage": "https://www.agenticshelf.ai",
+    "repository": "https://github.com/vboykoCTO/agentic-shelf",
+    "version": "1.0.0",
+    "tags": [
+      "agenticshelf",
+      "hosted",
+      "commerce",
+      "live",
+      "product",
+      "catalog",
+      "stock",
+      "pricing"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-05-06T16:24:16.952518Z",
+      "lastCommitAt": "2026-05-06T16:24:16.952518Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 43,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-agenticshelf-graffeo",
+    "name": "Graffeo Coffee Roasting",
+    "description": "Live MCP catalog for Graffeo Coffee Roasting - Simply the World's Finest Coffee since 1935.",
+    "category": "agent-tools",
+    "homepage": "https://www.graffeo.com",
+    "version": "1.0.2",
+    "tags": [
+      "agenticshelf",
+      "graffeo",
+      "live",
+      "catalog",
+      "coffee",
+      "roasting",
+      "simply",
+      "world"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-05-14T20:40:06.442182Z",
+      "lastCommitAt": "2026-05-14T20:40:06.442182Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 41,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-aliengiraffe-spotdb",
+    "name": "ai.aliengiraffe/spotdb",
+    "description": "Ephemeral data sandbox for AI workflows with guardrails and security",
+    "category": "agent-tools",
+    "homepage": "https://github.com/aliengiraffe/spotdb",
+    "repository": "https://github.com/aliengiraffe/spotdb",
+    "packageName": "docker.io/aliengiraffe/spotdb:0.1.0",
+    "packageRegistry": "other",
+    "version": "0.1.0",
+    "tags": [
+      "aliengiraffe",
+      "spotdb",
+      "ephemeral",
+      "data",
+      "sandbox",
+      "workflows",
+      "guardrails",
+      "security"
+    ],
+    "signals": {
+      "lastPublishedAt": "2025-10-09T17:05:17.793149Z",
+      "lastCommitAt": "2025-10-09T17:05:17.793149Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 38,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-adadvisor-mcp-server",
+    "name": "AdAdvisor MCP Server",
+    "description": "Query Meta Ads performance data — accounts, campaigns, ad sets, ads, metrics & settings.",
+    "category": "agent-tools",
+    "homepage": "https://www.adadvisor.ai/docs/user-guide/getting-started-with-mcp?utm_source=mcp-registry",
+    "version": "1.0.1",
+    "tags": [
+      "adadvisor",
+      "query",
+      "meta",
+      "performance",
+      "data",
+      "accounts",
+      "campaigns",
+      "sets"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-02-28T13:09:52.236521Z",
+      "lastCommitAt": "2026-02-28T13:09:52.236521Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 36,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-adramp-google-ads",
+    "name": "ai.adramp/google-ads",
+    "description": "Google Ads MCP server — manage campaigns, keywords, and metrics.",
+    "category": "agent-tools",
+    "homepage": "https://adramp.ai",
+    "version": "1.0.3",
+    "tags": [
+      "adramp",
+      "google",
+      "manage",
+      "campaigns",
+      "keywords",
+      "metrics"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-03-20T11:16:36.853329Z",
+      "lastCommitAt": "2026-03-20T11:16:36.853329Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 36,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-alpic-mcp-alpic-mcp",
+    "name": "Alpic",
+    "description": "Manage your projects, debug deployment, and check analytics for any MCP server you host with Alpic",
+    "category": "agent-tools",
+    "homepage": "https://alpic.ai",
+    "version": "0.0.1",
+    "tags": [
+      "alpic",
+      "manage",
+      "your",
+      "projects",
+      "debug",
+      "deployment",
+      "check",
+      "analytics"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-02-18T15:32:32.672631Z",
+      "lastCommitAt": "2026-02-18T15:32:32.672631Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 36,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-aarna-atars-mcp",
+    "name": "aTars MCP",
+    "description": "Crypto market signals, technical indicators, and sentiment analysis for AI agents.",
+    "category": "agent-tools",
+    "homepage": "https://mcp.aarna.ai/mcp",
+    "version": "0.1.0",
+    "tags": [
+      "aarna",
+      "atars",
+      "crypto",
+      "market",
+      "signals",
+      "technical",
+      "indicators",
+      "sentiment"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-03-10T11:09:59.15927Z",
+      "lastCommitAt": "2026-03-10T11:09:59.15927Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 36,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-adweave-meta-ads-mcp",
+    "name": "AdWeave — Meta Ads MCP Server",
+    "description": "Meta Ads MCP server with 47 tools for campaigns, creatives, audiences, and insights.",
+    "category": "agent-tools",
+    "version": "1.0.0",
+    "tags": [
+      "adweave",
+      "meta",
+      "tools",
+      "campaigns",
+      "creatives",
+      "audiences",
+      "insights"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-04-10T16:46:57.731179Z",
+      "lastCommitAt": "2026-04-10T16:46:57.731179Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 33,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-agentrapay-agentra",
+    "name": "ai.agentrapay/agentra",
+    "description": "Identity oracle and trust layer for autonomous AI agents. Bidirectional KYA and trust scoring.",
+    "category": "agent-tools",
+    "version": "1.0.0",
+    "tags": [
+      "agentrapay",
+      "agentra",
+      "identity",
+      "oracle",
+      "trust",
+      "layer",
+      "autonomous",
+      "agents"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-03-22T18:16:07.628131Z",
+      "lastCommitAt": "2026-03-22T18:16:07.628131Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 33,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ac-inference-sh-mcp",
+    "name": "inference.sh",
+    "description": "Run 150+ AI apps — image, video, audio, LLMs, 3D and more. Browse, execute, stream results.",
+    "category": "agent-tools",
+    "version": "1.0.1",
+    "tags": [
+      "inference",
+      "apps",
+      "image",
+      "video",
+      "audio",
+      "llms",
+      "more",
+      "browse"
+    ],
+    "signals": {
+      "lastPublishedAt": "2026-04-13T17:33:26.613537Z",
+      "lastCommitAt": "2026-04-13T17:33:26.613537Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 33,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
+  },
+  {
+    "id": "ai-alpic-test-test-mcp-server",
+    "name": "ai.alpic.test/test-mcp-server",
+    "description": "Alpic Test MCP Server - great server!",
+    "category": "agent-tools",
+    "version": "0.0.1",
+    "tags": [
+      "alpic",
+      "test",
+      "great"
+    ],
+    "signals": {
+      "lastPublishedAt": "2025-09-10T13:57:43.256739Z",
+      "lastCommitAt": "2025-09-10T13:57:43.256739Z",
+      "hasReadme": true,
+      "hasExamples": false,
+      "hasLicense": false
+    },
+    "score": 28,
+    "warnings": [
+      "Missing install command",
+      "Missing license signal"
+    ]
   }
 ]
