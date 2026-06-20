@@ -43,7 +43,8 @@
     "validate:data": "tsx scripts/validate-data.ts data/latest/servers.json",
     "smoke:cli": "pnpm run build:cli && node dist-cli/cli.js search filesystem --input fixtures/servers.json && node dist-cli/cli.js top --input fixtures/servers.json --limit 2 && node dist-cli/cli.js diff --before fixtures/servers-before.json --after fixtures/servers.json",
     "package:smoke": "npm pack --dry-run",
-    "test": "pnpm run check && pnpm run validate:data && pnpm run build:site && pnpm run smoke:cli",
+    "test:unit": "tsx --test tests/*.test.ts",
+    "test": "pnpm run test:unit && pnpm run check && pnpm run validate:data && pnpm run build:site && pnpm run smoke:cli",
     "release:check": "pnpm test && pnpm run package:smoke"
   },
   "devDependencies": {
