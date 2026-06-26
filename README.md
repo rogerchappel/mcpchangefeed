@@ -83,4 +83,10 @@ The first generated site includes:
 
 ```sh
 pnpm test
+pnpm run package:smoke
+pnpm run release:check
 ```
+
+`pnpm test` runs the unit tests, typecheck, data validation, static site build,
+and CLI smoke commands. Use `pnpm run package:smoke` when changing package
+contents, and finish release-facing changes with `pnpm run release:check`.
