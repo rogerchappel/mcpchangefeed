@@ -79,6 +79,12 @@ The first generated site includes:
 - sitemap and robots files
 - JSON export for client-side/search consumers
 
+## Limitations
+
+- Registry and package metadata can lag or disappear, so freshness scores should be treated as triage signals rather than authority.
+- External enrichment must stay cached and rate-limited; the CLI should remain useful from checked-in fixtures when network data is unavailable.
+- The changefeed reports public metadata changes and does not audit server runtime safety, permissions, or transport security.
+
 ## Verification
 
 ```sh
