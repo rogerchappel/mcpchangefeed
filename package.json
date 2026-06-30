@@ -7,6 +7,7 @@
   "files": [
     "dist-cli",
     "data/latest",
+    "docs/RELEASE_READINESS.md",
     "CHANGELOG.md",
     "README.md",
     "LICENSE",
@@ -43,7 +44,7 @@
     "validate:data": "tsx scripts/validate-data.ts data/latest/servers.json",
     "smoke": "pnpm run smoke:cli",
     "smoke:cli": "pnpm run build:cli && node dist-cli/cli.js search filesystem --input fixtures/servers.json && node dist-cli/cli.js top --input fixtures/servers.json --limit 2 && node dist-cli/cli.js diff --before fixtures/servers-before.json --after fixtures/servers.json",
-    "package:smoke": "npm pack --dry-run",
+    "package:smoke": "pnpm run build:cli && node scripts/package-smoke.cjs",
     "test:unit": "tsx --test tests/*.test.ts",
     "test": "pnpm run test:unit && pnpm run check && pnpm run validate:data && pnpm run build:site && pnpm run smoke",
     "release:check": "pnpm test && pnpm run package:smoke"
