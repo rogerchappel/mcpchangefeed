@@ -20,6 +20,7 @@ for (const [name, target] of Object.entries(pkg.bin || {})) {
 
 for (const required of [
   "data/latest/servers.json",
+  "docs/RELEASE_READINESS.md",
   "README.md",
   "CHANGELOG.md",
   "LICENSE",
@@ -33,6 +34,7 @@ const files = new Set(pkg.files || []);
 for (const required of [
   "dist-cli",
   "data/latest",
+  "docs/RELEASE_READINESS.md",
   "README.md",
   "CHANGELOG.md",
   "LICENSE",
