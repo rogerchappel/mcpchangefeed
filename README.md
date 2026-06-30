@@ -100,3 +100,6 @@ and canonical CLI smoke command. `pnpm run smoke` is the stable release-readines
 entrypoint; `pnpm run smoke:cli` remains available for CLI-only iteration. Use
 `pnpm run package:smoke` when changing package contents, and finish
 release-facing changes with `pnpm run release:check`.
+
+See [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md) for the package
+smoke contract, manual evidence commands, and publish-readiness checklist.
