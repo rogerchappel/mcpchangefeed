@@ -1,4 +1,4 @@
 # MCP Changefeed refresh
 
-- Generated: 2026-07-02T14:27:31Z
-- Records: 19
+- Generated: 2026-07-02T18:01:07Z
+- Records: 18
