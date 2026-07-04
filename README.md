@@ -28,6 +28,15 @@ node dist-cli/cli.js search filesystem --input fixtures/servers.json
 node dist-cli/cli.js diff --before fixtures/servers-before.json --after fixtures/servers.json
 ```
 
+For a repeatable, fixture-backed recording flow, run:
+
+```sh
+bash demo/run-fixture-changefeed.sh
+```
+
+The walkthrough in [docs/tutorials/fixture-changefeed-demo.md](docs/tutorials/fixture-changefeed-demo.md)
+captures the same local commands and expected artifacts.
+
 Planned package usage:
 
 ```sh
