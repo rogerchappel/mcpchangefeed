@@ -46,6 +46,18 @@ for (const required of [
   }
 }
 
+execFileSync("node", ["dist-cli/cli.js", "--help"], {
+  cwd: root,
+  stdio: "inherit",
+});
+const versionOutput = execFileSync("node", ["dist-cli/cli.js", "--version"], {
+  cwd: root,
+  encoding: "utf8",
+}).trim();
+if (versionOutput !== pkg.version) {
+  throw new Error(`CLI --version returned ${versionOutput}, expected ${pkg.version}`);
+}
+
 execFileSync("npm", ["pack", "--dry-run"], {
   cwd: root,
   stdio: "inherit",

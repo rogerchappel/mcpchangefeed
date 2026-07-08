@@ -23,6 +23,7 @@ The CLI makes the repo useful even before SEO compounds: developers can query th
 ```sh
 pnpm install
 pnpm run build:cli
+node dist-cli/cli.js --version
 node dist-cli/cli.js top --input fixtures/servers.json
 node dist-cli/cli.js search filesystem --input fixtures/servers.json
 node dist-cli/cli.js diff --before fixtures/servers-before.json --after fixtures/servers.json
@@ -107,8 +108,8 @@ pnpm run release:check
 `pnpm test` runs the unit tests, typecheck, data validation, static site build,
 and canonical CLI smoke command. `pnpm run smoke` is the stable release-readiness
 entrypoint; `pnpm run smoke:cli` remains available for CLI-only iteration. Use
-`pnpm run package:smoke` when changing package contents, and finish
-release-facing changes with `pnpm run release:check`.
+`pnpm run package:smoke` when changing package contents or CLI help/version
+behavior, and finish release-facing changes with `pnpm run release:check`.
 
 See [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md) for the package
 smoke contract, manual evidence commands, and publish-readiness checklist.

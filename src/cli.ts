@@ -2,6 +2,7 @@
 import { diffServers } from "./lib/diff.js";
 import { readServers } from "./lib/io.js";
 import { rankServers } from "./lib/score.js";
+import { readFileSync } from "node:fs";
 
 type Args = Record<string, string | boolean>;
 
@@ -11,6 +12,11 @@ async function main() {
 
   if (!command || command === "--help" || command === "-h" || args.help) {
     help();
+    return;
+  }
+
+  if (command === "--version" || command === "-v" || args.version) {
+    version();
     return;
   }
 
@@ -73,10 +79,17 @@ function help() {
   console.log(`mcpfeed / mcpchangefeed
 
 Commands:
+  --help
+  --version
   top --input data/latest/servers.json --limit 10
   search <query> --input data/latest/servers.json
   diff --before old.json --after new.json
 `);
+}
+
+function version() {
+  const packageJson = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8"));
+  console.log(packageJson.version);
 }
 
 main().catch((error: unknown) => {
