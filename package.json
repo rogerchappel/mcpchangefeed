@@ -1,6 +1,7 @@
 {
   "name": "mcpchangefeed",
   "version": "0.1.0",
+  "packageManager": "pnpm@10.34.5",
   "private": false,
   "description": "MCP ecosystem changefeed, CLI, and static site for registry diffs and freshness signals.",
   "type": "module",
@@ -47,7 +48,7 @@
     "package:smoke": "pnpm run build:cli && node scripts/package-smoke.cjs",
     "test:unit": "tsx --test tests/*.test.ts",
     "test": "pnpm run test:unit && pnpm run check && pnpm run validate:data && pnpm run build:site && pnpm run smoke",
-    "release:check": "pnpm test && pnpm run package:smoke"
+    "release:check": "pnpm run test && pnpm run package:smoke"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
@@ -57,6 +58,12 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   },
   "author": "Roger Chappel"
 }

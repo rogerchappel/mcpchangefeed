@@ -20,7 +20,11 @@ MCP discovery is fragmented, but directory space is already crowded. The useful 
 
 The CLI makes the repo useful even before SEO compounds: developers can query the same normalized dataset locally, compare snapshots in CI, and script checks around MCP server freshness.
 
+This repository supports pnpm 10.34.5, declared in `package.json`. Enable
+Corepack so local commands use that exact version:
+
 ```sh
+corepack enable
 pnpm install
 pnpm run build:cli
 node dist-cli/cli.js --version
