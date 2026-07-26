@@ -5,8 +5,11 @@ Contributions are welcome when they improve discovery quality, data correctness,
 Before opening a PR:
 
 ```sh
+corepack enable
 pnpm install
-pnpm test
+pnpm run release:check
 ```
+
+Corepack reads the exact supported pnpm version from `package.json`.
 
 Do not submit private registry data, credentials, customer-specific records, or copied proprietary directories.
