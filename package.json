@@ -1,6 +1,7 @@
 {
   "name": "mcpchangefeed",
   "version": "0.1.0",
+  "packageManager": "pnpm@10.34.5",
   "private": false,
   "description": "MCP ecosystem changefeed, CLI, and static site for registry diffs and freshness signals.",
   "type": "module",
@@ -57,6 +58,12 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   },
   "author": "Roger Chappel"
 }
