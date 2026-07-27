@@ -3,6 +3,7 @@ import { diffServers } from "./lib/diff.js";
 import { readServers } from "./lib/io.js";
 import { rankServers } from "./lib/score.js";
 import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
 
 type Args = Record<string, string | boolean>;
 
@@ -21,7 +22,7 @@ async function main() {
   }
 
   if (command === "top") {
-    const servers = await readServers(String(args.input ?? "data/latest/servers.json"));
+    const servers = await readServers(inputPath(args));
     const limit = Number(args.limit ?? 10);
     for (const server of rankServers(servers).slice(0, limit)) {
       console.log(`${server.score}\t${server.name}\t${server.category}\t${server.repository ?? server.homepage ?? ""}`);
@@ -32,7 +33,7 @@ async function main() {
   if (command === "search") {
     const query = String(rest.find((item) => !item.startsWith("--")) ?? "").toLowerCase();
     if (!query) throw new Error("search requires a query");
-    const servers = await readServers(String(args.input ?? "data/latest/servers.json"));
+    const servers = await readServers(inputPath(args));
     for (const server of rankServers(servers).filter((candidate) => matches(candidate, query))) {
       console.log(`${server.score}\t${server.name}\t${server.description}`);
     }
@@ -52,6 +53,12 @@ async function main() {
   }
 
   throw new Error(`Unknown command: ${command}`);
+}
+
+function inputPath(args: Args) {
+  return args.input
+    ? String(args.input)
+    : fileURLToPath(new URL("../data/latest/servers.json", import.meta.url));
 }
 
 function matches(server: { name: string; description: string; category: string; tags: string[] }, query: string) {
@@ -81,8 +88,8 @@ function help() {
 Commands:
   --help
   --version
-  top --input data/latest/servers.json --limit 10
-  search <query> --input data/latest/servers.json
+  top [--input data/latest/servers.json] [--limit 10]
+  search <query> [--input data/latest/servers.json]
   diff --before old.json --after new.json
 `);
 }
