@@ -2,6 +2,7 @@
 
 const { execFileSync } = require("node:child_process");
 const fs = require("node:fs");
+const os = require("node:os");
 const path = require("node:path");
 
 const root = path.resolve(__dirname, "..");
@@ -58,7 +59,38 @@ if (versionOutput !== pkg.version) {
   throw new Error(`CLI --version returned ${versionOutput}, expected ${pkg.version}`);
 }
 
-execFileSync("npm", ["pack", "--dry-run"], {
-  cwd: root,
-  stdio: "inherit",
-});
+const sandbox = fs.mkdtempSync(path.join(os.tmpdir(), "mcpchangefeed-package-smoke-"));
+const packDirectory = path.join(sandbox, "pack");
+const installDirectory = path.join(sandbox, "install");
+const foreignCwd = path.join(sandbox, "foreign-cwd");
+fs.mkdirSync(packDirectory);
+fs.mkdirSync(foreignCwd);
+
+try {
+  const packResult = JSON.parse(
+    execFileSync("npm", ["pack", "--json", "--pack-destination", packDirectory], {
+      cwd: root,
+      encoding: "utf8",
+    }),
+  );
+  const tarball = path.join(packDirectory, packResult[0].filename);
+  execFileSync("npm", ["install", "--ignore-scripts", "--prefix", installDirectory, tarball], {
+    cwd: root,
+    stdio: "inherit",
+  });
+
+  for (const binName of Object.keys(pkg.bin || {})) {
+    const bin = path.join(installDirectory, "node_modules", ".bin", binName);
+    for (const args of [["top", "--limit", "1"], ["search", "filesystem"]]) {
+      const output = execFileSync(bin, args, {
+        cwd: foreignCwd,
+        encoding: "utf8",
+      });
+      if (args[0] === "top" && !output.trim()) {
+        throw new Error(`${binName} ${args.join(" ")} returned no packaged dataset results`);
+      }
+    }
+  }
+} finally {
+  fs.rmSync(sandbox, { recursive: true, force: true });
+}
