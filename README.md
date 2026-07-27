@@ -42,13 +42,19 @@ bash demo/run-fixture-changefeed.sh
 The walkthrough in [docs/tutorials/fixture-changefeed-demo.md](docs/tutorials/fixture-changefeed-demo.md)
 captures the same local commands and expected artifacts.
 
-Planned package usage:
+Installed package usage:
 
 ```sh
-npx mcpchangefeed top
+npx mcpchangefeed top --limit 5
 mcpfeed search github
 mcpfeed diff --before old.json --after new.json
 ```
+
+`top` and `search` use the latest dataset bundled with the package when
+`--input` is omitted, so they work outside a repository checkout. Pass
+`--input path/to/servers.json` to query a specific file relative to your
+current working directory. `diff` always requires explicit `--before` and
+`--after` paths.
 
 ## Data Sources
 

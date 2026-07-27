@@ -19,10 +19,11 @@ static site build, CLI fixture smoke coverage, and package smoke verification.
 pnpm run package:smoke
 ```
 
-The package smoke builds the CLI, verifies both bin aliases point at an existing
-`dist-cli/cli.js`, confirms the checked-in latest data and support docs are
-included in the package allowlist, checks CLI help/version behavior, and
-finishes with `npm pack --dry-run`.
+The package smoke builds and packs the CLI, installs the tarball in a temporary
+prefix, and runs both bin aliases from an unrelated working directory. It
+verifies that `top` and `search` can read the bundled latest dataset without an
+`--input` path, in addition to checking the package allowlist and CLI
+help/version behavior.
 
 ## Manual release evidence
 
@@ -30,6 +31,8 @@ finishes with `npm pack --dry-run`.
 - CLI help/version: `node dist-cli/cli.js --help` and `node dist-cli/cli.js --version`
 - CLI fixture leaderboard: `node dist-cli/cli.js top --input fixtures/servers.json --limit 2`
 - CLI fixture diff: `node dist-cli/cli.js diff --before fixtures/servers-before.json --after fixtures/servers.json`
+- Installed default data: from outside the checkout, run `mcpchangefeed top --limit 1` and `mcpfeed search filesystem`
+- Explicit input override: from the checkout, run `mcpfeed top --input fixtures/servers.json --limit 1`
 - Data validation: `pnpm run validate:data`
 - Static site build: `pnpm run build:site`
 
