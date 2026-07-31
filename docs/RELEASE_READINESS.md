@@ -3,6 +3,11 @@
 Use this checklist before tagging, publishing, or promoting a refreshed MCP
 changefeed build.
 
+Live refreshes follow the official registry's `metadata.nextCursor` using the
+`cursor` request parameter. All pages are collected before records are
+normalized and duplicate server versions are resolved; cursor loops and
+repeated pages stop the refresh safely.
+
 ## Local gate
 
 ```sh
