@@ -54,7 +54,8 @@ mcpfeed diff --before old.json --after new.json
 `--input` is omitted, so they work outside a repository checkout. Pass
 `--input path/to/servers.json` to query a specific file relative to your
 current working directory. `diff` always requires explicit `--before` and
-`--after` paths.
+`--after` paths. `top --limit` accepts integers from 1 through 100. Options may
+appear before or after the `search` query.
 
 ## Data Sources
 

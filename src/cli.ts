@@ -5,25 +5,37 @@ import { rankServers } from "./lib/score.js";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
-type Args = Record<string, string | boolean>;
+type Args = Record<string, string>;
+
+type ParsedArgs = {
+  options: Args;
+  positionals: string[];
+};
+
+const commandOptions: Record<string, Set<string>> = {
+  top: new Set(["input", "limit"]),
+  search: new Set(["input"]),
+  diff: new Set(["before", "after"])
+};
 
 async function main() {
   const [command, ...rest] = process.argv.slice(2);
-  const args = parseArgs(rest);
+  const { options: args, positionals } = parseArgs(command, rest);
 
-  if (!command || command === "--help" || command === "-h" || args.help) {
+  if (!command || command === "--help" || command === "-h") {
     help();
     return;
   }
 
-  if (command === "--version" || command === "-v" || args.version) {
+  if (command === "--version" || command === "-v") {
     version();
     return;
   }
 
   if (command === "top") {
+    rejectPositionals(command, positionals);
     const servers = await readServers(inputPath(args));
-    const limit = Number(args.limit ?? 10);
+    const limit = parseLimit(args.limit);
     for (const server of rankServers(servers).slice(0, limit)) {
       console.log(`${server.score}\t${server.name}\t${server.category}\t${server.repository ?? server.homepage ?? ""}`);
     }
@@ -31,8 +43,8 @@ async function main() {
   }
 
   if (command === "search") {
-    const query = String(rest.find((item) => !item.startsWith("--")) ?? "").toLowerCase();
-    if (!query) throw new Error("search requires a query");
+    if (positionals.length !== 1) throw new Error("search requires exactly one query");
+    const query = positionals[0].toLowerCase();
     const servers = await readServers(inputPath(args));
     for (const server of rankServers(servers).filter((candidate) => matches(candidate, query))) {
       console.log(`${server.score}\t${server.name}\t${server.description}`);
@@ -41,6 +53,7 @@ async function main() {
   }
 
   if (command === "diff") {
+    rejectPositionals(command, positionals);
     const beforePath = String(args.before ?? "");
     const afterPath = String(args.after ?? "");
     if (!beforePath || !afterPath) throw new Error("diff requires --before and --after");
@@ -65,21 +78,42 @@ function matches(server: { name: string; description: string; category: string; 
   return [server.name, server.description, server.category, ...server.tags].some((value) => value.toLowerCase().includes(query));
 }
 
-function parseArgs(args: string[]): Args {
+function parseArgs(command: string | undefined, args: string[]): ParsedArgs {
   const parsed: Args = {};
+  const positionals: string[] = [];
+  const allowed = command ? commandOptions[command] : undefined;
+  if (command && !allowed) return { options: parsed, positionals: args };
+
   for (let index = 0; index < args.length; index += 1) {
     const value = args[index];
-    if (!value.startsWith("--")) continue;
+    if (!value.startsWith("--")) {
+      positionals.push(value);
+      continue;
+    }
     const key = value.slice(2);
+    if (!key || !allowed?.has(key)) throw new Error(`Unknown option for ${command}: ${value}`);
+    if (key in parsed) throw new Error(`Option may only be specified once: ${value}`);
     const next = args[index + 1];
     if (!next || next.startsWith("--")) {
-      parsed[key] = true;
-    } else {
-      parsed[key] = next;
-      index += 1;
+      throw new Error(`Option requires a value: ${value}`);
     }
+    parsed[key] = next;
+    index += 1;
   }
-  return parsed;
+  return { options: parsed, positionals };
+}
+
+function parseLimit(value: string | undefined) {
+  if (value === undefined) return 10;
+  const limit = Number(value);
+  if (!Number.isInteger(limit) || !Number.isFinite(limit) || limit < 1 || limit > 100) {
+    throw new Error("--limit must be an integer from 1 to 100");
+  }
+  return limit;
+}
+
+function rejectPositionals(command: string, positionals: string[]) {
+  if (positionals.length > 0) throw new Error(`${command} does not accept positional arguments`);
 }
 
 function help() {
@@ -88,7 +122,7 @@ function help() {
 Commands:
   --help
   --version
-  top [--input data/latest/servers.json] [--limit 10]
+  top [--input data/latest/servers.json] [--limit 1..100]
   search <query> [--input data/latest/servers.json]
   diff --before old.json --after new.json
 `);
