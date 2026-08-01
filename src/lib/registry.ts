@@ -6,7 +6,18 @@ type RegistryPage = {
   metadata?: unknown;
 };
 
-export async function fetchOfficialRegistry(url: string, fetcher: typeof fetch = fetch): Promise<McpServer[]> {
+type RegistryFetchOptions = {
+  maxRetries?: number;
+  sleep?: (milliseconds: number) => Promise<void>;
+};
+
+const RETRYABLE_STATUSES = new Set([408, 425, 429, 500, 502, 503, 504]);
+
+export async function fetchOfficialRegistry(
+  url: string,
+  fetcher: typeof fetch = fetch,
+  options: RegistryFetchOptions = {}
+): Promise<McpServer[]> {
   const records: unknown[] = [];
   const seenCursors = new Set<string>();
   const seenPages = new Set<string>();
@@ -16,12 +27,7 @@ export async function fetchOfficialRegistry(url: string, fetcher: typeof fetch =
     const pageUrl = new URL(url);
     if (cursor) pageUrl.searchParams.set("cursor", cursor);
 
-    const response = await fetcher(pageUrl, {
-      headers: { accept: "application/json", "user-agent": "mcpchangefeed/0.1" }
-    });
-    if (!response.ok) {
-      throw new Error(`Registry fetch failed: ${response.status} ${response.statusText}`);
-    }
+    const response = await fetchRegistryPage(pageUrl, fetcher, options);
 
     const body = (await response.json()) as RegistryPage;
     const pageRecords = Array.isArray(body.servers) ? body.servers : [];
@@ -47,6 +53,39 @@ export async function fetchOfficialRegistry(url: string, fetcher: typeof fetch =
   }
 
   return [...latest.values()];
+}
+
+async function fetchRegistryPage(pageUrl: URL, fetcher: typeof fetch, options: RegistryFetchOptions) {
+  const maxRetries = options.maxRetries ?? 3;
+  const sleep = options.sleep ?? ((milliseconds: number) => new Promise((resolve) => setTimeout(resolve, milliseconds)));
+
+  for (let attempt = 0; ; attempt += 1) {
+    const response = await fetcher(pageUrl, {
+      headers: { accept: "application/json", "user-agent": "mcpchangefeed/0.1" }
+    });
+    if (response.ok) return response;
+
+    const detail = `${response.status} ${response.statusText}`.trim();
+    if (!RETRYABLE_STATUSES.has(response.status)) {
+      throw new Error(`Registry fetch failed: ${detail}`);
+    }
+    if (attempt >= maxRetries) {
+      throw new Error(`Registry fetch failed after ${attempt + 1} attempts: ${detail}`);
+    }
+
+    await sleep(retryDelayMilliseconds(response.headers.get("retry-after"), attempt));
+  }
+}
+
+function retryDelayMilliseconds(retryAfter: string | null, attempt: number) {
+  if (retryAfter) {
+    const seconds = Number(retryAfter);
+    if (Number.isFinite(seconds) && seconds >= 0) return seconds * 1_000;
+
+    const date = Date.parse(retryAfter);
+    if (Number.isFinite(date)) return Math.max(0, date - Date.now());
+  }
+  return 250 * 2 ** attempt;
 }
 
 function registryNextCursor(metadata: unknown) {

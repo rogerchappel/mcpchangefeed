@@ -59,3 +59,54 @@ test("fetchOfficialRegistry treats absent or malformed metadata as a single page
     assert.equal(urls.length, 1);
   }
 });
+
+test("fetchOfficialRegistry retries a rate-limited page and honors Retry-After", async () => {
+  let calls = 0;
+  const delays: number[] = [];
+  const fetcher = async () => {
+    calls += 1;
+    if (calls === 1) return new Response(null, { status: 429, statusText: "Too Many Requests", headers: { "retry-after": "2" } });
+    return new Response(JSON.stringify({ servers: [record("alpha", "1.0.0")] }));
+  };
+
+  const servers = await fetchOfficialRegistry("https://registry.example/v0/servers", fetcher as typeof fetch, {
+    sleep: async (milliseconds) => { delays.push(milliseconds); }
+  });
+
+  assert.deepEqual(servers.map(({ id }) => id), ["alpha"]);
+  assert.equal(calls, 2);
+  assert.deepEqual(delays, [2_000]);
+});
+
+test("fetchOfficialRegistry reports the final response after exhausting retries", async () => {
+  let calls = 0;
+  const fetcher = async () => {
+    calls += 1;
+    return new Response(null, { status: 503, statusText: "Service Unavailable" });
+  };
+
+  await assert.rejects(
+    fetchOfficialRegistry("https://registry.example/v0/servers", fetcher as typeof fetch, {
+      maxRetries: 2,
+      sleep: async () => undefined
+    }),
+    /Registry fetch failed after 3 attempts: 503 Service Unavailable/
+  );
+  assert.equal(calls, 3);
+});
+
+test("fetchOfficialRegistry fails non-retryable client errors immediately", async () => {
+  let calls = 0;
+  const fetcher = async () => {
+    calls += 1;
+    return new Response(null, { status: 404, statusText: "Not Found" });
+  };
+
+  await assert.rejects(
+    fetchOfficialRegistry("https://registry.example/v0/servers", fetcher as typeof fetch, {
+      sleep: async () => assert.fail("non-retryable responses must not sleep")
+    }),
+    /Registry fetch failed: 404 Not Found/
+  );
+  assert.equal(calls, 1);
+});
