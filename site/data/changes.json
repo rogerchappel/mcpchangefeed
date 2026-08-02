@@ -1020,6 +1020,35 @@
       }
     },
     {
+      "id": "ing-3dpack-container-loading",
+      "name": "3DPACK.ING — Container & Truck Load Planning",
+      "description": "Plain-English shipment input for freight & logistics: containers your cargo fits, 3D load plan.",
+      "category": "agent-tools",
+      "homepage": "https://3dpack.ing",
+      "repository": "https://github.com/OnurGumus/3dpacking-mcp",
+      "packageName": "@3dpacking/mcp-server",
+      "packageRegistry": "npm",
+      "version": "0.1.1",
+      "install": "npx @3dpacking/mcp-server",
+      "tags": [
+        "3dpack",
+        "container",
+        "loading",
+        "plain",
+        "english",
+        "shipment",
+        "input",
+        "freight"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T11:43:37.031376Z",
+        "lastCommitAt": "2026-08-02T11:43:37.031376Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "dev-3tg-mcp",
       "name": "3TG Test Generation",
       "description": "3rd Generation Testing (3TG) — generate deterministic test suites from Markdown spec tables via MCP.",
@@ -4499,23 +4528,48 @@
     {
       "id": "com-focxle-afos",
       "name": "AFOS — Agentic Financial OS",
-      "description": "Agent payments over x402: pay in USDC on Base with no signup, plus trust data and hiring.",
+      "description": "Check any Base wallet's trust before you pay it. Per-call USDC over x402, no signup. Agent hiring.",
       "category": "agent-tools",
       "homepage": "https://focxle.com",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "tags": [
         "focxle",
         "afos",
-        "agent",
-        "payments",
-        "over",
-        "x402",
-        "usdc",
-        "base"
+        "check",
+        "base",
+        "wallet",
+        "trust",
+        "before",
+        "call"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-31T09:44:18.792045Z",
-        "lastCommitAt": "2026-07-31T09:44:18.792045Z",
+        "lastPublishedAt": "2026-08-02T10:40:24.167917Z",
+        "lastCommitAt": "2026-08-02T10:40:24.167917Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "io-oneprism-after-effects",
+      "name": "After Effects MCP",
+      "description": "The best MCP connector for After Effects. Real layers and keyframes, not scripts. Free to start.",
+      "category": "agent-tools",
+      "homepage": "https://oneprism.io",
+      "version": "1.1.1",
+      "tags": [
+        "oneprism",
+        "after",
+        "effects",
+        "best",
+        "connector",
+        "real",
+        "layers",
+        "keyframes"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T11:40:37.259617Z",
+        "lastCommitAt": "2026-08-02T11:40:37.259617Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -6211,9 +6265,9 @@
       "category": "developer-tools",
       "homepage": "https://github.com/HrRodan/agent-workspace-mcp",
       "repository": "https://github.com/HrRodan/agent-workspace-mcp",
-      "packageName": "ghcr.io/hrrodan/agent-workspace-mcp:1.4.71",
+      "packageName": "ghcr.io/hrrodan/agent-workspace-mcp:1.4.72",
       "packageRegistry": "other",
-      "version": "1.4.71",
+      "version": "1.4.72",
       "tags": [
         "github",
         "hrrodan",
@@ -6225,8 +6279,8 @@
         "secure"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-02T05:36:33.718543Z",
-        "lastCommitAt": "2026-08-02T05:36:33.718543Z",
+        "lastPublishedAt": "2026-08-02T10:33:39.269424Z",
+        "lastCommitAt": "2026-08-02T10:33:39.269424Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -11217,7 +11271,7 @@
       "repository": "https://github.com/AIops-tools/AI-Guardian",
       "packageName": "ai-guardian-aiops",
       "packageRegistry": "pypi",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "install": "uvx ai-guardian-aiops",
       "tags": [
         "github",
@@ -11230,8 +11284,8 @@
         "observability"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:40:41.247341Z",
-        "lastCommitAt": "2026-07-21T09:40:41.247341Z",
+        "lastPublishedAt": "2026-08-02T09:27:04.782642Z",
+        "lastCommitAt": "2026-08-02T09:27:04.782642Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -12495,6 +12549,32 @@
       "signals": {
         "lastPublishedAt": "2026-06-29T05:36:58.413006Z",
         "lastCommitAt": "2026-06-29T05:36:58.413006Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "ai-atlaso-mcp",
+      "name": "ai.atlaso/mcp",
+      "description": "AI memory layer — one shared, persistent memory across every AI tool you connect.",
+      "category": "agent-tools",
+      "homepage": "https://www.atlaso.ai",
+      "repository": "https://github.com/atlaso-labs/mcp",
+      "version": "1.0.1",
+      "tags": [
+        "atlaso",
+        "memory",
+        "layer",
+        "shared",
+        "persistent",
+        "across",
+        "every",
+        "tool"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T11:07:21.155706Z",
+        "lastCommitAt": "2026-08-02T11:07:21.155706Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -31955,9 +32035,9 @@
       "category": "developer-tools",
       "homepage": "https://github.com/clouatre-labs/aptu-coder",
       "repository": "https://github.com/clouatre-labs/aptu-coder",
-      "packageName": "https://github.com/clouatre-labs/aptu-coder/releases/download/v0.26.1/aptu-coder-0.26.1-aarch64-apple-darwin.mcpb",
+      "packageName": "https://github.com/clouatre-labs/aptu-coder/releases/download/v0.26.2/aptu-coder-0.26.2-aarch64-apple-darwin.mcpb",
       "packageRegistry": "other",
-      "version": "0.26.1",
+      "version": "0.26.2",
       "tags": [
         "github",
         "clouatre",
@@ -31969,8 +32049,8 @@
         "analysis"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-27T23:14:17.363235Z",
-        "lastCommitAt": "2026-07-27T23:14:17.363235Z",
+        "lastPublishedAt": "2026-08-02T11:59:40.047339Z",
+        "lastCommitAt": "2026-08-02T11:59:40.047339Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -38531,32 +38611,6 @@
       "signals": {
         "lastPublishedAt": "2026-07-11T14:04:53.219763Z",
         "lastCommitAt": "2026-07-11T14:04:53.219763Z",
-        "hasReadme": true,
-        "hasExamples": false,
-        "hasLicense": false
-      }
-    },
-    {
-      "id": "io-github-imashishkh21-atlaso",
-      "name": "Atlaso",
-      "description": "AI memory layer — one shared, persistent memory across every AI tool you connect.",
-      "category": "developer-tools",
-      "homepage": "https://www.atlaso.ai",
-      "repository": "https://github.com/atlaso-labs/mcp",
-      "version": "1.0.1",
-      "tags": [
-        "github",
-        "imashishkh21",
-        "atlaso",
-        "memory",
-        "layer",
-        "shared",
-        "persistent",
-        "across"
-      ],
-      "signals": {
-        "lastPublishedAt": "2026-07-27T21:23:07.548107Z",
-        "lastCommitAt": "2026-07-27T21:23:07.548107Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -52589,6 +52643,31 @@
       }
     },
     {
+      "id": "in-calmloop-tasks",
+      "name": "CalmLoop Task Manager",
+      "description": "Manage tasks, Focus Zone, notes, projects, and task history from compatible AI assistants.",
+      "category": "agent-tools",
+      "homepage": "https://calmloop.in/how-to-mcp",
+      "version": "2.0.0",
+      "tags": [
+        "calmloop",
+        "tasks",
+        "manage",
+        "focus",
+        "zone",
+        "notes",
+        "projects",
+        "task"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T10:36:04.160679Z",
+        "lastCommitAt": "2026-08-02T10:36:04.160679Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "com-calmseo-seo-mcp",
       "name": "CalmSEO",
       "description": "SEO MCP server for keyword research, SERP analysis, audits, and Search Console workflows.",
@@ -52803,7 +52882,7 @@
       "description": "Public read-only archive of journalist Cameron Wilson's work, appearances, and biography.",
       "category": "agent-tools",
       "homepage": "https://camfeed.cameronwilson.com.au/mcp-info",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "tags": [
         "cameronwilson",
         "camfeed",
@@ -52815,8 +52894,8 @@
         "cameron"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-02T05:00:19.418981Z",
-        "lastCommitAt": "2026-08-02T05:00:19.418981Z",
+        "lastPublishedAt": "2026-08-02T11:46:23.346637Z",
+        "lastCommitAt": "2026-08-02T11:46:23.346637Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -53199,9 +53278,9 @@
       "category": "developer-tools",
       "homepage": "https://osauer.dev/canary/",
       "repository": "https://github.com/osauer/canary",
-      "packageName": "https://github.com/osauer/canary/releases/download/v2.6.0/canary-v2.6.0.mcpb",
+      "packageName": "https://github.com/osauer/canary/releases/download/v2.6.1/canary-v2.6.1.mcpb",
       "packageRegistry": "other",
-      "version": "2.6.0",
+      "version": "2.6.1",
       "tags": [
         "github",
         "osauer",
@@ -53213,8 +53292,8 @@
         "portfolio"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-31T20:56:35.867847Z",
-        "lastCommitAt": "2026-07-31T20:56:35.867847Z",
+        "lastPublishedAt": "2026-08-02T11:15:11.462224Z",
+        "lastCommitAt": "2026-08-02T11:15:11.462224Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -55906,7 +55985,7 @@
       "repository": "https://github.com/AIops-tools/Ceph-AIops",
       "packageName": "ceph-aiops",
       "packageRegistry": "pypi",
-      "version": "0.7.0",
+      "version": "0.8.0",
       "install": "uvx ceph-aiops",
       "tags": [
         "github",
@@ -55919,8 +55998,8 @@
         "pool"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T15:31:05.24004Z",
-        "lastCommitAt": "2026-07-21T15:31:05.24004Z",
+        "lastPublishedAt": "2026-08-02T09:26:59.305811Z",
+        "lastCommitAt": "2026-08-02T09:26:59.305811Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -58252,7 +58331,7 @@
       "repository": "https://github.com/AIops-tools/CICD-AIops",
       "packageName": "cicd-aiops",
       "packageRegistry": "pypi",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "install": "uvx cicd-aiops",
       "tags": [
         "github",
@@ -58265,8 +58344,8 @@
         "gitlab"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T15:31:55.596192Z",
-        "lastCommitAt": "2026-07-21T15:31:55.596192Z",
+        "lastPublishedAt": "2026-08-02T09:27:54.292603Z",
+        "lastCommitAt": "2026-08-02T09:27:54.292603Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -66014,7 +66093,7 @@
       "category": "agent-tools",
       "homepage": "https://accountingqb.com",
       "repository": "https://github.com/RCOLKITT/AccountingQB-MCP",
-      "version": "3.7.0",
+      "version": "3.8.1",
       "tags": [
         "accountingqb",
         "quickbooks",
@@ -66026,8 +66105,8 @@
         "canadian"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-01T20:45:05.859737Z",
-        "lastCommitAt": "2026-08-01T20:45:05.859737Z",
+        "lastPublishedAt": "2026-08-02T12:28:51.307092Z",
+        "lastCommitAt": "2026-08-02T12:28:51.307092Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -68240,7 +68319,7 @@
       "category": "agent-tools",
       "homepage": "https://github.com/MadaBurns/bv-mcp",
       "repository": "https://github.com/MadaBurns/bv-mcp",
-      "version": "3.38.0",
+      "version": "3.39.0",
       "tags": [
         "blackveilsecurity",
         "email",
@@ -68252,8 +68331,8 @@
         "brand"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-31T08:43:46.870009Z",
-        "lastCommitAt": "2026-07-31T08:43:46.870009Z",
+        "lastPublishedAt": "2026-08-02T09:54:02.552089Z",
+        "lastCommitAt": "2026-08-02T09:54:02.552089Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -94102,7 +94181,7 @@
       "repository": "https://github.com/MaxFreedomPollard/Compartment",
       "packageName": "compartment",
       "packageRegistry": "pypi",
-      "version": "4.4.1",
+      "version": "4.5.0",
       "install": "uvx compartment",
       "tags": [
         "github",
@@ -94115,8 +94194,8 @@
         "rest"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-01T03:02:59.967909Z",
-        "lastCommitAt": "2026-08-01T03:02:59.967909Z",
+        "lastPublishedAt": "2026-08-02T09:58:36.388427Z",
+        "lastCommitAt": "2026-08-02T09:58:36.388427Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -94359,7 +94438,7 @@
       "repository": "https://github.com/AIops-tools/Compliance-AIops",
       "packageName": "compliance-aiops",
       "packageRegistry": "pypi",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "install": "uvx compliance-aiops",
       "tags": [
         "github",
@@ -94372,8 +94451,8 @@
         "hipaa"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:40:38.26607Z",
-        "lastCommitAt": "2026-07-21T09:40:38.26607Z",
+        "lastPublishedAt": "2026-08-02T09:27:04.071774Z",
+        "lastCommitAt": "2026-08-02T09:27:04.071774Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -96023,7 +96102,7 @@
       "repository": "https://github.com/AIops-tools/Container-Host-AIops",
       "packageName": "container-host-aiops",
       "packageRegistry": "pypi",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "install": "uvx container-host-aiops",
       "tags": [
         "github",
@@ -96036,8 +96115,8 @@
         "portainer"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:40:44.300578Z",
-        "lastCommitAt": "2026-07-21T09:40:44.300578Z",
+        "lastPublishedAt": "2026-08-02T09:27:04.348065Z",
+        "lastCommitAt": "2026-08-02T09:27:04.348065Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -110863,23 +110942,23 @@
     {
       "id": "dev-afriref-reference-data",
       "name": "dev.afriref/reference-data",
-      "description": "African government data: policy rates, VAT, wages, tax, holidays, official FX fixes. 34 countries.",
+      "description": "African govt data, cited to source: rates, VAT, tax, wages, holidays, FX. 34 countries; Ghana free.",
       "category": "agent-tools",
       "homepage": "https://afriref.dev",
-      "version": "1.3.0",
+      "version": "1.5.0",
       "tags": [
         "afriref",
         "reference",
         "data",
         "african",
-        "government",
-        "policy",
-        "rates",
-        "wages"
+        "govt",
+        "cited",
+        "source",
+        "rates"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-27T16:17:14.239995Z",
-        "lastCommitAt": "2026-07-27T16:17:14.239995Z",
+        "lastPublishedAt": "2026-08-02T11:59:41.299503Z",
+        "lastCommitAt": "2026-08-02T11:59:41.299503Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -111101,23 +111180,23 @@
     {
       "id": "dev-asiaref-reference-data",
       "name": "dev.asiaref/reference-data",
-      "description": "Asian government reference data: policy rates, VAT, wages, tax, CPI, public holidays. 28 countries.",
+      "description": "Asian govt data, cited to source: rates, VAT, tax, wages, holidays, FX. 28 countries; Japan free.",
       "category": "agent-tools",
       "homepage": "https://asiaref.dev",
-      "version": "1.3.0",
+      "version": "1.5.0",
       "tags": [
         "asiaref",
         "reference",
         "data",
         "asian",
-        "government",
-        "policy",
-        "rates",
-        "wages"
+        "govt",
+        "cited",
+        "source",
+        "rates"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-27T16:17:22.693013Z",
-        "lastCommitAt": "2026-07-27T16:17:22.693013Z",
+        "lastPublishedAt": "2026-08-02T11:59:57.278519Z",
+        "lastCommitAt": "2026-08-02T11:59:57.278519Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -111154,23 +111233,23 @@
     {
       "id": "dev-ausref-reference-data",
       "name": "dev.ausref/reference-data",
-      "description": "Oceania government reference data: policy rates, tax, wages, CPI, public holidays. 8 countries.",
+      "description": "Oceania govt data, cited: rates, VAT, tax, wages, holidays, FX. 8 countries; Australia free.",
       "category": "agent-tools",
       "homepage": "https://ausref.dev",
-      "version": "1.3.0",
+      "version": "1.5.0",
       "tags": [
         "ausref",
         "reference",
         "data",
         "oceania",
-        "government",
-        "policy",
+        "govt",
+        "cited",
         "rates",
         "wages"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-27T16:17:43.677594Z",
-        "lastCommitAt": "2026-07-27T16:17:43.677594Z",
+        "lastPublishedAt": "2026-08-02T12:00:07.855715Z",
+        "lastCommitAt": "2026-08-02T12:00:07.855715Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -111777,23 +111856,23 @@
     {
       "id": "dev-euroref-reference-data",
       "name": "dev.euroref/reference-data",
-      "description": "European government data: ECB/BoE rates, VAT, wages, tax, CPI, holidays, FX fixes. 35 countries.",
+      "description": "European govt data, cited: rates, VAT, tax, wages, holidays, FX. 35 countries; Germany free.",
       "category": "agent-tools",
       "homepage": "https://euroref.dev",
-      "version": "1.4.0",
+      "version": "1.5.0",
       "tags": [
         "euroref",
         "reference",
         "data",
         "european",
-        "government",
+        "govt",
+        "cited",
         "rates",
-        "wages",
-        "holidays"
+        "wages"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-31T07:10:32.368005Z",
-        "lastCommitAt": "2026-07-31T07:10:32.368005Z",
+        "lastPublishedAt": "2026-08-02T11:59:54.646842Z",
+        "lastCommitAt": "2026-08-02T11:59:54.646842Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -112241,23 +112320,23 @@
     {
       "id": "dev-latamref-reference-data",
       "name": "dev.latamref/reference-data",
-      "description": "Latin-American reference data: policy rates, VAT, wages, CPI, tax, holidays — 22 countries.",
+      "description": "LatAm govt data, cited to source: rates, VAT, tax, wages, holidays, FX. 22 countries; Brazil free.",
       "category": "agent-tools",
       "homepage": "https://latamref.dev",
-      "version": "1.3.0",
+      "version": "1.5.0",
       "tags": [
         "latamref",
         "reference",
         "data",
-        "latin",
-        "american",
-        "policy",
-        "rates",
-        "wages"
+        "latam",
+        "govt",
+        "cited",
+        "source",
+        "rates"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-24T20:29:09.144157Z",
-        "lastCommitAt": "2026-07-24T20:29:09.144157Z",
+        "lastPublishedAt": "2026-08-02T11:59:59.928554Z",
+        "lastCommitAt": "2026-08-02T11:59:59.928554Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -112548,23 +112627,23 @@
     {
       "id": "dev-mearef-reference-data",
       "name": "dev.mearef/reference-data",
-      "description": "Middle East government data: policy rates, VAT, wages, tax, CPI, public holidays. 9 countries.",
+      "description": "Mid-East govt data, cited to source: rates, VAT, tax, wages, holidays, FX. 9 countries; UAE free.",
       "category": "agent-tools",
       "homepage": "https://mearef.dev",
-      "version": "1.3.0",
+      "version": "1.5.0",
       "tags": [
         "mearef",
         "reference",
         "data",
-        "middle",
         "east",
-        "government",
-        "policy",
+        "govt",
+        "cited",
+        "source",
         "rates"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-27T16:17:49.069565Z",
-        "lastCommitAt": "2026-07-27T16:17:49.069565Z",
+        "lastPublishedAt": "2026-08-02T12:00:05.225783Z",
+        "lastCommitAt": "2026-08-02T12:00:05.225783Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -113269,23 +113348,23 @@
     {
       "id": "dev-usaref-reference-data",
       "name": "dev.usaref/reference-data",
-      "description": "North American government data: policy rates, tax, wages, CPI, public holidays. 10 countries.",
+      "description": "N American govt data, cited to source: rates, VAT, tax, wages, holidays, FX. 10 countries; USA free.",
       "category": "agent-tools",
       "homepage": "https://usaref.dev",
-      "version": "1.3.0",
+      "version": "1.5.0",
       "tags": [
         "usaref",
         "reference",
         "data",
-        "north",
         "american",
-        "government",
-        "policy",
+        "govt",
+        "cited",
+        "source",
         "rates"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-27T16:17:36.096159Z",
-        "lastCommitAt": "2026-07-27T16:17:36.096159Z",
+        "lastPublishedAt": "2026-08-02T12:00:02.583919Z",
+        "lastCommitAt": "2026-08-02T12:00:02.583919Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -115086,27 +115165,27 @@
     {
       "id": "io-github-cappyeo-discord-mcp",
       "name": "Discord MCP",
-      "description": "Connect MCP-compatible AI clients to Discord through a typed local server with 192 tools.",
+      "description": "Connect AI clients to a caller-owned Discord bot with 192 tools over stdio or authenticated HTTP.",
       "category": "developer-tools",
       "homepage": "https://cappyeo.github.io/discord-mcp/",
       "repository": "https://github.com/cappyeo/discord-mcp",
       "packageName": "@discord-mcp/cli",
       "packageRegistry": "npm",
-      "version": "0.13.4",
+      "version": "0.14.0",
       "install": "npx @discord-mcp/cli",
       "tags": [
         "github",
         "cappyeo",
         "discord",
         "connect",
-        "compatible",
         "clients",
-        "through",
-        "typed"
+        "caller",
+        "owned",
+        "tools"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-01T19:51:01.328744Z",
-        "lastCommitAt": "2026-08-01T19:51:01.328744Z",
+        "lastPublishedAt": "2026-08-02T12:10:06.249382Z",
+        "lastCommitAt": "2026-08-02T12:10:06.249382Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -123406,7 +123485,7 @@
       "repository": "https://github.com/AIops-tools/Endpoint-AIops",
       "packageName": "endpoint-aiops",
       "packageRegistry": "pypi",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "install": "uvx endpoint-aiops",
       "tags": [
         "github",
@@ -123419,8 +123498,8 @@
         "storm"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:40:44.301535Z",
-        "lastCommitAt": "2026-07-21T09:40:44.301535Z",
+        "lastPublishedAt": "2026-08-02T09:27:14.493357Z",
+        "lastCommitAt": "2026-08-02T09:27:14.493357Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -124082,7 +124161,7 @@
       "repository": "https://github.com/juyterman1000/entroly",
       "packageName": "entroly",
       "packageRegistry": "pypi",
-      "version": "1.0.69",
+      "version": "1.0.72",
       "install": "uvx entroly",
       "tags": [
         "github",
@@ -124095,8 +124174,8 @@
         "optimization"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-30T06:16:12.533394Z",
-        "lastCommitAt": "2026-07-30T06:16:12.533394Z",
+        "lastPublishedAt": "2026-08-02T10:28:48.201691Z",
+        "lastCommitAt": "2026-08-02T10:28:48.201691Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -130968,7 +131047,7 @@
       "repository": "https://github.com/AIops-tools/Fabric-AIops",
       "packageName": "fabric-aiops",
       "packageRegistry": "pypi",
-      "version": "0.7.0",
+      "version": "0.8.0",
       "install": "uvx fabric-aiops",
       "tags": [
         "github",
@@ -130981,8 +131060,8 @@
         "uplink"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:40:12.95854Z",
-        "lastCommitAt": "2026-07-21T09:40:12.95854Z",
+        "lastPublishedAt": "2026-08-02T09:27:06.104435Z",
+        "lastCommitAt": "2026-08-02T09:27:06.104435Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -135494,7 +135573,7 @@
       "repository": "https://github.com/AIops-tools/Firewall-AIops",
       "packageName": "firewall-aiops",
       "packageRegistry": "pypi",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "install": "uvx firewall-aiops",
       "tags": [
         "github",
@@ -135507,8 +135586,8 @@
         "rules"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:40:14.930397Z",
-        "lastCommitAt": "2026-07-21T09:40:14.930397Z",
+        "lastPublishedAt": "2026-08-02T09:27:06.439101Z",
+        "lastCommitAt": "2026-08-02T09:27:06.439101Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -161861,7 +161940,7 @@
       "repository": "https://github.com/AIops-tools/Identity-AIops",
       "packageName": "identity-aiops",
       "packageRegistry": "pypi",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "install": "uvx identity-aiops",
       "tags": [
         "github",
@@ -161874,8 +161953,8 @@
         "users"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:40:48.508187Z",
-        "lastCommitAt": "2026-07-21T09:40:48.508187Z",
+        "lastPublishedAt": "2026-08-02T09:27:09.912135Z",
+        "lastCommitAt": "2026-08-02T09:27:09.912135Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -164210,7 +164289,7 @@
       "repository": "https://github.com/AIops-tools/Inference-AIops",
       "packageName": "inference-aiops",
       "packageRegistry": "pypi",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "install": "uvx inference-aiops",
       "tags": [
         "github",
@@ -164223,8 +164302,8 @@
         "latency"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:41:08.792143Z",
-        "lastCommitAt": "2026-07-21T09:41:08.792143Z",
+        "lastPublishedAt": "2026-08-02T09:27:02.193509Z",
+        "lastCommitAt": "2026-08-02T09:27:02.193509Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -167842,7 +167921,7 @@
       "repository": "https://github.com/0Mattias/bettermemory",
       "packageName": "bettermemory",
       "packageRegistry": "pypi",
-      "version": "3.35.0",
+      "version": "3.36.0",
       "install": "uvx bettermemory",
       "tags": [
         "github",
@@ -167855,8 +167934,8 @@
         "against"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-01T21:37:43.438321Z",
-        "lastCommitAt": "2026-08-01T21:37:43.438321Z",
+        "lastPublishedAt": "2026-08-02T11:06:06.919807Z",
+        "lastCommitAt": "2026-08-02T11:06:06.919807Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -184437,7 +184516,7 @@
       "category": "developer-tools",
       "homepage": "https://github.com/avabuildsdata/mcp-us-business-data",
       "repository": "https://github.com/avabuildsdata/mcp-us-business-data",
-      "version": "1.9.211",
+      "version": "1.9.213",
       "tags": [
         "github",
         "avabuildsdata",
@@ -184449,8 +184528,8 @@
         "permit"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-02T09:07:46.352159Z",
-        "lastCommitAt": "2026-08-02T09:07:46.352159Z",
+        "lastPublishedAt": "2026-08-02T11:41:37.198782Z",
+        "lastCommitAt": "2026-08-02T11:41:37.198782Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -184688,7 +184767,7 @@
       "repository": "https://github.com/awkoy/notion-mcp-server",
       "packageName": "notion-mcp-server",
       "packageRegistry": "npm",
-      "version": "2.12.0",
+      "version": "2.13.0",
       "install": "npx notion-mcp-server",
       "tags": [
         "github",
@@ -184701,8 +184780,8 @@
         "blocks"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-10T20:36:32.399408Z",
-        "lastCommitAt": "2026-07-10T20:36:32.399408Z",
+        "lastPublishedAt": "2026-08-02T12:32:47.42791Z",
+        "lastCommitAt": "2026-08-02T12:32:47.42791Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -251959,7 +252038,7 @@
       "repository": "https://github.com/hrtips/cvx",
       "packageName": "@hrtips/cvx",
       "packageRegistry": "npm",
-      "version": "1.5.0",
+      "version": "1.6.0",
       "install": "npx @hrtips/cvx",
       "tags": [
         "github",
@@ -251972,8 +252051,8 @@
         "yaml"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-28T01:12:36.501821Z",
-        "lastCommitAt": "2026-07-28T01:12:36.501821Z",
+        "lastPublishedAt": "2026-08-02T10:58:10.873553Z",
+        "lastCommitAt": "2026-08-02T10:58:10.873553Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -254106,6 +254185,35 @@
       "signals": {
         "lastPublishedAt": "2026-03-11T22:04:21.155219Z",
         "lastCommitAt": "2026-03-11T22:04:21.155219Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "io-github-imashishkh21-atlaso",
+      "name": "io.github.imashishkh21/atlaso",
+      "description": "Open-source memory for AI agents. Conflict-flagging recall, scope-bag dispersion, local SQLite.",
+      "category": "data",
+      "homepage": "https://www.atlaso.ai",
+      "repository": "https://github.com/imashishkh21/atlaso",
+      "packageName": "atlaso",
+      "packageRegistry": "pypi",
+      "version": "0.1.0a6",
+      "install": "uvx atlaso",
+      "tags": [
+        "github",
+        "imashishkh21",
+        "atlaso",
+        "open",
+        "source",
+        "memory",
+        "agents",
+        "conflict"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-05-12T23:10:29.144962Z",
+        "lastCommitAt": "2026-08-02T11:06:07.551195Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -258765,6 +258873,35 @@
       "signals": {
         "lastPublishedAt": "2026-01-25T14:28:42.770823Z",
         "lastCommitAt": "2026-01-25T14:28:42.770823Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "io-github-jameelnabbo-o360-mcp",
+      "name": "io.github.JameelNabbo/o360-mcp",
+      "description": "Run Offensive360 SAST scans (60+ languages) on local code; findings with file/line and fixes",
+      "category": "developer-tools",
+      "homepage": "https://github.com/offensive360/mcp-server",
+      "repository": "https://github.com/offensive360/mcp-server",
+      "packageName": "o360-mcp",
+      "packageRegistry": "npm",
+      "version": "1.0.1",
+      "install": "npx o360-mcp",
+      "tags": [
+        "github",
+        "jameelnabbo",
+        "o360",
+        "offensive360",
+        "sast",
+        "scans",
+        "languages",
+        "local"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T09:40:49.400696Z",
+        "lastCommitAt": "2026-08-02T09:40:49.400696Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -275740,6 +275877,35 @@
       }
     },
     {
+      "id": "io-github-liminalpepe-x402-codesearch-mcp",
+      "name": "io.github.liminalpepe/x402-codesearch-mcp",
+      "description": "Free MCP server: index a repo's files into the x402-codesearch Worker's search index.",
+      "category": "developer-tools",
+      "homepage": "https://github.com/liminalpepe/x402-codesearch-mcp",
+      "repository": "https://github.com/liminalpepe/x402-codesearch-mcp",
+      "packageName": "x402-codesearch-mcp",
+      "packageRegistry": "npm",
+      "version": "0.1.0",
+      "install": "npx x402-codesearch-mcp",
+      "tags": [
+        "github",
+        "liminalpepe",
+        "x402",
+        "codesearch",
+        "free",
+        "index",
+        "repo",
+        "files"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T11:06:30.712142Z",
+        "lastCommitAt": "2026-08-02T11:06:30.712142Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "io-github-liminalpepe-x402-dataviz-mcp",
       "name": "io.github.liminalpepe/x402-dataviz-mcp",
       "description": "Free MCP server: render bar/line/area charts to SVG from structured data.",
@@ -275763,6 +275929,35 @@
       "signals": {
         "lastPublishedAt": "2026-08-02T00:24:10.780861Z",
         "lastCommitAt": "2026-08-02T00:24:10.780861Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "io-github-liminalpepe-x402-repohealth-mcp",
+      "name": "io.github.liminalpepe/x402-repohealth-mcp",
+      "description": "Free MCP server: compute a GitHub repo maintenance/abandonment health score from live data.",
+      "category": "developer-tools",
+      "homepage": "https://github.com/liminalpepe/x402-repohealth-mcp",
+      "repository": "https://github.com/liminalpepe/x402-repohealth-mcp",
+      "packageName": "x402-repohealth-mcp",
+      "packageRegistry": "npm",
+      "version": "0.1.0",
+      "install": "npx x402-repohealth-mcp",
+      "tags": [
+        "github",
+        "liminalpepe",
+        "x402",
+        "repohealth",
+        "free",
+        "compute",
+        "repo",
+        "maintenance"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T11:06:16.219245Z",
+        "lastCommitAt": "2026-08-02T11:06:16.219245Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -278984,7 +279179,7 @@
       "repository": "https://github.com/Lyellr88/marm-memory",
       "packageName": "marm-mcp-server",
       "packageRegistry": "pypi",
-      "version": "2.35.0",
+      "version": "2.36.0",
       "install": "uvx marm-mcp-server",
       "tags": [
         "github",
@@ -278997,8 +279192,8 @@
         "semantic"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-02T02:14:21.953074Z",
-        "lastCommitAt": "2026-08-02T02:14:21.953074Z",
+        "lastPublishedAt": "2026-08-02T11:09:05.192311Z",
+        "lastCommitAt": "2026-08-02T11:09:05.192311Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -303397,7 +303592,7 @@
       "repository": "https://github.com/openagentemail/openagentemail",
       "packageName": "@openagentemail/mcp",
       "packageRegistry": "npm",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "install": "npx @openagentemail/mcp",
       "tags": [
         "github",
@@ -303410,8 +303605,8 @@
         "read"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-30T20:49:04.920715Z",
-        "lastCommitAt": "2026-07-30T20:49:04.920715Z",
+        "lastPublishedAt": "2026-08-02T11:17:11.706696Z",
+        "lastCommitAt": "2026-08-02T11:17:11.706696Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -305453,24 +305648,24 @@
     {
       "id": "io-github-paperandbeyond23-gif-propzapi",
       "name": "io.github.paperandbeyond23-gif/propzapi",
-      "description": "Props-first sports odds API: live odds and player props across NBA, NFL, MLB and NHL.",
+      "description": "Image generation API: render HTML/CSS templates to PNG, JPEG, WebP or PDF, plus URL screenshots.",
       "category": "developer-tools",
       "homepage": "https://propzapi.com",
       "repository": "https://github.com/paperandbeyond23-gif/propzapi-skills",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "tags": [
         "github",
         "paperandbeyond23",
         "propzapi",
-        "props",
-        "first",
-        "sports",
-        "odds",
-        "live"
+        "image",
+        "generation",
+        "render",
+        "html",
+        "templates"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-17T18:45:06.219213Z",
-        "lastCommitAt": "2026-07-17T18:45:06.219213Z",
+        "lastPublishedAt": "2026-08-02T11:29:26.175463Z",
+        "lastCommitAt": "2026-08-02T11:29:26.175463Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -330718,7 +330913,7 @@
       "repository": "https://github.com/ShekharBhardwaj/AgenticLedger",
       "packageName": "agentic-ledger",
       "packageRegistry": "pypi",
-      "version": "0.8.0",
+      "version": "0.8.1",
       "install": "uvx agentic-ledger",
       "tags": [
         "github",
@@ -330731,8 +330926,8 @@
         "recorder"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-01T23:14:39.264111Z",
-        "lastCommitAt": "2026-08-01T23:14:39.264111Z",
+        "lastPublishedAt": "2026-08-02T12:29:53.170599Z",
+        "lastCommitAt": "2026-08-02T12:29:53.170599Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -333376,7 +333571,7 @@
       "repository": "https://github.com/smilemin07/korean-rnd-regs-mcp",
       "packageName": "korean-rnd-regs-mcp",
       "packageRegistry": "pypi",
-      "version": "0.29.0",
+      "version": "0.30.0",
       "install": "uvx korean-rnd-regs-mcp",
       "tags": [
         "github",
@@ -333389,8 +333584,8 @@
         "national"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-25T12:04:27.404066Z",
-        "lastCommitAt": "2026-07-25T12:04:27.404066Z",
+        "lastPublishedAt": "2026-08-02T10:41:46.935797Z",
+        "lastCommitAt": "2026-08-02T10:41:46.935797Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -345512,9 +345707,9 @@
       "category": "developer-tools",
       "homepage": "https://github.com/TinySuiteHQ/TinySearch",
       "repository": "https://github.com/TinySuiteHQ/TinySearch",
-      "packageName": "docker.io/marcellm01/tinysearch:v0.4.2",
+      "packageName": "docker.io/marcellm01/tinysearch:v0.4.3",
       "packageRegistry": "other",
-      "version": "0.4.2",
+      "version": "0.4.3",
       "tags": [
         "github",
         "tinysuitehq",
@@ -345525,8 +345720,8 @@
         "agents"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-31T14:51:38.085833Z",
-        "lastCommitAt": "2026-07-31T14:51:38.085833Z",
+        "lastPublishedAt": "2026-08-02T12:13:31.512816Z",
+        "lastCommitAt": "2026-08-02T12:13:31.512816Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -376256,7 +376451,7 @@
       "repository": "https://github.com/AIops-tools/K8s-AIops",
       "packageName": "k8s-aiops",
       "packageRegistry": "pypi",
-      "version": "0.8.0",
+      "version": "0.9.0",
       "install": "uvx k8s-aiops",
       "tags": [
         "github",
@@ -376269,8 +376464,8 @@
         "undo"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:40:29.11554Z",
-        "lastCommitAt": "2026-07-21T09:40:29.11554Z",
+        "lastPublishedAt": "2026-08-02T09:27:22.107812Z",
+        "lastCommitAt": "2026-08-02T09:27:22.107812Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -384824,6 +385019,32 @@
       }
     },
     {
+      "id": "io-github-liftli-ai-liftli",
+      "name": "Liftli",
+      "description": "Strategist, ghostwriter, scheduler and analyst in one, inside your AI. LinkedIn, X, Substack.",
+      "category": "developer-tools",
+      "homepage": "https://liftli.ai",
+      "repository": "https://github.com/liftli-ai/liftli-mcp",
+      "version": "1.0.0",
+      "tags": [
+        "github",
+        "liftli",
+        "strategist",
+        "ghostwriter",
+        "scheduler",
+        "analyst",
+        "inside",
+        "your"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T10:41:34.900399Z",
+        "lastCommitAt": "2026-08-02T10:41:34.900399Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "com-liftmcp-platform",
       "name": "LiftMCP",
       "description": "Makes websites AI-agent-ready via MCP. Each property gets its own hosted MCP server.",
@@ -385662,9 +385883,9 @@
       "category": "developer-tools",
       "homepage": "https://github.com/prakharagarwal-dev/linkedin-mcp-server",
       "repository": "https://github.com/prakharagarwal-dev/linkedin-mcp-server",
-      "packageName": "ghcr.io/prakharagarwal-dev/linkedin-mcp-server:0.14.2",
+      "packageName": "ghcr.io/prakharagarwal-dev/linkedin-mcp-server:0.15.0",
       "packageRegistry": "other",
-      "version": "0.14.2",
+      "version": "0.15.0",
       "tags": [
         "github",
         "prakharagarwal",
@@ -385676,8 +385897,8 @@
         "capabilities"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-02T09:27:36.651051Z",
-        "lastCommitAt": "2026-08-02T09:27:36.651051Z",
+        "lastPublishedAt": "2026-08-02T11:53:24.641554Z",
+        "lastCommitAt": "2026-08-02T11:53:24.641554Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -388816,6 +389037,31 @@
       "signals": {
         "lastPublishedAt": "2026-06-22T02:30:37.956837Z",
         "lastCommitAt": "2026-06-22T02:30:37.956837Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "com-loxoneai-loxone-ai",
+      "name": "Loxone AI",
+      "description": "Control a Loxone Miniserver smart home: lights, blinds, climate, scenes and energy.",
+      "category": "agent-tools",
+      "homepage": "https://loxoneai.com",
+      "version": "1.1.0",
+      "tags": [
+        "loxoneai",
+        "loxone",
+        "control",
+        "miniserver",
+        "smart",
+        "home",
+        "lights",
+        "blinds"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T09:24:01.403089Z",
+        "lastCommitAt": "2026-08-02T09:24:01.403089Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -393238,6 +393484,31 @@
       }
     },
     {
+      "id": "ai-mymarky-marky",
+      "name": "Marky",
+      "description": "Create, schedule, and publish on-brand social posts to Instagram, LinkedIn, TikTok, and more.",
+      "category": "agent-tools",
+      "homepage": "https://www.mymarky.ai",
+      "version": "1.0.0",
+      "tags": [
+        "mymarky",
+        "marky",
+        "create",
+        "schedule",
+        "publish",
+        "brand",
+        "social",
+        "posts"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T11:58:55.88036Z",
+        "lastCommitAt": "2026-08-02T11:58:55.88036Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "io-github-marmotdata-marmot",
       "name": "Marmot Data Catalog",
       "description": "Open-source data catalog. Search assets, explore lineage, and find ownership.",
@@ -393759,7 +394030,7 @@
       "repository": "https://github.com/clouatre-labs/math-mcp-learning-server",
       "packageName": "math-mcp-learning-server",
       "packageRegistry": "pypi",
-      "version": "0.12.1",
+      "version": "0.12.3",
       "install": "uvx math-mcp-learning-server",
       "tags": [
         "github",
@@ -393772,8 +394043,8 @@
         "tools"
       ],
       "signals": {
-        "lastPublishedAt": "2026-04-02T18:57:54.42992Z",
-        "lastCommitAt": "2026-04-02T18:57:54.42992Z",
+        "lastPublishedAt": "2026-08-02T11:02:48.324476Z",
+        "lastCommitAt": "2026-08-02T11:02:48.324476Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -396632,7 +396903,7 @@
       "repository": "https://github.com/gautamvarmadatla/mcpsafetywarden",
       "packageName": "mcpsafetywarden",
       "packageRegistry": "pypi",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "install": "uvx mcpsafetywarden",
       "tags": [
         "github",
@@ -396645,8 +396916,8 @@
         "behavioral"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-01T05:39:48.491816Z",
-        "lastCommitAt": "2026-08-01T05:39:48.491816Z",
+        "lastPublishedAt": "2026-08-02T11:03:25.577613Z",
+        "lastCommitAt": "2026-08-02T11:03:25.577613Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -400817,7 +401088,7 @@
       "repository": "https://github.com/AVIDS2/memorix",
       "packageName": "memorix",
       "packageRegistry": "npm",
-      "version": "1.3.1",
+      "version": "1.3.3",
       "install": "npx memorix",
       "tags": [
         "github",
@@ -400830,8 +401101,8 @@
         "memory"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-31T10:12:14.912616Z",
-        "lastCommitAt": "2026-07-31T10:12:14.912616Z",
+        "lastPublishedAt": "2026-08-02T11:31:39.532175Z",
+        "lastCommitAt": "2026-08-02T11:31:39.532175Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -403922,6 +404193,31 @@
       }
     },
     {
+      "id": "co-mindlify-mindlify",
+      "name": "Mindlify",
+      "description": "Turn AI conversations into visual knowledge maps. Create, connect, search, and organize thoughts.",
+      "category": "search",
+      "homepage": "https://mindlify.co",
+      "version": "1.0.0",
+      "tags": [
+        "mindlify",
+        "turn",
+        "conversations",
+        "into",
+        "visual",
+        "knowledge",
+        "maps",
+        "create"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T11:39:16.468615Z",
+        "lastCommitAt": "2026-08-02T11:39:16.468615Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "com-keenethics-labs-mindmap",
       "name": "MindMap",
       "description": "Turn outlines and hierarchical notes into interactive mind maps through a hosted remote MCP server.",
@@ -404260,7 +404556,7 @@
       "repository": "https://github.com/AIops-tools/MinIO-AIops",
       "packageName": "minio-aiops",
       "packageRegistry": "pypi",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "install": "uvx minio-aiops",
       "tags": [
         "github",
@@ -404273,8 +404569,8 @@
         "exposure"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:40:50.712117Z",
-        "lastCommitAt": "2026-07-21T09:40:50.712117Z",
+        "lastPublishedAt": "2026-08-02T09:27:21.871165Z",
+        "lastCommitAt": "2026-08-02T09:27:21.871165Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -406522,7 +406818,7 @@
       "repository": "https://github.com/AIops-tools/Monitoring-AIops",
       "packageName": "monitoring-aiops",
       "packageRegistry": "pypi",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "install": "uvx monitoring-aiops",
       "tags": [
         "github",
@@ -406535,8 +406831,8 @@
         "prtg"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:41:13.101917Z",
-        "lastCommitAt": "2026-07-21T09:41:13.101917Z",
+        "lastPublishedAt": "2026-08-02T09:28:49.441846Z",
+        "lastCommitAt": "2026-08-02T09:28:49.441846Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -409745,7 +410041,7 @@
       "repository": "https://github.com/AIops-tools/MySQL-AIops",
       "packageName": "mysql-aiops",
       "packageRegistry": "pypi",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "install": "uvx mysql-aiops",
       "tags": [
         "github",
@@ -409758,8 +410054,8 @@
         "query"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:40:27.562438Z",
-        "lastCommitAt": "2026-07-21T09:40:27.562438Z",
+        "lastPublishedAt": "2026-08-02T09:28:16.149271Z",
+        "lastCommitAt": "2026-08-02T09:28:16.149271Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -411647,7 +411943,7 @@
       "repository": "https://github.com/NEAT-Technologies/Neat",
       "packageName": "@neat.is/mcp",
       "packageRegistry": "npm",
-      "version": "0.7.1",
+      "version": "0.7.2",
       "install": "npx @neat.is/mcp",
       "tags": [
         "github",
@@ -411660,8 +411956,8 @@
         "static"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-01T14:58:56.737762Z",
-        "lastCommitAt": "2026-08-01T14:58:56.737762Z",
+        "lastPublishedAt": "2026-08-02T11:20:27.471436Z",
+        "lastCommitAt": "2026-08-02T11:20:27.471436Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -413402,7 +413698,7 @@
       "repository": "https://github.com/AIops-tools/Network-AIops",
       "packageName": "network-aiops",
       "packageRegistry": "pypi",
-      "version": "0.8.0",
+      "version": "0.9.0",
       "install": "uvx network-aiops",
       "tags": [
         "github",
@@ -413415,8 +413711,8 @@
         "audit"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T15:31:32.852128Z",
-        "lastCommitAt": "2026-07-21T15:31:32.852128Z",
+        "lastPublishedAt": "2026-08-02T09:27:32.721597Z",
+        "lastCommitAt": "2026-08-02T09:27:32.721597Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -416682,6 +416978,31 @@
       }
     },
     {
+      "id": "de-nomado24-jobs",
+      "name": "Nomado24 Remote Jobs",
+      "description": "Search ~10,000 remote/hybrid jobs for Germany and the EU; aggregate market stats. Free, no auth.",
+      "category": "search",
+      "homepage": "https://www.nomado24.de/en/developers",
+      "version": "1.0.0",
+      "tags": [
+        "nomado24",
+        "jobs",
+        "search",
+        "remote",
+        "hybrid",
+        "germany",
+        "aggregate",
+        "market"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T11:36:31.328345Z",
+        "lastCommitAt": "2026-08-02T11:36:31.328345Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "io-github-pipeworx-io-nominatim",
       "name": "nominatim",
       "description": "Nominatim MCP — wraps OpenStreetMap Nominatim geocoding API (free, no auth)",
@@ -419224,7 +419545,7 @@
       "repository": "https://github.com/AIops-tools/Nutanix-AIops",
       "packageName": "nutanix-aiops",
       "packageRegistry": "pypi",
-      "version": "0.7.0",
+      "version": "0.8.0",
       "install": "uvx nutanix-aiops",
       "tags": [
         "github",
@@ -419237,8 +419558,8 @@
         "clusters"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T15:31:22.136424Z",
-        "lastCommitAt": "2026-07-21T15:31:22.136424Z",
+        "lastPublishedAt": "2026-08-02T09:28:28.266189Z",
+        "lastCommitAt": "2026-08-02T09:28:28.266189Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -420365,7 +420686,7 @@
       "repository": "https://github.com/AIops-tools/Observability-AIops",
       "packageName": "observability-aiops",
       "packageRegistry": "pypi",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "install": "uvx observability-aiops",
       "tags": [
         "github",
@@ -420378,8 +420699,8 @@
         "promql"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:41:15.053781Z",
-        "lastCommitAt": "2026-07-21T09:41:15.053781Z",
+        "lastPublishedAt": "2026-08-02T09:27:50.529772Z",
+        "lastCommitAt": "2026-08-02T09:27:50.529772Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -426308,7 +426629,7 @@
       "repository": "https://github.com/Kentucky-ai/opentakeoff",
       "packageName": "opentakeoff-mcp",
       "packageRegistry": "npm",
-      "version": "0.9.21",
+      "version": "0.9.25",
       "install": "npx opentakeoff-mcp",
       "tags": [
         "github",
@@ -426321,8 +426642,8 @@
         "plans"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-02T05:24:43.431652Z",
-        "lastCommitAt": "2026-08-02T05:24:43.431652Z",
+        "lastPublishedAt": "2026-08-02T12:11:54.146507Z",
+        "lastCommitAt": "2026-08-02T12:11:54.146507Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -427827,9 +428148,9 @@
       "category": "developer-tools",
       "homepage": "https://orchestkit.yonyon.ai",
       "repository": "https://github.com/yonatangross/orchestkit",
-      "packageName": "ghcr.io/yonatangross/orchestkit-docs-mcp:9.5.1",
+      "packageName": "ghcr.io/yonatangross/orchestkit-docs-mcp:9.5.2",
       "packageRegistry": "other",
-      "version": "9.5.1",
+      "version": "9.5.2",
       "tags": [
         "github",
         "yonatangross",
@@ -427841,8 +428162,8 @@
         "text"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-02T08:11:22.073725Z",
-        "lastCommitAt": "2026-08-02T08:11:22.073725Z",
+        "lastPublishedAt": "2026-08-02T10:31:36.410485Z",
+        "lastCommitAt": "2026-08-02T10:31:36.410485Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -435767,7 +436088,7 @@
       "repository": "https://github.com/zalez/perplexity-agent-mcp",
       "packageName": "perplexity-agent-mcp",
       "packageRegistry": "pypi",
-      "version": "0.3.1",
+      "version": "0.4.0",
       "install": "uvx perplexity-agent-mcp",
       "tags": [
         "github",
@@ -435780,8 +436101,8 @@
         "citations"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-28T07:17:59.470225Z",
-        "lastCommitAt": "2026-07-28T07:17:59.470225Z",
+        "lastPublishedAt": "2026-08-02T10:49:19.419907Z",
+        "lastCommitAt": "2026-08-02T10:49:19.419907Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -438335,6 +438656,32 @@
       }
     },
     {
+      "id": "io-github-absharma9796-pixel-agent",
+      "name": "Pixel Agent",
+      "description": "Convert images to PNG, JPEG, WebP, or AVIF through one public remote MCP tool.",
+      "category": "developer-tools",
+      "homepage": "https://pixel-agent.for-ai-agents.workers.dev/",
+      "repository": "https://github.com/absharma9796/matrix",
+      "version": "1.0.0",
+      "tags": [
+        "github",
+        "absharma9796",
+        "pixel",
+        "agent",
+        "convert",
+        "images",
+        "jpeg",
+        "webp"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T12:33:20.312354Z",
+        "lastCommitAt": "2026-08-02T12:33:20.312354Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "pro-pixeldrive-pixeldrive",
       "name": "PixelDrive",
       "description": "Generate branded images at scale: design templates and render them to PNGs by prompt.",
@@ -438665,6 +439012,35 @@
       "signals": {
         "lastPublishedAt": "2026-06-22T23:05:00.263602Z",
         "lastCommitAt": "2026-06-22T23:05:00.263602Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "pl-piszczek-ai-economics",
+      "name": "pl.piszczek/ai-economics",
+      "description": "12 calculators for AI cost, energy and agent verification. Free API, no key.",
+      "category": "agent-tools",
+      "homepage": "https://piszczek.pl/tools",
+      "repository": "https://github.com/pich/ai-economics-mcp",
+      "packageName": "@michalpiszczek/ai-economics-mcp",
+      "packageRegistry": "npm",
+      "version": "1.0.1",
+      "install": "npx @michalpiszczek/ai-economics-mcp",
+      "tags": [
+        "piszczek",
+        "economics",
+        "calculators",
+        "cost",
+        "energy",
+        "agent",
+        "verification",
+        "free"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T11:39:52.358101Z",
+        "lastCommitAt": "2026-08-02T11:39:52.358101Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -441233,7 +441609,7 @@
       "repository": "https://github.com/AIops-tools/Postgres-AIops",
       "packageName": "postgres-aiops",
       "packageRegistry": "pypi",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "install": "uvx postgres-aiops",
       "tags": [
         "github",
@@ -441246,8 +441622,8 @@
         "query"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:40:42.106753Z",
-        "lastCommitAt": "2026-07-21T09:40:42.106753Z",
+        "lastPublishedAt": "2026-08-02T09:28:34.066941Z",
+        "lastCommitAt": "2026-08-02T09:28:34.066941Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -445656,7 +446032,7 @@
       "repository": "https://github.com/AIops-tools/Proxmox-AIops",
       "packageName": "proxmox-aiops",
       "packageRegistry": "pypi",
-      "version": "0.8.0",
+      "version": "0.9.0",
       "install": "uvx proxmox-aiops",
       "tags": [
         "github",
@@ -445669,8 +446045,8 @@
         "budget"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T15:31:05.237012Z",
-        "lastCommitAt": "2026-07-21T15:31:05.237012Z",
+        "lastPublishedAt": "2026-08-02T09:28:33.258178Z",
+        "lastCommitAt": "2026-08-02T09:28:33.258178Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -445741,7 +446117,7 @@
       "repository": "https://github.com/AIops-tools/Proxy-AIops",
       "packageName": "proxy-aiops",
       "packageRegistry": "pypi",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "install": "uvx proxy-aiops",
       "tags": [
         "github",
@@ -445754,8 +446130,8 @@
         "haproxy"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:41:19.266602Z",
-        "lastCommitAt": "2026-07-21T09:41:19.266602Z",
+        "lastPublishedAt": "2026-08-02T09:28:36.428049Z",
+        "lastCommitAt": "2026-08-02T09:28:36.428049Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -449108,7 +449484,7 @@
       "repository": "https://github.com/AIops-tools/Queue-AIops",
       "packageName": "queue-aiops",
       "packageRegistry": "pypi",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "install": "uvx queue-aiops",
       "tags": [
         "github",
@@ -449121,8 +449497,8 @@
         "memory"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:41:26.589344Z",
-        "lastCommitAt": "2026-07-21T09:41:26.589344Z",
+        "lastPublishedAt": "2026-08-02T09:28:26.316134Z",
+        "lastCommitAt": "2026-08-02T09:28:26.316134Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -452460,6 +452836,32 @@
       "signals": {
         "lastPublishedAt": "2026-07-29T12:53:40.189889Z",
         "lastCommitAt": "2026-07-29T12:53:40.189889Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "io-github-absharma9796-red-flag-greenflag",
+      "name": "Red-Flag Greenflag",
+      "description": "Read and participate in a public AI-agent consensus board through four MCP tools.",
+      "category": "developer-tools",
+      "homepage": "https://red-flag-greenflag.for-ai-agents.workers.dev/",
+      "repository": "https://github.com/absharma9796/matrix",
+      "version": "0.1.0",
+      "tags": [
+        "github",
+        "absharma9796",
+        "flag",
+        "greenflag",
+        "read",
+        "participate",
+        "public",
+        "agent"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T12:33:14.251721Z",
+        "lastCommitAt": "2026-08-02T12:33:14.251721Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -464403,7 +464805,7 @@
       "description": "Vulnerability management: scan projects, search sealed packages, manage sealing rules and reports.",
       "category": "search",
       "homepage": "https://app.sealsecurity.io",
-      "version": "0.1.110",
+      "version": "0.1.114",
       "tags": [
         "sealsecurity",
         "vulnerability",
@@ -464415,8 +464817,8 @@
         "packages"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-30T10:08:38.242303Z",
-        "lastCommitAt": "2026-07-30T10:08:38.242303Z",
+        "lastPublishedAt": "2026-08-02T10:58:58.95333Z",
+        "lastCommitAt": "2026-08-02T10:58:58.95333Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -470368,10 +470770,10 @@
       "description": "Hourly crypto news sentiment and typed market events, with sources on every signal.",
       "category": "agent-tools",
       "homepage": "https://shingou.io/docs/agents?via=mcp",
-      "packageName": "@auriontech/shingou-mcp-stdio",
+      "packageName": "@shingou-io/mcp-stdio",
       "packageRegistry": "npm",
-      "version": "0.3.0",
-      "install": "npx @auriontech/shingou-mcp-stdio",
+      "version": "0.3.2",
+      "install": "npx @shingou-io/mcp-stdio",
       "tags": [
         "shingou",
         "sentiment",
@@ -470383,8 +470785,8 @@
         "events"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-01T21:04:25.02693Z",
-        "lastCommitAt": "2026-08-01T21:04:25.02693Z",
+        "lastPublishedAt": "2026-08-02T12:30:02.149705Z",
+        "lastCommitAt": "2026-08-02T12:30:02.149705Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -473183,23 +473585,23 @@
     {
       "id": "eu-sirenic-sirenic",
       "name": "Sirenic",
-      "description": "Official French & European company data for AI agents. Pay-per-call in USDC via x402, no API key.",
+      "description": "French & European company registry for AI agents: KYB, sanctions, annual accounts. x402, no API key.",
       "category": "agent-tools",
       "homepage": "https://api.sirenic.eu",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "sirenic",
-        "official",
         "french",
         "european",
         "company",
-        "data",
+        "registry",
         "agents",
-        "call"
+        "sanctions",
+        "annual"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-17T10:47:56.178197Z",
-        "lastCommitAt": "2026-07-17T10:47:56.178197Z",
+        "lastPublishedAt": "2026-08-02T11:48:06.330505Z",
+        "lastCommitAt": "2026-08-02T11:48:06.330505Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -475464,7 +475866,7 @@
       "category": "agent-tools",
       "homepage": "https://github.com/smplkit/mcp",
       "repository": "https://github.com/smplkit/mcp",
-      "version": "0.10.4",
+      "version": "0.10.6",
       "tags": [
         "smplkit",
         "operate",
@@ -475476,8 +475878,8 @@
         "logging"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-25T09:23:18.892468Z",
-        "lastCommitAt": "2026-07-25T09:23:18.892468Z",
+        "lastPublishedAt": "2026-08-02T10:15:47.027033Z",
+        "lastCommitAt": "2026-08-02T10:15:47.027033Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -482093,6 +482495,31 @@
       }
     },
     {
+      "id": "io-github-aliveranme-stata-mcp",
+      "name": "Stata MCP Server",
+      "description": "通过 pystata 驱动真实 Stata 的 MCP 服务器：数据加载/清洗/建模/诊断/图形导出，75 个工具覆盖完整计量工作流。",
+      "category": "developer-tools",
+      "homepage": "https://github.com/aliveranme/stata-mcp",
+      "repository": "https://github.com/aliveranme/stata-mcp",
+      "packageName": "@aliveranme/stata-mcp",
+      "packageRegistry": "npm",
+      "version": "1.0.5",
+      "install": "npx @aliveranme/stata-mcp",
+      "tags": [
+        "github",
+        "aliveranme",
+        "stata",
+        "pystata"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T12:27:39.823832Z",
+        "lastCommitAt": "2026-08-02T12:27:39.823832Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "io-github-tmonk-mcp-stata",
       "name": "Stata MCP Server",
       "description": "A lightweight MCP server for Stata.",
@@ -483674,7 +484101,9 @@
       "name": "StoreInspect",
       "description": "Search Shopify stores, enrich domains, and reveal approved contact channels.",
       "category": "search",
-      "version": "1.0.0",
+      "homepage": "https://github.com/StoreInspect/storeinspect-mcp",
+      "repository": "https://github.com/StoreInspect/storeinspect-mcp",
+      "version": "1.0.1",
       "tags": [
         "storeinspect",
         "search",
@@ -483686,8 +484115,8 @@
         "approved"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-04T09:59:21.770373Z",
-        "lastCommitAt": "2026-07-04T09:59:21.770373Z",
+        "lastPublishedAt": "2026-08-02T10:26:34.287714Z",
+        "lastCommitAt": "2026-08-02T10:26:34.287714Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -500581,6 +501010,31 @@
       }
     },
     {
+      "id": "io-github-chriscorp-tracea",
+      "name": "Tracea",
+      "description": "Tracea — legal identity (Know Your Agent) for AI agents, on-chain. ERC-8004 compatible.",
+      "category": "developer-tools",
+      "homepage": "https://tracea.online",
+      "version": "0.1.0",
+      "tags": [
+        "github",
+        "chriscorp",
+        "tracea",
+        "legal",
+        "identity",
+        "know",
+        "your",
+        "agent"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-02T10:59:49.649728Z",
+        "lastCommitAt": "2026-08-02T10:59:49.649728Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "eu-tracepass-tracepass",
       "name": "TracePass",
       "description": "Manage products, EU Digital Product Passports, operator parties, and GS1 EPCIS supply-chain events.",
@@ -500670,7 +501124,7 @@
       "repository": "https://github.com/trackly-app/trackly-cli",
       "packageName": "trackly-cli",
       "packageRegistry": "npm",
-      "version": "0.11.0",
+      "version": "0.12.0",
       "install": "npx trackly-cli",
       "tags": [
         "github",
@@ -500683,8 +501137,8 @@
         "jobs"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-02T06:31:04.079299Z",
-        "lastCommitAt": "2026-08-02T06:31:04.079299Z",
+        "lastPublishedAt": "2026-08-02T10:37:31.16564Z",
+        "lastCommitAt": "2026-08-02T10:37:31.16564Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -502795,7 +503249,7 @@
       "repository": "https://github.com/AIops-tools/TrueNAS-AIops",
       "packageName": "truenas-aiops",
       "packageRegistry": "pypi",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "install": "uvx truenas-aiops",
       "tags": [
         "github",
@@ -502808,8 +503262,8 @@
         "audit"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:41:22.965843Z",
-        "lastCommitAt": "2026-07-21T09:41:22.965843Z",
+        "lastPublishedAt": "2026-08-02T09:27:30.694004Z",
+        "lastCommitAt": "2026-08-02T09:27:30.694004Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -504158,7 +504612,8 @@
       "description": "Human feedback for AI agents: share HTML, get a live review link, read anchored notes as markdown.",
       "category": "agent-tools",
       "homepage": "https://twocents.page/mcp",
-      "version": "1.0.0",
+      "repository": "https://github.com/twocents-page/twocents-mcp",
+      "version": "1.0.1",
       "tags": [
         "page",
         "twocents",
@@ -504170,8 +504625,8 @@
         "live"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-22T12:40:14.089711Z",
-        "lastCommitAt": "2026-07-22T12:40:14.089711Z",
+        "lastPublishedAt": "2026-08-02T12:14:01.238299Z",
+        "lastCommitAt": "2026-08-02T12:14:01.238299Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -504944,7 +505399,7 @@
       "repository": "https://github.com/uindow/uindow",
       "packageName": "@uindow/cli",
       "packageRegistry": "npm",
-      "version": "0.0.144",
+      "version": "0.0.146",
       "install": "npx @uindow/cli",
       "tags": [
         "github",
@@ -504957,8 +505412,8 @@
         "over"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-02T07:59:08.817645Z",
-        "lastCommitAt": "2026-08-02T07:59:08.817645Z",
+        "lastPublishedAt": "2026-08-02T11:19:31.701381Z",
+        "lastCommitAt": "2026-08-02T11:19:31.701381Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -511305,7 +511760,7 @@
       "repository": "https://github.com/AIops-tools/Veeam-AIops",
       "packageName": "veeam-aiops",
       "packageRegistry": "pypi",
-      "version": "0.8.0",
+      "version": "0.9.0",
       "install": "uvx veeam-aiops",
       "tags": [
         "github",
@@ -511318,8 +511773,8 @@
         "audit"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T15:31:41.53221Z",
-        "lastCommitAt": "2026-07-21T15:31:41.53221Z",
+        "lastPublishedAt": "2026-08-02T09:28:26.319841Z",
+        "lastCommitAt": "2026-08-02T09:28:26.319841Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -524982,7 +525437,7 @@
       "repository": "https://github.com/AIops-tools/XCPng-AIops",
       "packageName": "xcpng-aiops",
       "packageRegistry": "pypi",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "install": "uvx xcpng-aiops",
       "tags": [
         "github",
@@ -524995,8 +525450,8 @@
         "budget"
       ],
       "signals": {
-        "lastPublishedAt": "2026-07-21T09:40:14.922252Z",
-        "lastCommitAt": "2026-07-21T09:40:14.922252Z",
+        "lastPublishedAt": "2026-08-02T09:27:38.439026Z",
+        "lastCommitAt": "2026-08-02T09:27:38.439026Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
