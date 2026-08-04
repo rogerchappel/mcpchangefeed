@@ -78,6 +78,43 @@ test("fetchOfficialRegistry retries a rate-limited page and honors Retry-After",
   assert.deepEqual(delays, [2_000]);
 });
 
+test("fetchOfficialRegistry retries a rejected fetch and recovers", async () => {
+  let calls = 0;
+  const delays: number[] = [];
+  const fetcher = async () => {
+    calls += 1;
+    if (calls === 1) throw new TypeError("fetch failed");
+    return new Response(JSON.stringify({ servers: [record("alpha", "1.0.0")] }));
+  };
+
+  const servers = await fetchOfficialRegistry("https://registry.example/v0/servers", fetcher as typeof fetch, {
+    sleep: async (milliseconds) => { delays.push(milliseconds); }
+  });
+
+  assert.deepEqual(servers.map(({ id }) => id), ["alpha"]);
+  assert.equal(calls, 2);
+  assert.deepEqual(delays, [250]);
+});
+
+test("fetchOfficialRegistry reports the final network error after exhausting retries", async () => {
+  let calls = 0;
+  const delays: number[] = [];
+  const fetcher = async () => {
+    calls += 1;
+    throw new TypeError("fetch failed");
+  };
+
+  await assert.rejects(
+    fetchOfficialRegistry("https://registry.example/v0/servers", fetcher as typeof fetch, {
+      maxRetries: 2,
+      sleep: async (milliseconds) => { delays.push(milliseconds); }
+    }),
+    /Registry fetch failed after 3 attempts: fetch failed/
+  );
+  assert.equal(calls, 3);
+  assert.deepEqual(delays, [250, 500]);
+});
+
 test("fetchOfficialRegistry reports the final response after exhausting retries", async () => {
   let calls = 0;
   const fetcher = async () => {
