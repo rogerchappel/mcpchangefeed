@@ -60,9 +60,19 @@ async function fetchRegistryPage(pageUrl: URL, fetcher: typeof fetch, options: R
   const sleep = options.sleep ?? ((milliseconds: number) => new Promise((resolve) => setTimeout(resolve, milliseconds)));
 
   for (let attempt = 0; ; attempt += 1) {
-    const response = await fetcher(pageUrl, {
-      headers: { accept: "application/json", "user-agent": "mcpchangefeed/0.1" }
-    });
+    let response: Response;
+    try {
+      response = await fetcher(pageUrl, {
+        headers: { accept: "application/json", "user-agent": "mcpchangefeed/0.1" }
+      });
+    } catch (error) {
+      if (attempt >= maxRetries) {
+        const detail = error instanceof Error ? error.message : String(error);
+        throw new Error(`Registry fetch failed after ${attempt + 1} attempts: ${detail}`);
+      }
+      await sleep(retryDelayMilliseconds(null, attempt));
+      continue;
+    }
     if (response.ok) return response;
 
     const detail = `${response.status} ${response.statusText}`.trim();
