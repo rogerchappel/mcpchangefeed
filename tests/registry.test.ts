@@ -96,6 +96,72 @@ test("fetchOfficialRegistry retries a rejected fetch and recovers", async () => 
   assert.deepEqual(delays, [250]);
 });
 
+test("fetchOfficialRegistry aborts timed-out requests and stops after the configured retry limit", async () => {
+  let calls = 0;
+  const signals: AbortSignal[] = [];
+  const delays: number[] = [];
+  const cleared: number[] = [];
+  let nextTimer = 0;
+  const callbacks = new Map<number, () => void>();
+  const fetcher = async (_input: string | URL | Request, init?: RequestInit) => {
+    calls += 1;
+    signals.push(init?.signal as AbortSignal);
+    return await new Promise<Response>(() => undefined);
+  };
+  const schedule = ((callback: () => void) => {
+    const timer = ++nextTimer;
+    callbacks.set(timer, callback);
+    queueMicrotask(() => callbacks.get(timer)?.());
+    return timer;
+  }) as unknown as typeof setTimeout;
+  const cancel = ((timer: number) => {
+    cleared.push(timer);
+    callbacks.delete(timer);
+  }) as unknown as typeof clearTimeout;
+
+  await assert.rejects(
+    fetchOfficialRegistry("https://registry.example/v0/servers", fetcher as typeof fetch, {
+      maxRetries: 2,
+      requestTimeoutMs: 125,
+      sleep: async (milliseconds) => { delays.push(milliseconds); },
+      setTimeout: schedule,
+      clearTimeout: cancel
+    }),
+    /Registry fetch failed after 3 attempts: request timed out after 125ms/
+  );
+
+  assert.equal(calls, 3);
+  assert.deepEqual(delays, [250, 500]);
+  assert.equal(signals.length, 3);
+  assert.ok(signals.every((signal) => signal.aborted));
+  assert.deepEqual(cleared, [1, 2, 3]);
+});
+
+test("fetchOfficialRegistry clears request timeouts after successful responses", async () => {
+  const cleared: unknown[] = [];
+  let receivedSignal: AbortSignal | undefined;
+  const timer = { id: "request-timeout" };
+  const fetcher = async (_input: string | URL | Request, init?: RequestInit) => {
+    receivedSignal = init?.signal as AbortSignal;
+    return new Response(JSON.stringify({ servers: [record("alpha", "1.0.0")] }));
+  };
+
+  const servers = await fetchOfficialRegistry("https://registry.example/v0/servers", fetcher as typeof fetch, {
+    maxRetries: 0,
+    requestTimeoutMs: 987,
+    setTimeout: ((callback: () => void, milliseconds: number) => {
+      assert.equal(typeof callback, "function");
+      assert.equal(milliseconds, 987);
+      return timer;
+    }) as unknown as typeof setTimeout,
+    clearTimeout: ((value: unknown) => { cleared.push(value); }) as typeof clearTimeout
+  });
+
+  assert.deepEqual(servers.map(({ id }) => id), ["alpha"]);
+  assert.equal(receivedSignal?.aborted, false);
+  assert.deepEqual(cleared, [timer]);
+});
+
 test("fetchOfficialRegistry reports the final network error after exhausting retries", async () => {
   let calls = 0;
   const delays: number[] = [];

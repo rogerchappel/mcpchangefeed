@@ -8,10 +8,14 @@ type RegistryPage = {
 
 type RegistryFetchOptions = {
   maxRetries?: number;
+  requestTimeoutMs?: number;
   sleep?: (milliseconds: number) => Promise<void>;
+  setTimeout?: typeof setTimeout;
+  clearTimeout?: typeof clearTimeout;
 };
 
 const RETRYABLE_STATUSES = new Set([408, 425, 429, 500, 502, 503, 504]);
+const DEFAULT_REQUEST_TIMEOUT_MS = 30_000;
 
 export async function fetchOfficialRegistry(
   url: string,
@@ -57,14 +61,17 @@ export async function fetchOfficialRegistry(
 
 async function fetchRegistryPage(pageUrl: URL, fetcher: typeof fetch, options: RegistryFetchOptions) {
   const maxRetries = options.maxRetries ?? 3;
+  const requestTimeoutMs = options.requestTimeoutMs ?? DEFAULT_REQUEST_TIMEOUT_MS;
   const sleep = options.sleep ?? ((milliseconds: number) => new Promise((resolve) => setTimeout(resolve, milliseconds)));
+
+  if (!Number.isFinite(requestTimeoutMs) || requestTimeoutMs < 0) {
+    throw new TypeError("requestTimeoutMs must be a finite, non-negative number");
+  }
 
   for (let attempt = 0; ; attempt += 1) {
     let response: Response;
     try {
-      response = await fetcher(pageUrl, {
-        headers: { accept: "application/json", "user-agent": "mcpchangefeed/0.1" }
-      });
+      response = await fetchWithTimeout(pageUrl, fetcher, requestTimeoutMs, options);
     } catch (error) {
       if (attempt >= maxRetries) {
         const detail = error instanceof Error ? error.message : String(error);
@@ -84,6 +91,37 @@ async function fetchRegistryPage(pageUrl: URL, fetcher: typeof fetch, options: R
     }
 
     await sleep(retryDelayMilliseconds(response.headers.get("retry-after"), attempt));
+  }
+}
+
+async function fetchWithTimeout(
+  pageUrl: URL,
+  fetcher: typeof fetch,
+  requestTimeoutMs: number,
+  options: RegistryFetchOptions
+) {
+  const controller = new AbortController();
+  const scheduleTimeout = options.setTimeout ?? setTimeout;
+  const cancelTimeout = options.clearTimeout ?? clearTimeout;
+  let timeout: ReturnType<typeof setTimeout> | undefined;
+
+  const timedOut = new Promise<never>((_resolve, reject) => {
+    timeout = scheduleTimeout(() => {
+      controller.abort();
+      reject(new Error(`request timed out after ${requestTimeoutMs}ms`));
+    }, requestTimeoutMs);
+  });
+
+  try {
+    return await Promise.race([
+      fetcher(pageUrl, {
+        headers: { accept: "application/json", "user-agent": "mcpchangefeed/0.1" },
+        signal: controller.signal
+      }),
+      timedOut
+    ]);
+  } finally {
+    if (timeout !== undefined) cancelTimeout(timeout);
   }
 }
 
