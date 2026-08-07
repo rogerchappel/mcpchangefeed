@@ -1,16 +1,17 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { diffServers } from "../src/lib/diff.js";
+import { previousHistorySnapshot } from "../src/lib/history.js";
 import { readServers } from "../src/lib/io.js";
 import { rankServers } from "../src/lib/score.js";
 
 const args = parseArgs(process.argv.slice(2));
 const input = args.input ?? "data/latest/servers.json";
-const before = args.before ?? "fixtures/servers-before.json";
+const before = args.before ?? await previousHistorySnapshot(args.history ?? "data/history", input);
 const publicDir = args.publicDir ?? "site-src/public";
 
 const latestServers = await readServers(input);
-const beforeServers = await readOptionalServers(before);
+const beforeServers = before ? await readOptionalServers(before) : [];
 const ranked = rankServers(latestServers);
 const changes = diffServers(beforeServers, latestServers);
 
