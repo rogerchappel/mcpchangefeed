@@ -92,6 +92,15 @@ pnpm run build:site
 
 Output goes to `site/` and can be published by GitHub Pages or Cloudflare Pages.
 
+Production builds compare `data/latest/servers.json` with the immediately
+preceding dated snapshot in `data/history`. On the first run, when no previous
+snapshot exists, every current server is reported as added. Fixture-backed or
+demo builds can choose a deterministic baseline explicitly:
+
+```sh
+tsx scripts/build-site.ts --input fixtures/servers.json --before fixtures/servers-before.json
+```
+
 The first generated site includes:
 
 - homepage leaderboard
