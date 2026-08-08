@@ -27,8 +27,16 @@ pnpm run package:smoke
 The package smoke builds and packs the CLI, installs the tarball in a temporary
 prefix, and runs both bin aliases from an unrelated working directory. It
 verifies that `top` and `search` can read the bundled latest dataset without an
-`--input` path, in addition to checking the package allowlist and CLI
-help/version behavior.
+`--input` path, in addition to checking the package allowlist and both installed
+bin aliases' `--version` behavior.
+
+## npm release workflow
+
+Run the **npm release** workflow manually for a non-publishing dry run. A
+published GitHub release whose tag is exactly `v` plus the `package.json`
+version runs the same gate and publishes with npm trusted publishing and
+provenance. Configure the `npm` GitHub environment and the package's npm trusted
+publisher before publishing the first release; no long-lived npm token is used.
 
 ## Manual release evidence
 
