@@ -81,6 +81,13 @@ try {
 
   for (const binName of Object.keys(pkg.bin || {})) {
     const bin = path.join(installDirectory, "node_modules", ".bin", binName);
+    const installedVersion = execFileSync(bin, ["--version"], {
+      cwd: foreignCwd,
+      encoding: "utf8",
+    }).trim();
+    if (installedVersion !== pkg.version) {
+      throw new Error(`${binName} --version returned ${installedVersion}, expected ${pkg.version}`);
+    }
     for (const args of [["top", "--limit", "1"], ["search", "filesystem"]]) {
       const output = execFileSync(bin, args, {
         cwd: foreignCwd,
