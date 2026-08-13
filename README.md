@@ -78,11 +78,15 @@ The scheduled workflow refreshes public data and commits only meaningful changes
 
 - latest normalized snapshot
 - dated history snapshot
+- generated Astro public data
 - changed leaderboard output
 - changed static pages
 - daily changelog entry
 
 No timestamp-only commits.
+
+`pnpm run check:generated` rebuilds the site and fails when any tracked public
+input or static output differs from the committed refresh snapshot.
 
 The workflow is intentionally GitHub-token-light. It starts with the official MCP registry endpoint and can add npm/PyPI enrichment without depending on high-volume GitHub API calls.
 
