@@ -39,5 +39,15 @@ export function scoreServer(server: McpServer, now = new Date()): ScoredServer {
 }
 
 export function rankServers(servers: McpServer[]): ScoredServer[] {
-  return servers.map((server) => scoreServer(server)).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+  const snapshotDate = newestSignalDate(servers);
+  return servers.map((server) => scoreServer(server, snapshotDate)).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+}
+
+function newestSignalDate(servers: McpServer[]): Date {
+  const timestamps = servers.flatMap((server) => [server.signals.lastPublishedAt, server.signals.lastCommitAt])
+    .filter((value): value is string => typeof value === "string")
+    .map(Date.parse)
+    .filter(Number.isFinite);
+
+  return timestamps.length > 0 ? new Date(Math.max(...timestamps)) : new Date(0);
 }

@@ -80,3 +80,22 @@ test("rankServers prefers complete and fresh server records", () => {
   assert.ok(scored.warnings.includes("No recent activity signal"));
   assert.equal(rankServers([staleIncomplete, baseServer])[0].id, "filesystem");
 });
+
+test("rankServers scores freshness relative to the committed snapshot", () => {
+  const boundaryServer = {
+    ...baseServer,
+    id: "boundary",
+    signals: { ...baseServer.signals, lastPublishedAt: "2025-01-01T00:00:00.000Z" }
+  };
+  const snapshotLeader = {
+    ...baseServer,
+    id: "latest",
+    signals: { ...baseServer.signals, lastPublishedAt: "2025-04-30T00:00:00.000Z" }
+  };
+
+  const first = rankServers([boundaryServer, snapshotLeader]);
+  const second = rankServers([boundaryServer, snapshotLeader]);
+
+  assert.deepEqual(first, second);
+  assert.equal(first.find((server) => server.id === "boundary")?.score, scoreServer(boundaryServer, new Date("2025-04-30T00:00:00.000Z")).score);
+});
