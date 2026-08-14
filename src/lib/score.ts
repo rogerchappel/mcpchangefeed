@@ -43,7 +43,7 @@ export function rankServers(servers: McpServer[]): ScoredServer[] {
   return servers.map((server) => scoreServer(server, snapshotDate)).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
 }
 
-function newestSignalDate(servers: McpServer[]): Date {
+export function newestSignalDate(servers: McpServer[]): Date {
   const timestamps = servers.flatMap((server) => [server.signals.lastPublishedAt, server.signals.lastCommitAt])
     .filter((value): value is string => typeof value === "string")
     .map(Date.parse)

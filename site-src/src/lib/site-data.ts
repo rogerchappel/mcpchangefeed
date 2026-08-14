@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { rankServers } from "../../../src/lib/score";
+import { newestSignalDate, rankServers } from "../../../src/lib/score";
 import { slugify } from "../../../src/lib/slug";
 import type { McpServer, ScoredServer, ServerDiff } from "../../../src/lib/types";
 
@@ -15,10 +15,13 @@ const root = process.cwd();
 const dataPath = join(root, "data/latest/servers.json");
 const changesPath = join(root, "site-src/public/data/changes.json");
 const sponsorPath = join(root, "site-src/public/sponsors/sponsors.example.json");
+let snapshotDate = new Date(0);
 
 export async function getServers(): Promise<ScoredServer[]> {
   const raw = await readFile(dataPath, "utf8");
-  return rankServers(JSON.parse(raw) as McpServer[]);
+  const servers = JSON.parse(raw) as McpServer[];
+  snapshotDate = newestSignalDate(servers);
+  return rankServers(servers);
 }
 
 export async function getChanges(): Promise<ServerDiff> {
@@ -59,9 +62,14 @@ export function formatNumber(value?: number) {
 export function freshnessLabel(value?: string) {
   if (!value) return "Unknown";
   const then = new Date(value).getTime();
-  const now = Date.now();
+  const now = snapshotDate.getTime();
   const days = Math.max(0, Math.round((now - then) / 86_400_000));
   if (days <= 14) return "Fresh";
   if (days <= 60) return "Active";
   return "Watch";
+}
+
+export function isFresh(value?: string) {
+  if (!value) return false;
+  return snapshotDate.getTime() - new Date(value).getTime() <= 60 * 86_400_000;
 }
