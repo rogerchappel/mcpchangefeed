@@ -43,7 +43,7 @@ jobs:
           git diff --cached --quiet || git commit -m "Refresh MCP registry data"
       - name: Commit site changes
         run: |
-          git add site
+          git add site-src/public/data site-src/public/robots.txt site
           git diff --cached --quiet || git commit -m "Rebuild public MCP Changefeed site"
       - name: Commit refresh report
         run: |

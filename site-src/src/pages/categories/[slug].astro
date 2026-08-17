@@ -1,7 +1,7 @@
 ---
 import ServerCard from "../../components/ServerCard.astro";
 import Base from "../../layouts/Base.astro";
-import { categorySlug, formatCategory, getServers } from "../../lib/site-data";
+import { categorySlug, formatCategory, getServers, isFresh } from "../../lib/site-data";
 
 export async function getStaticPaths() {
   const servers = await getServers();
@@ -16,8 +16,7 @@ const { category, servers } = Astro.props;
 const averageScore = Math.round(servers.reduce((total, server) => total + (server.score ?? 0), 0) / Math.max(servers.length, 1));
 const freshCount = servers.filter((server) => {
   const lastSeen = server.signals.lastPublishedAt ?? server.signals.lastCommitAt;
-  if (!lastSeen) return false;
-  return Date.now() - new Date(lastSeen).getTime() <= 60 * 86_400_000;
+  return isFresh(lastSeen);
 }).length;
 ---
 

@@ -40,6 +40,7 @@
     "check": "tsc --noEmit",
     "build:cli": "tsc -p tsconfig.cli.json && node scripts/fix-cli-shebang.cjs",
     "build:site": "tsx scripts/build-site.ts --input data/latest/servers.json && astro build",
+    "check:generated": "pnpm run build:site && git diff --exit-code -- site-src/public/data site-src/public/robots.txt site",
     "dev:site": "tsx scripts/build-site.ts --input data/latest/servers.json && astro dev",
     "refresh": "tsx scripts/refresh.ts --out data/latest/servers.json --history data/history",
     "validate:data": "tsx scripts/validate-data.ts data/latest/servers.json",
@@ -49,7 +50,7 @@
     "workflow:check": "node scripts/check-release-workflow.cjs",
     "test:unit": "tsx --test tests/*.test.ts",
     "test": "pnpm run test:unit && pnpm run check && pnpm run validate:data && pnpm run build:site && pnpm run smoke",
-    "release:check": "pnpm run test && pnpm run package:smoke && pnpm run workflow:check"
+    "release:check": "pnpm run test && pnpm run check:generated && pnpm run package:smoke && pnpm run workflow:check"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
