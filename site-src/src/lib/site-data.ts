@@ -51,7 +51,7 @@ export function formatCategory(category: string) {
 
 export function formatDate(value?: string) {
   if (!value) return "Unknown";
-  return new Intl.DateTimeFormat("en", { dateStyle: "medium" }).format(new Date(value));
+  return new Intl.DateTimeFormat("en", { dateStyle: "medium", timeZone: "UTC" }).format(new Date(value));
 }
 
 export function formatNumber(value?: number) {
