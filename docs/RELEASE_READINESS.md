@@ -34,7 +34,8 @@ bin aliases' `--version` behavior.
 
 Run the **npm release** workflow manually for a non-publishing dry run. A
 published GitHub release whose tag is exactly `v` plus the `package.json`
-version runs the same gate and publishes with npm trusted publishing and
+version installs npm 11.5.1 (the minimum release with trusted publishing
+support), runs the same gate, and publishes with npm trusted publishing and
 provenance. Configure the `npm` GitHub environment and the package's npm trusted
 publisher before publishing the first release; no long-lived npm token is used.
 

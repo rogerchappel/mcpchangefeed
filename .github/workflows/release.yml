@@ -23,6 +23,8 @@ jobs:
           node-version: 22.12.0
           cache: pnpm
           registry-url: https://registry.npmjs.org
+      - name: Install npm with trusted publishing support
+        run: npm install --global npm@11.5.1
       - run: pnpm install --frozen-lockfile
       - run: pnpm run release:check
       - name: Verify release tag matches package version
