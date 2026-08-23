@@ -77,6 +77,31 @@
       }
     },
     {
+      "id": "com-backquant-backquant",
+      "name": "BackQuant",
+      "description": "Crypto options dealer gamma, IV, flow and trade tape for BTC, ETH, SOL and HYPE.",
+      "category": "agent-tools",
+      "homepage": "https://docs.backquant.com/mcp-server",
+      "version": "1.0.0",
+      "tags": [
+        "backquant",
+        "crypto",
+        "options",
+        "dealer",
+        "gamma",
+        "flow",
+        "trade",
+        "tape"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T05:43:18.817531Z",
+        "lastCommitAt": "2026-08-23T05:43:18.817531Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "be-realbam-catalog",
       "name": "BAM Kaarsen catalog",
       "description": "Search and browse the BAM Kaarsen candle catalog and white-label offering. Read-only, no auth.",
@@ -96,6 +121,59 @@
       "signals": {
         "lastPublishedAt": "2026-08-22T23:07:57.787965Z",
         "lastCommitAt": "2026-08-22T23:07:57.787965Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "io-github-omarberrehail-blaitech-refinery",
+      "name": "Blaitech Data Refinery MCP",
+      "description": "x402-gated weather and FX exchange rate data endpoints for AI agents.",
+      "category": "developer-tools",
+      "version": "1.0.0",
+      "tags": [
+        "github",
+        "omarberrehail",
+        "blaitech",
+        "refinery",
+        "x402",
+        "gated",
+        "weather",
+        "exchange"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T05:45:15.96519Z",
+        "lastCommitAt": "2026-08-23T05:45:15.96519Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "io-github-bridgenode-ai-bridgenode-mcp",
+      "name": "BridgeNode MCP",
+      "description": "BridgeNode — x402 pay-per-request AI inference. OpenAI-compatible API + MCP server, Solana USDC.",
+      "category": "developer-tools",
+      "homepage": "https://bridgenode.cc",
+      "repository": "https://github.com/bridgenode-ai/bridgenode-mcp",
+      "packageName": "@bridgenode/mcp",
+      "packageRegistry": "npm",
+      "version": "1.0.12",
+      "install": "npx @bridgenode/mcp",
+      "tags": [
+        "github",
+        "bridgenode",
+        "x402",
+        "request",
+        "inference",
+        "openai",
+        "compatible",
+        "solana"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T07:45:47.67737Z",
+        "lastCommitAt": "2026-08-23T07:45:47.67737Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -177,11 +255,39 @@
       }
     },
     {
+      "id": "co-cuvo-website",
+      "name": "co.cuvo/website",
+      "description": "Cuvo Health published site content and live discovery-call booking tools for AI agents.",
+      "category": "search",
+      "homepage": "https://cuvo.co/developers",
+      "packageName": "cuvo-health",
+      "packageRegistry": "npm",
+      "version": "1.0.1",
+      "install": "npx cuvo-health",
+      "tags": [
+        "cuvo",
+        "website",
+        "health",
+        "published",
+        "site",
+        "content",
+        "live",
+        "discovery"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T07:49:49.117782Z",
+        "lastCommitAt": "2026-08-23T07:49:49.117782Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "co-getrefine-refine",
       "name": "co.getrefine/refine",
       "description": "Search jobs, track applications, manage recruiter email, and interviews, from your AI assistant.",
       "category": "search",
-      "version": "0.3.1",
+      "version": "0.4.0",
       "tags": [
         "getrefine",
         "refine",
@@ -193,8 +299,8 @@
         "recruiter"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-23T04:30:39.570448Z",
-        "lastCommitAt": "2026-08-23T04:30:39.570448Z",
+        "lastPublishedAt": "2026-08-23T05:58:24.921865Z",
+        "lastCommitAt": "2026-08-23T05:58:24.921865Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -320,6 +426,32 @@
       "signals": {
         "lastPublishedAt": "2026-08-22T23:11:50.943084Z",
         "lastCommitAt": "2026-08-22T23:11:50.943084Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "io-github-taylorsmithgg-crawl-census",
+      "name": "Crawl Census",
+      "description": "Ask before you fetch: will this domain serve your crawler, refuse it, or charge it?",
+      "category": "developer-tools",
+      "homepage": "https://crawlcensus.com/for-crawlers",
+      "repository": "https://github.com/taylorsmithgg/crawl-census-client",
+      "version": "1.0.0",
+      "tags": [
+        "github",
+        "taylorsmithgg",
+        "crawl",
+        "census",
+        "before",
+        "fetch",
+        "will",
+        "domain"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T08:07:57.365585Z",
+        "lastCommitAt": "2026-08-23T08:07:57.365585Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -600,7 +732,7 @@
       "repository": "https://github.com/Jujitae/invara",
       "packageName": "invara",
       "packageRegistry": "pypi",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "install": "uvx invara",
       "tags": [
         "github",
@@ -613,8 +745,8 @@
         "declared"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-23T04:48:49.813685Z",
-        "lastCommitAt": "2026-08-23T04:48:49.813685Z",
+        "lastPublishedAt": "2026-08-23T06:06:47.06811Z",
+        "lastCommitAt": "2026-08-23T06:06:47.06811Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -970,6 +1102,32 @@
       }
     },
     {
+      "id": "io-github-krupalghori44-dev-infyicon-mcp",
+      "name": "io.github.krupalghori44-dev/infyicon-mcp",
+      "description": "Search 161,000+ free hand-drawn icons and fetch ready-to-embed SVG or PNG from any MCP client.",
+      "category": "developer-tools",
+      "homepage": "https://github.com/krupalghori44-dev/infyicon-mcp",
+      "repository": "https://github.com/krupalghori44-dev/infyicon-mcp",
+      "version": "1.0.0",
+      "tags": [
+        "github",
+        "krupalghori44",
+        "infyicon",
+        "search",
+        "free",
+        "hand",
+        "drawn",
+        "icons"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T07:07:43.018589Z",
+        "lastCommitAt": "2026-08-23T07:07:43.018589Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "io-github-kvenanzi-terrarium",
       "name": "io.github.kvenanzi/terrarium",
       "description": "A world built and run by AI agents. Join as a citizen: artifacts, quests, governance.",
@@ -1074,6 +1232,64 @@
       }
     },
     {
+      "id": "io-github-nileshpatil6-telegram-slack-mcp",
+      "name": "io.github.nileshpatil6/telegram-slack-mcp",
+      "description": "Read and reply to your personal Telegram chats and all your Slack workspaces.",
+      "category": "developer-tools",
+      "homepage": "https://github.com/nileshpatil6/telegram-slack-mcp",
+      "repository": "https://github.com/nileshpatil6/telegram-slack-mcp",
+      "packageName": "telegram-slack-mcp",
+      "packageRegistry": "npm",
+      "version": "0.2.2",
+      "install": "npx telegram-slack-mcp",
+      "tags": [
+        "github",
+        "nileshpatil6",
+        "telegram",
+        "slack",
+        "read",
+        "reply",
+        "your",
+        "personal"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T08:14:56.560621Z",
+        "lastCommitAt": "2026-08-23T08:14:56.560621Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "io-github-razvangirgiz-wazap",
+      "name": "io.github.razvangirgiz/wazap",
+      "description": "WhatsApp for your agent: chats, messages, media, contacts and groups behind MCP tools.",
+      "category": "developer-tools",
+      "homepage": "https://github.com/razvangirgiz/wazap",
+      "repository": "https://github.com/razvangirgiz/wazap",
+      "packageName": "wazap-mcp",
+      "packageRegistry": "npm",
+      "version": "0.10.0",
+      "install": "npx wazap-mcp",
+      "tags": [
+        "github",
+        "razvangirgiz",
+        "wazap",
+        "whatsapp",
+        "your",
+        "agent",
+        "chats",
+        "messages"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T08:26:17.029375Z",
+        "lastCommitAt": "2026-08-23T08:26:17.029375Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "io-github-skylarng89-cogmemory-mcp",
       "name": "io.github.skylarng89/cogmemory-mcp",
       "description": "CogMemory MCP Server — Unified context subsystems for AI coding agents",
@@ -1133,10 +1349,10 @@
     {
       "id": "io-github-kirubel-kirah-local-services",
       "name": "Kirah Local Services",
-      "description": "Discover local service businesses, compare offerings, and check current availability.",
+      "description": "Discover local services and availability, then create, track, reschedule, or cancel bookings.",
       "category": "developer-tools",
       "homepage": "https://kirah.ai/ai-agents",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "tags": [
         "github",
         "kirubel",
@@ -1144,12 +1360,37 @@
         "local",
         "services",
         "discover",
-        "service",
-        "businesses"
+        "availability",
+        "then"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-23T04:21:32.324557Z",
-        "lastCommitAt": "2026-08-23T04:21:32.324557Z",
+        "lastPublishedAt": "2026-08-23T05:16:33.181191Z",
+        "lastCommitAt": "2026-08-23T05:16:33.181191Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "town-liars-arena",
+      "name": "Liars Town Arena",
+      "description": "Play Werewolf against other AI agents. join once, then loop observe/act. Public ELO leaderboard.",
+      "category": "agent-tools",
+      "homepage": "https://liars.town",
+      "version": "0.2.0",
+      "tags": [
+        "town",
+        "liars",
+        "arena",
+        "play",
+        "werewolf",
+        "against",
+        "other",
+        "agents"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T07:34:42.137004Z",
+        "lastCommitAt": "2026-08-23T07:34:42.137004Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -1176,6 +1417,35 @@
       "signals": {
         "lastPublishedAt": "2026-08-22T23:10:40.362312Z",
         "lastCommitAt": "2026-08-22T23:10:40.362312Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "io-github-m00nreport-mcp-server",
+      "name": "M00N Report",
+      "description": "Test management over MCP: author cases, run manual executions, cut releases, read health",
+      "category": "developer-tools",
+      "homepage": "https://m00nreport.com/documentation/mcp/quick-start",
+      "repository": "https://github.com/m00nreport/mcp-server",
+      "packageName": "@m00nsolutions/mcp-server",
+      "packageRegistry": "npm",
+      "version": "1.5.0",
+      "install": "npx @m00nsolutions/mcp-server",
+      "tags": [
+        "github",
+        "m00nreport",
+        "test",
+        "management",
+        "over",
+        "author",
+        "cases",
+        "manual"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T07:32:12.87713Z",
+        "lastCommitAt": "2026-08-23T07:32:12.87713Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -1323,7 +1593,7 @@
       "repository": "https://github.com/scarletkc/Perenna",
       "packageName": "perenna",
       "packageRegistry": "pypi",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "install": "uvx perenna",
       "tags": [
         "github",
@@ -1336,8 +1606,87 @@
         "agents"
       ],
       "signals": {
-        "lastPublishedAt": "2026-08-23T04:43:28.117217Z",
-        "lastCommitAt": "2026-08-23T04:43:28.117217Z",
+        "lastPublishedAt": "2026-08-23T05:41:41.255414Z",
+        "lastCommitAt": "2026-08-23T05:41:41.255414Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "com-lattice-sys-plumbline-mcp",
+      "name": "Plumbline — a trust layer for LLM answers",
+      "description": "Every figure re-checked against SQL-computed facts; unsupported questions refused with the reason.",
+      "category": "data",
+      "homepage": "https://plumbline.lattice-sys.com/",
+      "version": "0.1.0",
+      "tags": [
+        "lattice",
+        "plumbline",
+        "every",
+        "figure",
+        "checked",
+        "against",
+        "computed",
+        "facts"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T06:46:35.428879Z",
+        "lastCommitAt": "2026-08-23T06:46:35.428879Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "io-github-aida-mikechen-plushwipes-agent-revenue",
+      "name": "Plushwipes Agent Revenue",
+      "description": "Read-only tools for evaluating a live Plushwipes performance-commission opportunity.",
+      "category": "developer-tools",
+      "homepage": "https://earn.plushwipes.com",
+      "repository": "https://github.com/aida-mikechen/plushwipes-agent-revenue",
+      "version": "0.1.0",
+      "tags": [
+        "github",
+        "aida",
+        "mikechen",
+        "plushwipes",
+        "agent",
+        "revenue",
+        "read",
+        "only"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T06:24:33.531882Z",
+        "lastCommitAt": "2026-08-23T06:24:33.531882Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "io-github-imattau-polypack-mcp",
+      "name": "Polypack Memory",
+      "description": "MCP server exposing Polypack as persistent adaptive memory",
+      "category": "developer-tools",
+      "homepage": "https://github.com/imattau/polypack-mcp",
+      "repository": "https://github.com/imattau/polypack-mcp",
+      "packageName": "polypack-mcp",
+      "packageRegistry": "pypi",
+      "version": "0.1.16",
+      "install": "uvx polypack-mcp",
+      "tags": [
+        "github",
+        "imattau",
+        "polypack",
+        "exposing",
+        "persistent",
+        "adaptive",
+        "memory"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T05:39:20.278405Z",
+        "lastCommitAt": "2026-08-23T05:39:20.278405Z",
         "hasReadme": true,
         "hasExamples": false,
         "hasLicense": false
@@ -1402,6 +1751,59 @@
       }
     },
     {
+      "id": "io-github-guillaumelessard-qector-desktop",
+      "name": "QECTOR Quantum Error Correction",
+      "description": "Local quantum error correction tools; decoder output verified against H c = s (mod 2).",
+      "category": "developer-tools",
+      "homepage": "https://qector.store",
+      "repository": "https://github.com/GuillaumeLessard/qector-claude-plugin",
+      "packageName": "https://github.com/GuillaumeLessard/qector-claude-plugin/releases/download/v1.0.4/qector-claude-desktop-1.0.4.mcpb",
+      "packageRegistry": "other",
+      "version": "1.0.4",
+      "tags": [
+        "github",
+        "guillaumelessard",
+        "qector",
+        "desktop",
+        "local",
+        "quantum",
+        "error",
+        "correction"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T07:36:44.402767Z",
+        "lastCommitAt": "2026-08-23T07:36:44.402767Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "com-resollo-agent-api",
+      "name": "Resollo Agent API",
+      "description": "Resollo marketplace agent API: search products and place orders, always with human payment approval.",
+      "category": "search",
+      "homepage": "https://www.resollo.com",
+      "version": "1.23.0",
+      "tags": [
+        "resollo",
+        "agent",
+        "marketplace",
+        "search",
+        "products",
+        "place",
+        "orders",
+        "always"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T06:29:18.520582Z",
+        "lastCommitAt": "2026-08-23T06:29:18.520582Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "com-sandbox-as-a-service-mcp",
       "name": "Sandbox as a Service",
       "description": "Give an agent a real Linux VM: run commands, move files, expose a preview URL, destroy it.",
@@ -1459,6 +1861,31 @@
       }
     },
     {
+      "id": "com-smart-me-smart-me",
+      "name": "smart-me",
+      "description": "Your building's energy in real time: smart-me meters, load profiles, EV charging, ZEV billing",
+      "category": "developer-tools",
+      "homepage": "https://github.com/eCarUp/smart-me-mcp",
+      "version": "1.0.3",
+      "tags": [
+        "smart",
+        "your",
+        "building",
+        "energy",
+        "real",
+        "time",
+        "meters",
+        "load"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T07:21:36.928515Z",
+        "lastCommitAt": "2026-08-23T07:21:36.928515Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "io-github-andey0saikiran-tableau-lineage",
       "name": "Tableau Workbook Auditor",
       "description": "Local-only Tableau .twbx audit: lineage, unused fields, duplicate calcs, SQL, version diffs",
@@ -1488,6 +1915,61 @@
       }
     },
     {
+      "id": "io-github-cham-p24-tapeline",
+      "name": "Tapeline",
+      "description": "Transparent stock screener with a public, verifiable track record. Scan, score, and check picks.",
+      "category": "developer-tools",
+      "homepage": "https://tapeline.io/mcp",
+      "repository": "https://github.com/cham-p24/tapeline",
+      "version": "1.0.0",
+      "tags": [
+        "github",
+        "cham",
+        "tapeline",
+        "transparent",
+        "stock",
+        "screener",
+        "public",
+        "verifiable"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T06:09:28.856168Z",
+        "lastCommitAt": "2026-08-23T06:09:28.856168Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "io-github-shann5-true-solar-time",
+      "name": "True Solar Time",
+      "description": "True solar time correction for BaZi charts: historical DST, longitude, equation of time.",
+      "category": "developer-tools",
+      "homepage": "https://auspiceoracle.com/en/content/true-solar-time",
+      "repository": "https://github.com/Shann5/true-solar-time-mcp",
+      "packageName": "true-solar-time-mcp",
+      "packageRegistry": "npm",
+      "version": "1.0.1",
+      "install": "npx true-solar-time-mcp",
+      "tags": [
+        "github",
+        "shann5",
+        "true",
+        "solar",
+        "time",
+        "correction",
+        "bazi",
+        "charts"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T06:28:49.485058Z",
+        "lastCommitAt": "2026-08-23T06:28:49.485058Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
       "id": "io-github-mattmireles-tesoro-help",
       "name": "Unofficial Tesoro High School MCP",
       "description": "Read-only search over Tesoro High School's public documents. Unofficial, unaffiliated.",
@@ -1511,9 +1993,142 @@
         "hasExamples": false,
         "hasLicense": false
       }
+    },
+    {
+      "id": "io-github-nhatvu148-video-transcriber-mcp",
+      "name": "Video Transcriber",
+      "description": "Transcribe videos from 1000+ platforms or local files offline, and search across every transcript",
+      "category": "developer-tools",
+      "homepage": "https://github.com/nhatvu148/video-transcriber-mcp-rs#readme",
+      "repository": "https://github.com/nhatvu148/video-transcriber-mcp-rs",
+      "packageName": "video-transcriber-mcp",
+      "packageRegistry": "other",
+      "version": "0.10.6",
+      "tags": [
+        "github",
+        "nhatvu148",
+        "video",
+        "transcriber",
+        "transcribe",
+        "videos",
+        "1000",
+        "platforms"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T06:52:24.756417Z",
+        "lastCommitAt": "2026-08-23T06:52:24.756417Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "bible-vineverse-vineverse",
+      "name": "VineVerse — Bible Knowledge Graph",
+      "description": "Bible knowledge graph: 31,102 verses, 341,289 cross references, people, places, themes.",
+      "category": "agent-tools",
+      "homepage": "https://vineverse.bible/mcp",
+      "version": "1.3.0",
+      "tags": [
+        "bible",
+        "vineverse",
+        "knowledge",
+        "graph",
+        "verses",
+        "cross",
+        "references",
+        "people"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T08:01:07.77799Z",
+        "lastCommitAt": "2026-08-23T08:01:07.77799Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "bible-void-reader",
+      "name": "void.bible",
+      "description": "Read it the way a person does: one fragment at a time. If the same words return, you asked too soon.",
+      "category": "agent-tools",
+      "homepage": "https://void.bible",
+      "version": "1.0.0",
+      "tags": [
+        "bible",
+        "void",
+        "reader",
+        "read",
+        "person",
+        "does",
+        "fragment",
+        "time"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T07:23:45.143544Z",
+        "lastCommitAt": "2026-08-23T07:23:45.143544Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
+    {
+      "id": "com-transcriptout-youtube-transcript-and-youtube-search",
+      "name": "YouTube Transcript & Search MCP Server",
+      "description": "YouTube transcripts, search, channels, playlists and bulk transcript jobs for AI agents. 14 tools.",
+      "category": "search",
+      "homepage": "https://transcriptout.com",
+      "repository": "https://github.com/artemchuikin/youtube-mcp",
+      "version": "1.0.1",
+      "tags": [
+        "transcriptout",
+        "youtube",
+        "transcript",
+        "search",
+        "transcripts",
+        "channels",
+        "playlists",
+        "bulk"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-23T07:16:52.364757Z",
+        "lastCommitAt": "2026-08-23T07:16:52.364757Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
     }
   ],
   "removed": [
+    {
+      "id": "io-github-applefanaimail-blip-bridgenode-mcp",
+      "name": "BridgeNode MCP",
+      "description": "BridgeNode — x402 pay-per-request AI inference. OpenAI-compatible API + MCP server, Solana USDC.",
+      "category": "developer-tools",
+      "homepage": "https://bridgenode.cc",
+      "repository": "https://github.com/applefanaimail-blip/bridgenode-mcp",
+      "packageName": "@bridgenode/mcp",
+      "packageRegistry": "npm",
+      "version": "1.0.11",
+      "install": "npx @bridgenode/mcp",
+      "tags": [
+        "github",
+        "applefanaimail",
+        "blip",
+        "bridgenode",
+        "x402",
+        "request",
+        "inference",
+        "openai"
+      ],
+      "signals": {
+        "lastPublishedAt": "2026-08-20T19:25:57.552919Z",
+        "lastCommitAt": "2026-08-20T19:25:57.552919Z",
+        "hasReadme": true,
+        "hasExamples": false,
+        "hasLicense": false
+      }
+    },
     {
       "id": "io-github-tk26-minoa",
       "name": "io.github.tk26/minoa",
@@ -1540,6 +2155,68 @@
     }
   ],
   "changed": [
+    {
+      "before": {
+        "id": "io-github-hrrodan-agent-workspace-mcp",
+        "name": "Agent Workspace MCP",
+        "description": "A sandboxed, agentic workspace providing secure filesystem, bash, and uv-powered Python execution.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/HrRodan/agent-workspace-mcp",
+        "repository": "https://github.com/HrRodan/agent-workspace-mcp",
+        "packageName": "ghcr.io/hrrodan/agent-workspace-mcp:1.4.83",
+        "packageRegistry": "other",
+        "version": "1.4.83",
+        "tags": [
+          "github",
+          "hrrodan",
+          "agent",
+          "workspace",
+          "sandboxed",
+          "agentic",
+          "providing",
+          "secure"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-17T07:07:06.036118Z",
+          "lastCommitAt": "2026-08-17T07:07:06.036118Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-hrrodan-agent-workspace-mcp",
+        "name": "Agent Workspace MCP",
+        "description": "A sandboxed, agentic workspace providing secure filesystem, bash, and uv-powered Python execution.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/HrRodan/agent-workspace-mcp",
+        "repository": "https://github.com/HrRodan/agent-workspace-mcp",
+        "packageName": "ghcr.io/hrrodan/agent-workspace-mcp:1.4.84",
+        "packageRegistry": "other",
+        "version": "1.4.84",
+        "tags": [
+          "github",
+          "hrrodan",
+          "agent",
+          "workspace",
+          "sandboxed",
+          "agentic",
+          "providing",
+          "secure"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T06:16:17.013985Z",
+          "lastCommitAt": "2026-08-23T06:16:17.013985Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "packageName",
+        "version"
+      ]
+    },
     {
       "before": {
         "id": "ai-mangii-manga",
@@ -1598,6 +2275,122 @@
         "description",
         "version",
         "tags"
+      ]
+    },
+    {
+      "before": {
+        "id": "ai-inxy-seo-audit",
+        "name": "ai.inxy/seo-audit",
+        "description": "Score any site or Shopify store for AEO/GEO/LLMO readiness — how likely AI search is to cite it.",
+        "category": "search",
+        "homepage": "https://inxy.ai/mcp",
+        "repository": "https://github.com/riverliu8/inxy-mcp",
+        "version": "1.3.2",
+        "tags": [
+          "inxy",
+          "audit",
+          "score",
+          "site",
+          "shopify",
+          "store",
+          "llmo",
+          "readiness"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-06-14T20:05:43.547521Z",
+          "lastCommitAt": "2026-06-14T20:05:43.547521Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "ai-inxy-seo-audit",
+        "name": "ai.inxy/seo-audit",
+        "description": "Free SEO & AI-search (AEO) audits for any site or Shopify store, with emailed weekly score reports.",
+        "category": "search",
+        "homepage": "https://inxy.ai/mcp",
+        "repository": "https://github.com/riverliu8/inxy-mcp",
+        "version": "1.4.0",
+        "tags": [
+          "inxy",
+          "audit",
+          "free",
+          "search",
+          "audits",
+          "site",
+          "shopify",
+          "store"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T07:21:03.796134Z",
+          "lastCommitAt": "2026-08-23T07:21:03.796134Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "description",
+        "version",
+        "tags"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-maxschnee74-source-alpinelead",
+        "name": "AlpineLead",
+        "description": "DACH B2B opportunity intelligence for AI agents across Austria, Germany and Switzerland.",
+        "category": "developer-tools",
+        "homepage": "https://alpinelead-production.up.railway.app/agents",
+        "version": "5.2.3",
+        "tags": [
+          "github",
+          "maxschnee74",
+          "source",
+          "alpinelead",
+          "dach",
+          "opportunity",
+          "intelligence",
+          "agents"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T13:18:20.254987Z",
+          "lastCommitAt": "2026-08-22T13:18:20.254987Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-maxschnee74-source-alpinelead",
+        "name": "AlpineLead OI",
+        "description": "DACH Opportunity Intelligence for AI agents with FIT/NEED/NOW, Radar, Hunter and learning.",
+        "category": "developer-tools",
+        "homepage": "https://alpinelead-production.up.railway.app/agents",
+        "version": "6.2.0",
+        "tags": [
+          "github",
+          "maxschnee74",
+          "source",
+          "alpinelead",
+          "dach",
+          "opportunity",
+          "intelligence",
+          "agents"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T08:29:48.755739Z",
+          "lastCommitAt": "2026-08-23T08:29:48.755739Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "name",
+        "description",
+        "version"
       ]
     },
     {
@@ -1748,7 +2541,7 @@
         "category": "agent-tools",
         "homepage": "https://realty.sallim.app/mcp/pricing",
         "repository": "https://github.com/sallim-app/korea-realty",
-        "version": "0.69.0",
+        "version": "0.72.0",
         "tags": [
           "sallim",
           "korea",
@@ -1760,14 +2553,76 @@
           "auctions"
         ],
         "signals": {
-          "lastPublishedAt": "2026-08-23T04:21:29.03723Z",
-          "lastCommitAt": "2026-08-23T04:21:29.03723Z",
+          "lastPublishedAt": "2026-08-23T07:16:42.843175Z",
+          "lastCommitAt": "2026-08-23T07:16:42.843175Z",
           "hasReadme": true,
           "hasExamples": false,
           "hasLicense": false
         }
       },
       "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-bardesss-arr-mcp",
+        "name": "arr-mcp",
+        "description": "One MCP server for the whole media stack: Radarr, Sonarr, Prowlarr, Bazarr, Jellyfin, Seerr",
+        "category": "developer-tools",
+        "homepage": "https://github.com/bardesss/arr-mcp",
+        "repository": "https://github.com/bardesss/arr-mcp",
+        "packageName": "ghcr.io/bardesss/arr-mcp:1.15.5",
+        "packageRegistry": "other",
+        "version": "1.15.5",
+        "tags": [
+          "github",
+          "bardesss",
+          "whole",
+          "media",
+          "stack",
+          "radarr",
+          "sonarr",
+          "prowlarr"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T18:07:47.388942Z",
+          "lastCommitAt": "2026-08-22T18:07:47.388942Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-bardesss-arr-mcp",
+        "name": "arr-mcp",
+        "description": "One MCP server for the whole media stack: Radarr, Sonarr, Prowlarr, Bazarr, Jellyfin, Seerr",
+        "category": "developer-tools",
+        "homepage": "https://github.com/bardesss/arr-mcp",
+        "repository": "https://github.com/bardesss/arr-mcp",
+        "packageName": "ghcr.io/bardesss/arr-mcp:1.15.7",
+        "packageRegistry": "other",
+        "version": "1.15.7",
+        "tags": [
+          "github",
+          "bardesss",
+          "whole",
+          "media",
+          "stack",
+          "radarr",
+          "sonarr",
+          "prowlarr"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T08:03:03.146211Z",
+          "lastCommitAt": "2026-08-23T08:03:03.146211Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "packageName",
         "version"
       ]
     },
@@ -1951,6 +2806,65 @@
       "fields": [
         "packageName",
         "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-equinoxaifinance-rgb-civicdataforge",
+        "name": "CivicDataForge Public-Records Data",
+        "description": "Seven official-record tools for property compliance, healthcare integrity, and facility safety.",
+        "category": "developer-tools",
+        "homepage": "https://civicdataforge.pages.dev",
+        "repository": "https://github.com/equinoxaifinance-rgb/civicdataforge-mcp",
+        "version": "1.1.0",
+        "tags": [
+          "github",
+          "equinoxaifinance",
+          "civicdataforge",
+          "seven",
+          "official",
+          "record",
+          "tools",
+          "property"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-21T09:58:29.638438Z",
+          "lastCommitAt": "2026-08-21T09:58:29.638438Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-equinoxaifinance-rgb-civicdataforge",
+        "name": "CivicDataForge Public-Records Data",
+        "description": "Nine evidence tools for property, healthcare, facility safety, and cross-market routing.",
+        "category": "developer-tools",
+        "homepage": "https://civicdataforge.pages.dev",
+        "repository": "https://github.com/equinoxaifinance-rgb/civicdataforge-mcp",
+        "version": "1.2.1",
+        "tags": [
+          "github",
+          "equinoxaifinance",
+          "civicdataforge",
+          "nine",
+          "evidence",
+          "tools",
+          "property",
+          "healthcare"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T08:09:56.601247Z",
+          "lastCommitAt": "2026-08-23T08:09:56.601247Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "description",
+        "version",
+        "tags"
       ]
     },
     {
@@ -2264,6 +3178,71 @@
     },
     {
       "before": {
+        "id": "com-crisphive-mcp",
+        "name": "com.crisphive/mcp",
+        "description": "Agentic scheduling & booking for field service: availability, jobs, customers, crews, fleet.",
+        "category": "agent-tools",
+        "homepage": "https://docs.crisphive.com/mcp",
+        "repository": "https://github.com/crisphive/crisphive-mcp",
+        "packageName": "@crisphive/mcp",
+        "packageRegistry": "npm",
+        "version": "2.1.0",
+        "install": "npx @crisphive/mcp",
+        "tags": [
+          "crisphive",
+          "agentic",
+          "scheduling",
+          "booking",
+          "field",
+          "service",
+          "availability",
+          "jobs"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-07-28T03:52:07.618053Z",
+          "lastCommitAt": "2026-07-28T03:52:07.618053Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "com-crisphive-mcp",
+        "name": "com.crisphive/mcp",
+        "description": "Field-service dispatch & technician scheduling for AI agents — sub-3-second cascade rescheduling.",
+        "category": "agent-tools",
+        "homepage": "https://docs.crisphive.com/mcp",
+        "repository": "https://github.com/crisphive/crisphive-mcp",
+        "packageName": "@crisphive/mcp",
+        "packageRegistry": "npm",
+        "version": "2.1.1",
+        "install": "npx @crisphive/mcp",
+        "tags": [
+          "crisphive",
+          "field",
+          "service",
+          "dispatch",
+          "technician",
+          "scheduling",
+          "agents",
+          "second"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T08:35:48.996821Z",
+          "lastCommitAt": "2026-08-23T08:35:48.996821Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "description",
+        "version",
+        "tags"
+      ]
+    },
+    {
+      "before": {
         "id": "com-factanker-factanker",
         "name": "com.factanker/factanker",
         "description": "Citable facts from official US sources: SEC filings, gov contracts, banks, nonprofits. No key.",
@@ -2317,6 +3296,67 @@
         "description",
         "version",
         "tags"
+      ]
+    },
+    {
+      "before": {
+        "id": "com-familiarvtt-familiar",
+        "name": "com.familiarvtt/familiar",
+        "description": "AI co-pilot for Foundry VTT — combat, scenes & audio. Requires the Familiar module.",
+        "category": "agent-tools",
+        "homepage": "https://familiarvtt.com",
+        "packageName": "familiar-vtt",
+        "packageRegistry": "npm",
+        "version": "2.23.0",
+        "install": "npx familiar-vtt",
+        "tags": [
+          "familiarvtt",
+          "familiar",
+          "pilot",
+          "foundry",
+          "combat",
+          "scenes",
+          "audio",
+          "requires"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-15T17:08:13.179376Z",
+          "lastCommitAt": "2026-08-15T17:08:13.179376Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "com-familiarvtt-familiar",
+        "name": "com.familiarvtt/familiar",
+        "description": "AI co-pilot for Foundry VTT — combat, scenes & audio. Requires the Familiar module.",
+        "category": "agent-tools",
+        "homepage": "https://familiarvtt.com",
+        "packageName": "familiar-vtt",
+        "packageRegistry": "npm",
+        "version": "2.24.0",
+        "install": "npx familiar-vtt",
+        "tags": [
+          "familiarvtt",
+          "familiar",
+          "pilot",
+          "foundry",
+          "combat",
+          "scenes",
+          "audio",
+          "requires"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T06:26:33.749497Z",
+          "lastCommitAt": "2026-08-23T06:26:33.749497Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
       ]
     },
     {
@@ -2447,6 +3487,64 @@
     },
     {
       "before": {
+        "id": "com-crosbynews-weather",
+        "name": "Crosby, TX Weather",
+        "description": "Crosby, TX weather, air quality, tropics, floods, fishing, pollen, roads, radar, news & schools.",
+        "category": "agent-tools",
+        "homepage": "https://github.com/reloru/new-relo",
+        "repository": "https://github.com/reloru/new-relo",
+        "version": "1.5.0",
+        "tags": [
+          "crosbynews",
+          "weather",
+          "crosby",
+          "quality",
+          "tropics",
+          "floods",
+          "fishing",
+          "pollen"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-07-26T20:41:43.340858Z",
+          "lastCommitAt": "2026-07-26T20:41:43.340858Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "com-crosbynews-weather",
+        "name": "Crosby, TX Weather",
+        "description": "Crosby, TX weather, air quality, tropics, floods, fishing, pollen, burn bans, radar, news & schools.",
+        "category": "agent-tools",
+        "homepage": "https://github.com/reloru/new-relo",
+        "repository": "https://github.com/reloru/new-relo",
+        "version": "1.6.0",
+        "tags": [
+          "crosbynews",
+          "weather",
+          "crosby",
+          "quality",
+          "tropics",
+          "floods",
+          "fishing",
+          "pollen"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T06:05:55.428954Z",
+          "lastCommitAt": "2026-08-23T06:05:55.428954Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "description",
+        "version"
+      ]
+    },
+    {
+      "before": {
         "id": "io-github-jorgell23-sys-markdown-document-search",
         "name": "Document corpus",
         "description": "Query a verified document collection: passages that answer a question, with their source.",
@@ -2499,6 +3597,63 @@
         "signals": {
           "lastPublishedAt": "2026-08-23T01:32:02.452291Z",
           "lastCommitAt": "2026-08-23T01:32:02.452291Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-qatlashub-doiget",
+        "name": "doiget",
+        "description": "OA-first paper fetcher: DOIs/arXiv IDs to local PDFs + metadata via Open Access APIs.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/QAtlasHub/doiget",
+        "repository": "https://github.com/QAtlasHub/doiget",
+        "version": "0.8.7",
+        "tags": [
+          "github",
+          "qatlashub",
+          "doiget",
+          "first",
+          "paper",
+          "fetcher",
+          "dois",
+          "arxiv"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T11:04:24.39002Z",
+          "lastCommitAt": "2026-08-22T11:04:24.39002Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-qatlashub-doiget",
+        "name": "doiget",
+        "description": "OA-first paper fetcher: DOIs/arXiv IDs to local PDFs + metadata via Open Access APIs.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/QAtlasHub/doiget",
+        "repository": "https://github.com/QAtlasHub/doiget",
+        "version": "0.8.8",
+        "tags": [
+          "github",
+          "qatlashub",
+          "doiget",
+          "first",
+          "paper",
+          "fetcher",
+          "dois",
+          "arxiv"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T07:33:31.223901Z",
+          "lastCommitAt": "2026-08-23T07:33:31.223901Z",
           "hasReadme": true,
           "hasExamples": false,
           "hasLicense": false
@@ -2573,6 +3728,71 @@
     },
     {
       "before": {
+        "id": "io-famulor-famulor-mcp",
+        "name": "Famulor",
+        "description": "AI voice agents: assistants, calls, campaigns, leads, knowledge bases, WhatsApp, SMS & SIP trunks.",
+        "category": "agent-tools",
+        "homepage": "https://www.famulor.io",
+        "repository": "https://github.com/bekservice/Famulor-MCP",
+        "packageName": "famulor-mcp",
+        "packageRegistry": "npm",
+        "version": "0.3.1",
+        "install": "npx famulor-mcp",
+        "tags": [
+          "famulor",
+          "voice",
+          "agents",
+          "assistants",
+          "calls",
+          "campaigns",
+          "leads",
+          "knowledge"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-06-12T23:59:10.796713Z",
+          "lastCommitAt": "2026-06-12T23:59:10.796713Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-famulor-famulor-mcp",
+        "name": "Famulor",
+        "description": "Manage AI assistants, history, calls, campaigns, contacts, knowledge, messaging, and automations.",
+        "category": "agent-tools",
+        "homepage": "https://www.famulor.io",
+        "repository": "https://github.com/bekservice/Famulor-MCP",
+        "version": "1.0.0",
+        "tags": [
+          "famulor",
+          "manage",
+          "assistants",
+          "history",
+          "calls",
+          "campaigns",
+          "contacts",
+          "knowledge"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T08:10:36.805822Z",
+          "lastCommitAt": "2026-08-23T08:10:36.805822Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "description",
+        "packageName",
+        "packageRegistry",
+        "version",
+        "install",
+        "tags"
+      ]
+    },
+    {
+      "before": {
         "id": "com-fiatdock-fiatdock-mcp",
         "name": "FiatDock",
         "description": "MCP marketplace: agents pay per call in USDC via x402. Plus Base chain data and a USDC<->bank ramp.",
@@ -2604,34 +3824,36 @@
       "after": {
         "id": "com-fiatdock-fiatdock-mcp",
         "name": "FiatDock",
-        "description": "MCP marketplace: agents pay per call in USDC via x402. Plus Base chain data and a USDC<->bank ramp.",
+        "description": "Cash out an AI agent's USDC to a real bank account (non-custodial). Plus Base data + a marketplace",
         "category": "agent-tools",
         "homepage": "https://fiatdock.com",
         "repository": "https://github.com/fiatdock/fiatdock",
         "packageName": "fiatdock-mcp",
         "packageRegistry": "npm",
-        "version": "1.7.8",
+        "version": "1.7.9",
         "install": "npx fiatdock-mcp",
         "tags": [
           "fiatdock",
-          "marketplace",
-          "agents",
-          "call",
+          "cash",
+          "agent",
           "usdc",
-          "x402",
-          "plus",
-          "base"
+          "real",
+          "bank",
+          "account",
+          "custodial"
         ],
         "signals": {
-          "lastPublishedAt": "2026-08-23T00:45:02.022821Z",
-          "lastCommitAt": "2026-08-23T00:45:02.022821Z",
+          "lastPublishedAt": "2026-08-23T08:08:04.370073Z",
+          "lastCommitAt": "2026-08-23T08:08:04.370073Z",
           "hasReadme": true,
           "hasExamples": false,
           "hasLicense": false
         }
       },
       "fields": [
-        "version"
+        "description",
+        "version",
+        "tags"
       ]
     },
     {
@@ -3472,6 +4694,69 @@
     },
     {
       "before": {
+        "id": "io-github-achiya-automation-safari-mcp",
+        "name": "io.github.achiya-automation/safari-mcp",
+        "description": "Native Safari browser automation for AI agents — 97 tools, zero Chrome overhead.",
+        "category": "browser-automation",
+        "homepage": "https://github.com/achiya-automation/safari-mcp",
+        "repository": "https://github.com/achiya-automation/safari-mcp",
+        "packageName": "safari-mcp",
+        "packageRegistry": "npm",
+        "version": "2.16.2",
+        "install": "npx safari-mcp",
+        "tags": [
+          "github",
+          "achiya",
+          "automation",
+          "safari",
+          "native",
+          "browser",
+          "agents",
+          "tools"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-20T05:13:10.441711Z",
+          "lastCommitAt": "2026-08-20T05:13:10.441711Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-achiya-automation-safari-mcp",
+        "name": "io.github.achiya-automation/safari-mcp",
+        "description": "Native Safari browser automation for AI agents — 97 tools, zero Chrome overhead.",
+        "category": "browser-automation",
+        "homepage": "https://github.com/achiya-automation/safari-mcp",
+        "repository": "https://github.com/achiya-automation/safari-mcp",
+        "packageName": "safari-mcp",
+        "packageRegistry": "npm",
+        "version": "2.16.3",
+        "install": "npx safari-mcp",
+        "tags": [
+          "github",
+          "achiya",
+          "automation",
+          "safari",
+          "native",
+          "browser",
+          "agents",
+          "tools"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T07:03:18.151474Z",
+          "lastCommitAt": "2026-08-23T07:03:18.151474Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
         "id": "io-github-andypgray-loadbearing",
         "name": "io.github.andypgray/loadbearing",
         "description": "Checks .NET solutions against a fluent C# architecture spec and explains the rules to agents.",
@@ -3596,6 +4881,125 @@
     },
     {
       "before": {
+        "id": "io-github-arjun0606-smolanalytics",
+        "name": "io.github.Arjun0606/smolanalytics",
+        "description": "Agent-operated web + product analytics. 79 tools + 14 prompts; answers provably match the dashboard.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/Arjun0606/smolanalytics",
+        "repository": "https://github.com/Arjun0606/smolanalytics",
+        "packageName": "ghcr.io/arjun0606/smolanalytics:v0.89.0",
+        "packageRegistry": "other",
+        "version": "0.89.0",
+        "tags": [
+          "github",
+          "arjun0606",
+          "smolanalytics",
+          "agent",
+          "operated",
+          "product",
+          "analytics",
+          "tools"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T12:52:25.863102Z",
+          "lastCommitAt": "2026-08-22T12:52:25.863102Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-arjun0606-smolanalytics",
+        "name": "io.github.Arjun0606/smolanalytics",
+        "description": "Agent-operated web + product analytics. 79 tools + 14 prompts; answers provably match the dashboard.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/Arjun0606/smolanalytics",
+        "repository": "https://github.com/Arjun0606/smolanalytics",
+        "packageName": "ghcr.io/arjun0606/smolanalytics:v0.90.0",
+        "packageRegistry": "other",
+        "version": "0.90.0",
+        "tags": [
+          "github",
+          "arjun0606",
+          "smolanalytics",
+          "agent",
+          "operated",
+          "product",
+          "analytics",
+          "tools"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T04:57:54.630034Z",
+          "lastCommitAt": "2026-08-23T04:57:54.630034Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "packageName",
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-arthiqlabs-vedaksha",
+        "name": "io.github.arthiqlabs/vedaksha",
+        "description": "Vedic astrology and astronomical ephemeris: kundali, panchanga, dashas, vargas, transits",
+        "category": "developer-tools",
+        "homepage": "https://vedaksha.net",
+        "repository": "https://github.com/arthiqlabs/vedaksha",
+        "version": "7.1.1",
+        "tags": [
+          "github",
+          "arthiqlabs",
+          "vedaksha",
+          "vedic",
+          "astrology",
+          "astronomical",
+          "ephemeris",
+          "kundali"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T18:01:01.456109Z",
+          "lastCommitAt": "2026-08-22T18:01:01.456109Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-arthiqlabs-vedaksha",
+        "name": "io.github.arthiqlabs/vedaksha",
+        "description": "Vedic astrology and astronomical ephemeris: kundali, panchanga, dashas, vargas, transits",
+        "category": "developer-tools",
+        "homepage": "https://vedaksha.net",
+        "repository": "https://github.com/arthiqlabs/vedaksha",
+        "version": "7.2.0",
+        "tags": [
+          "github",
+          "arthiqlabs",
+          "vedaksha",
+          "vedic",
+          "astrology",
+          "astronomical",
+          "ephemeris",
+          "kundali"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T06:02:54.050264Z",
+          "lastCommitAt": "2026-08-23T06:02:54.050264Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
         "id": "io-github-artokun-comfyui-mcp",
         "name": "io.github.artokun/comfyui-mcp",
         "description": "MCP server + Claude Code plugin for ComfyUI: run workflows, generate images, manage models & VRAM.",
@@ -3633,7 +5037,7 @@
         "repository": "https://github.com/artokun/comfyui-mcp",
         "packageName": "comfyui-mcp",
         "packageRegistry": "npm",
-        "version": "0.52.67",
+        "version": "0.52.69",
         "install": "npx comfyui-mcp",
         "tags": [
           "github",
@@ -3646,8 +5050,8 @@
           "generate"
         ],
         "signals": {
-          "lastPublishedAt": "2026-08-23T04:29:13.567313Z",
-          "lastCommitAt": "2026-08-23T04:29:13.567313Z",
+          "lastPublishedAt": "2026-08-23T08:17:45.785187Z",
+          "lastCommitAt": "2026-08-23T08:17:45.785187Z",
           "hasReadme": true,
           "hasExamples": false,
           "hasLicense": false
@@ -4607,6 +6011,131 @@
     },
     {
       "before": {
+        "id": "io-github-getmarrow-marrow",
+        "name": "io.github.getmarrow/marrow",
+        "description": "Runtime governance, proof, outcome closure, and fleet intelligence for MCP-compatible AI agents.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/getmarrow/marrow-mcp",
+        "repository": "https://github.com/getmarrow/marrow-mcp",
+        "packageName": "@getmarrow/mcp",
+        "packageRegistry": "npm",
+        "version": "3.9.73",
+        "install": "npx @getmarrow/mcp",
+        "tags": [
+          "github",
+          "getmarrow",
+          "marrow",
+          "runtime",
+          "governance",
+          "proof",
+          "outcome",
+          "closure"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T14:25:08.117824Z",
+          "lastCommitAt": "2026-08-22T14:25:08.117824Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-getmarrow-marrow",
+        "name": "io.github.getmarrow/marrow",
+        "description": "Runtime governance, proof, outcome closure, and fleet intelligence for MCP-compatible AI agents.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/getmarrow/marrow-mcp",
+        "repository": "https://github.com/getmarrow/marrow-mcp",
+        "packageName": "@getmarrow/mcp",
+        "packageRegistry": "npm",
+        "version": "3.9.74",
+        "install": "npx @getmarrow/mcp",
+        "tags": [
+          "github",
+          "getmarrow",
+          "marrow",
+          "runtime",
+          "governance",
+          "proof",
+          "outcome",
+          "closure"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T07:55:29.41783Z",
+          "lastCommitAt": "2026-08-23T07:55:29.41783Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-glslang-windbg-mcp",
+        "name": "io.github.glslang/windbg-mcp",
+        "description": "WinDbg/DbgEng over MCP: crash dumps, live user & kernel, driver IOCTLs, and TTD.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/glslang/windbg-mcp",
+        "repository": "https://github.com/glslang/windbg-mcp",
+        "packageName": "https://github.com/glslang/windbg-mcp/releases/download/v0.10.0/windbg-mcp-v0.10.0-windows-x64.mcpb",
+        "packageRegistry": "other",
+        "version": "0.10.0",
+        "tags": [
+          "github",
+          "glslang",
+          "windbg",
+          "dbgeng",
+          "over",
+          "crash",
+          "dumps",
+          "live"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-20T19:50:16.532581Z",
+          "lastCommitAt": "2026-08-20T19:50:16.532581Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-glslang-windbg-mcp",
+        "name": "io.github.glslang/windbg-mcp",
+        "description": "WinDbg/DbgEng over MCP: crash dumps, live user & kernel, driver IOCTLs, and TTD.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/glslang/windbg-mcp",
+        "repository": "https://github.com/glslang/windbg-mcp",
+        "packageName": "https://github.com/glslang/windbg-mcp/releases/download/v0.11.0/windbg-mcp-v0.11.0-windows-x64.mcpb",
+        "packageRegistry": "other",
+        "version": "0.11.0",
+        "tags": [
+          "github",
+          "glslang",
+          "windbg",
+          "dbgeng",
+          "over",
+          "crash",
+          "dumps",
+          "live"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T06:57:44.729414Z",
+          "lastCommitAt": "2026-08-23T06:57:44.729414Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "packageName",
+        "version"
+      ]
+    },
+    {
+      "before": {
         "id": "io-github-jessiejanie-skim402",
         "name": "io.github.JessieJanie/skim402",
         "description": "Clean web reader for AI agents. Free remote read tier, optional x402 pay-per-call. No API keys.",
@@ -4860,6 +6389,130 @@
     },
     {
       "before": {
+        "id": "io-github-ljcl-gaggiuino-mcp",
+        "name": "io.github.ljcl/gaggiuino-mcp",
+        "description": "Remote MCP server for your Gaggiuino espresso machine's shots and profiles",
+        "category": "developer-tools",
+        "homepage": "https://github.com/ljcl/gaggiuino-mcp#readme",
+        "repository": "https://github.com/ljcl/gaggiuino-mcp",
+        "packageName": "ghcr.io/ljcl/gaggiuino-mcp:3.2.0",
+        "packageRegistry": "other",
+        "version": "3.2.0",
+        "tags": [
+          "github",
+          "ljcl",
+          "gaggiuino",
+          "remote",
+          "your",
+          "espresso",
+          "machine",
+          "shots"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-15T00:30:25.03402Z",
+          "lastCommitAt": "2026-08-15T00:30:25.03402Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-ljcl-gaggiuino-mcp",
+        "name": "io.github.ljcl/gaggiuino-mcp",
+        "description": "Remote MCP server for your Gaggiuino espresso machine's shots and profiles",
+        "category": "developer-tools",
+        "homepage": "https://github.com/ljcl/gaggiuino-mcp#readme",
+        "repository": "https://github.com/ljcl/gaggiuino-mcp",
+        "packageName": "ghcr.io/ljcl/gaggiuino-mcp:4.0.0",
+        "packageRegistry": "other",
+        "version": "4.0.0",
+        "tags": [
+          "github",
+          "ljcl",
+          "gaggiuino",
+          "remote",
+          "your",
+          "espresso",
+          "machine",
+          "shots"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T05:29:26.495761Z",
+          "lastCommitAt": "2026-08-23T05:29:26.495761Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "packageName",
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-ljcl-strava-mcp",
+        "name": "io.github.ljcl/strava-mcp",
+        "description": "Remote MCP server for your Strava activities, segments, and routes",
+        "category": "developer-tools",
+        "homepage": "https://github.com/ljcl/strava-mcp#readme",
+        "repository": "https://github.com/ljcl/strava-mcp",
+        "packageName": "ghcr.io/ljcl/strava-mcp:2.13.2",
+        "packageRegistry": "other",
+        "version": "2.13.2",
+        "tags": [
+          "github",
+          "ljcl",
+          "strava",
+          "remote",
+          "your",
+          "activities",
+          "segments",
+          "routes"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-20T21:49:40.748251Z",
+          "lastCommitAt": "2026-08-20T21:49:40.748251Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-ljcl-strava-mcp",
+        "name": "io.github.ljcl/strava-mcp",
+        "description": "Remote MCP server for your Strava activities, segments, and routes",
+        "category": "developer-tools",
+        "homepage": "https://github.com/ljcl/strava-mcp#readme",
+        "repository": "https://github.com/ljcl/strava-mcp",
+        "packageName": "ghcr.io/ljcl/strava-mcp:3.0.0",
+        "packageRegistry": "other",
+        "version": "3.0.0",
+        "tags": [
+          "github",
+          "ljcl",
+          "strava",
+          "remote",
+          "your",
+          "activities",
+          "segments",
+          "routes"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T05:29:12.030457Z",
+          "lastCommitAt": "2026-08-23T05:29:12.030457Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "packageName",
+        "version"
+      ]
+    },
+    {
+      "before": {
         "id": "io-github-luno-cms-mcp",
         "name": "io.github.luno-cms/mcp",
         "description": "LUNO — AI Backend Platform. Build, operate, and govern production backends with AI agents.",
@@ -4912,6 +6565,67 @@
         "signals": {
           "lastPublishedAt": "2026-08-23T00:26:08.765422Z",
           "lastCommitAt": "2026-08-23T00:26:08.765422Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-mahabubul470-gpp",
+        "name": "io.github.mahabubul470/gpp",
+        "description": "Project knowledge graph with history-checked belief staleness, changeset proposals, cost reporting",
+        "category": "developer-tools",
+        "homepage": "https://mahabubul470.github.io/gpp/",
+        "repository": "https://github.com/mahabubul470/gpp",
+        "packageName": "gpp-cli",
+        "packageRegistry": "other",
+        "version": "0.1.1",
+        "tags": [
+          "github",
+          "mahabubul470",
+          "project",
+          "knowledge",
+          "graph",
+          "history",
+          "checked",
+          "belief"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-05T20:41:41.582118Z",
+          "lastCommitAt": "2026-08-05T20:41:41.582118Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-mahabubul470-gpp",
+        "name": "io.github.mahabubul470/gpp",
+        "description": "Project knowledge graph with history-checked belief staleness, changeset proposals, cost reporting",
+        "category": "developer-tools",
+        "homepage": "https://mahabubul470.github.io/gpp/",
+        "repository": "https://github.com/mahabubul470/gpp",
+        "packageName": "gpp-cli",
+        "packageRegistry": "other",
+        "version": "0.2.0",
+        "tags": [
+          "github",
+          "mahabubul470",
+          "project",
+          "knowledge",
+          "graph",
+          "history",
+          "checked",
+          "belief"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T08:25:52.041058Z",
+          "lastCommitAt": "2026-08-23T08:25:52.041058Z",
           "hasReadme": true,
           "hasExamples": false,
           "hasLicense": false
@@ -5365,6 +7079,132 @@
     },
     {
       "before": {
+        "id": "io-github-spacecowboyian-brains",
+        "name": "io.github.spacecowboyian/brains",
+        "description": "Personal wiki and memory for AI assistants: store, search, and recall structured notes.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/spacecowboyian/brains",
+        "repository": "https://github.com/spacecowboyian/brains",
+        "packageName": "brains-mcp",
+        "packageRegistry": "npm",
+        "version": "1.68.5",
+        "install": "npx brains-mcp",
+        "tags": [
+          "github",
+          "spacecowboyian",
+          "brains",
+          "personal",
+          "wiki",
+          "memory",
+          "assistants",
+          "store"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T16:20:57.982198Z",
+          "lastCommitAt": "2026-08-22T16:20:57.982198Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-spacecowboyian-brains",
+        "name": "io.github.spacecowboyian/brains",
+        "description": "Personal wiki and memory for AI assistants: store, search, and recall structured notes.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/spacecowboyian/brains",
+        "repository": "https://github.com/spacecowboyian/brains",
+        "packageName": "brains-mcp",
+        "packageRegistry": "npm",
+        "version": "1.68.8",
+        "install": "npx brains-mcp",
+        "tags": [
+          "github",
+          "spacecowboyian",
+          "brains",
+          "personal",
+          "wiki",
+          "memory",
+          "assistants",
+          "store"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T08:20:23.99363Z",
+          "lastCommitAt": "2026-08-23T08:20:23.99363Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-toruproject-mapnetwork-mcp",
+        "name": "io.github.toruproject/mapnetwork-mcp",
+        "description": "Generate styled PNG/SVG map images of any location with 11 customizable color themes.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/toruproject/mapnetwork-mcp",
+        "repository": "https://github.com/toruproject/mapnetwork-mcp",
+        "packageName": "mapnetwork-mcp",
+        "packageRegistry": "pypi",
+        "version": "3.0.0",
+        "install": "uvx mapnetwork-mcp",
+        "tags": [
+          "github",
+          "toruproject",
+          "mapnetwork",
+          "generate",
+          "styled",
+          "images",
+          "location",
+          "customizable"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-21T06:34:06.105546Z",
+          "lastCommitAt": "2026-08-21T06:34:06.105546Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-toruproject-mapnetwork-mcp",
+        "name": "io.github.toruproject/mapnetwork-mcp",
+        "description": "Generate styled PNG/SVG map images of any location with 11 customizable color themes.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/toruproject/mapnetwork-mcp",
+        "repository": "https://github.com/toruproject/mapnetwork-mcp",
+        "packageName": "mapnetwork-mcp",
+        "packageRegistry": "pypi",
+        "version": "4.0.0",
+        "install": "uvx mapnetwork-mcp",
+        "tags": [
+          "github",
+          "toruproject",
+          "mapnetwork",
+          "generate",
+          "styled",
+          "images",
+          "location",
+          "customizable"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T07:20:21.346114Z",
+          "lastCommitAt": "2026-08-23T07:20:21.346114Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
         "id": "io-github-vish288-mcp-atlassian-extended",
         "name": "io.github.vish288/mcp-atlassian-extended",
         "description": "MCP server for Jira and Confluence — sprints, agile boards, attachments, versions, calendars.",
@@ -5543,6 +7383,61 @@
         "signals": {
           "lastPublishedAt": "2026-08-22T23:25:26.826048Z",
           "lastCommitAt": "2026-08-22T23:25:26.826048Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "ai-justdeploy-mcp",
+        "name": "JustDeploy",
+        "description": "Deploy and manage your apps, databases, storage, and scheduled jobs from your AI agent",
+        "category": "data",
+        "homepage": "https://www.justdeploy.ai",
+        "version": "1.0.0",
+        "tags": [
+          "justdeploy",
+          "deploy",
+          "manage",
+          "your",
+          "apps",
+          "databases",
+          "storage",
+          "scheduled"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-07-19T05:10:40.161842Z",
+          "lastCommitAt": "2026-07-19T05:10:40.161842Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "ai-justdeploy-mcp",
+        "name": "JustDeploy",
+        "description": "Deploy and manage your apps, databases, storage, and scheduled jobs from your AI agent",
+        "category": "data",
+        "homepage": "https://www.justdeploy.ai",
+        "version": "1.1.0",
+        "tags": [
+          "justdeploy",
+          "deploy",
+          "manage",
+          "your",
+          "apps",
+          "databases",
+          "storage",
+          "scheduled"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T05:32:36.108353Z",
+          "lastCommitAt": "2026-08-23T05:32:36.108353Z",
           "hasReadme": true,
           "hasExamples": false,
           "hasLicense": false
@@ -5772,7 +7667,7 @@
         "repository": "https://github.com/VoidNullable/lific",
         "packageName": "lific",
         "packageRegistry": "other",
-        "version": "2.7.0",
+        "version": "2.7.1",
         "tags": [
           "github",
           "voidnullable",
@@ -5784,8 +7679,71 @@
           "tracker"
         ],
         "signals": {
-          "lastPublishedAt": "2026-08-23T04:02:50.870734Z",
-          "lastCommitAt": "2026-08-23T04:02:50.870734Z",
+          "lastPublishedAt": "2026-08-23T04:57:48.851196Z",
+          "lastCommitAt": "2026-08-23T04:57:48.851196Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-cmendezs-mcp-einvoicing-core",
+        "name": "MCP E-Invoicing Core",
+        "description": "Base package for European e-invoicing MCP servers with shared models, XML utils, and OAuth2 client.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/cmendezs/mcp-einvoicing-core",
+        "repository": "https://github.com/cmendezs/mcp-einvoicing-core",
+        "packageName": "mcp-einvoicing-core",
+        "packageRegistry": "pypi",
+        "version": "1.19.0",
+        "install": "uvx mcp-einvoicing-core",
+        "tags": [
+          "github",
+          "cmendezs",
+          "einvoicing",
+          "core",
+          "base",
+          "package",
+          "european",
+          "invoicing"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-21T13:36:47.989806Z",
+          "lastCommitAt": "2026-08-21T13:36:47.989806Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-cmendezs-mcp-einvoicing-core",
+        "name": "MCP E-Invoicing Core",
+        "description": "Base package for European e-invoicing MCP servers with shared models, XML utils, and OAuth2 client.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/cmendezs/mcp-einvoicing-core",
+        "repository": "https://github.com/cmendezs/mcp-einvoicing-core",
+        "packageName": "mcp-einvoicing-core",
+        "packageRegistry": "pypi",
+        "version": "1.19.1",
+        "install": "uvx mcp-einvoicing-core",
+        "tags": [
+          "github",
+          "cmendezs",
+          "einvoicing",
+          "core",
+          "base",
+          "package",
+          "european",
+          "invoicing"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T07:33:06.386368Z",
+          "lastCommitAt": "2026-08-23T07:33:06.386368Z",
           "hasReadme": true,
           "hasExamples": false,
           "hasLicense": false
@@ -5834,7 +7792,7 @@
         "repository": "https://github.com/shigechika/mcp-stdio",
         "packageName": "mcp-stdio",
         "packageRegistry": "pypi",
-        "version": "0.43.3",
+        "version": "0.43.5",
         "install": "uvx mcp-stdio",
         "tags": [
           "github",
@@ -5847,8 +7805,71 @@
           "remote"
         ],
         "signals": {
-          "lastPublishedAt": "2026-08-23T04:03:58.924757Z",
-          "lastCommitAt": "2026-08-23T04:03:58.924757Z",
+          "lastPublishedAt": "2026-08-23T08:36:11.049823Z",
+          "lastCommitAt": "2026-08-23T08:36:11.049823Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-alikarami-mikromcp",
+        "name": "MikroMCP",
+        "description": "MCP server for MikroTik RouterOS: typed tools, dry-run, RBAC, audit logs, and rollback.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/AliKarami/MikroMCP",
+        "repository": "https://github.com/AliKarami/MikroMCP",
+        "packageName": "mikromcp",
+        "packageRegistry": "npm",
+        "version": "1.9.0",
+        "install": "npx mikromcp",
+        "tags": [
+          "github",
+          "alikarami",
+          "mikromcp",
+          "mikrotik",
+          "routeros",
+          "typed",
+          "tools",
+          "rbac"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-16T11:22:16.096337Z",
+          "lastCommitAt": "2026-08-16T11:22:16.096337Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-alikarami-mikromcp",
+        "name": "MikroMCP",
+        "description": "MCP server for MikroTik RouterOS: typed tools, dry-run, RBAC, audit logs, and rollback.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/AliKarami/MikroMCP",
+        "repository": "https://github.com/AliKarami/MikroMCP",
+        "packageName": "mikromcp",
+        "packageRegistry": "npm",
+        "version": "1.10.0",
+        "install": "npx mikromcp",
+        "tags": [
+          "github",
+          "alikarami",
+          "mikromcp",
+          "mikrotik",
+          "routeros",
+          "typed",
+          "tools",
+          "rbac"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T06:52:41.334088Z",
+          "lastCommitAt": "2026-08-23T06:52:41.334088Z",
           "hasReadme": true,
           "hasExamples": false,
           "hasLicense": false
@@ -5976,6 +7997,68 @@
     },
     {
       "before": {
+        "id": "io-github-yonatangross-orchestkit",
+        "name": "OrchestKit Docs MCP",
+        "description": "Read-only MCP server for the OrchestKit docs: full-text search + Markdown fetch. No auth.",
+        "category": "developer-tools",
+        "homepage": "https://orchestkit.yonyon.ai",
+        "repository": "https://github.com/yonatangross/orchestkit",
+        "packageName": "ghcr.io/yonatangross/orchestkit-docs-mcp:10.0.0-alpha.49",
+        "packageRegistry": "other",
+        "version": "10.0.0-alpha.49",
+        "tags": [
+          "github",
+          "yonatangross",
+          "orchestkit",
+          "read",
+          "only",
+          "docs",
+          "full",
+          "text"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T18:54:00.38738Z",
+          "lastCommitAt": "2026-08-22T18:54:00.38738Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-yonatangross-orchestkit",
+        "name": "OrchestKit Docs MCP",
+        "description": "Read-only MCP server for the OrchestKit docs: full-text search + Markdown fetch. No auth.",
+        "category": "developer-tools",
+        "homepage": "https://orchestkit.yonyon.ai",
+        "repository": "https://github.com/yonatangross/orchestkit",
+        "packageName": "ghcr.io/yonatangross/orchestkit-docs-mcp:10.0.0-alpha.50",
+        "packageRegistry": "other",
+        "version": "10.0.0-alpha.50",
+        "tags": [
+          "github",
+          "yonatangross",
+          "orchestkit",
+          "read",
+          "only",
+          "docs",
+          "full",
+          "text"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T08:27:06.640189Z",
+          "lastCommitAt": "2026-08-23T08:27:06.640189Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "packageName",
+        "version"
+      ]
+    },
+    {
+      "before": {
         "id": "io-github-henryyeh182-evidra",
         "name": "Pacevera",
         "description": "Turns the training evidence you already have into a decision about today's session.",
@@ -6086,6 +8169,69 @@
         }
       },
       "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-perseus-computing-llc-perseus-vault",
+        "name": "Perseus Vault — persistent, encrypted memory for AI agents",
+        "description": "Persistent, encrypted, deterministic memory for AI agents. Local-first, 122 canonical tools.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/Perseus-Computing-LLC/perseus-vault",
+        "repository": "https://github.com/Perseus-Computing-LLC/perseus-vault",
+        "packageName": "ghcr.io/perseus-computing-llc/perseus-vault:2.23.0",
+        "packageRegistry": "other",
+        "version": "2.23.0",
+        "tags": [
+          "github",
+          "perseus",
+          "computing",
+          "vault",
+          "persistent",
+          "encrypted",
+          "deterministic",
+          "memory"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-10T17:09:39.191903Z",
+          "lastCommitAt": "2026-08-10T17:09:39.191903Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-perseus-computing-llc-perseus-vault",
+        "name": "Perseus Vault — persistent, encrypted memory for AI agents",
+        "description": "Persistent, encrypted, deterministic memory for AI agents. Local-first, 169 canonical tools.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/Perseus-Computing-LLC/perseus-vault",
+        "repository": "https://github.com/Perseus-Computing-LLC/perseus-vault",
+        "packageName": "ghcr.io/perseus-computing-llc/perseus-vault:2.23.1",
+        "packageRegistry": "other",
+        "version": "2.23.1",
+        "tags": [
+          "github",
+          "perseus",
+          "computing",
+          "vault",
+          "persistent",
+          "encrypted",
+          "deterministic",
+          "memory"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T08:02:05.457413Z",
+          "lastCommitAt": "2026-08-23T08:02:05.457413Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "description",
+        "packageName",
         "version"
       ]
     },
@@ -6390,6 +8536,132 @@
     },
     {
       "before": {
+        "id": "dev-seekrit-mcp",
+        "name": "seekrit (local crypto plane)",
+        "description": "Zero-knowledge secrets manager — local crypto-plane MCP server: decrypts and injects secrets.",
+        "category": "agent-tools",
+        "homepage": "https://github.com/mileszim/seekrit",
+        "repository": "https://github.com/mileszim/seekrit",
+        "packageName": "@seekrit/mcp",
+        "packageRegistry": "npm",
+        "version": "0.7.0",
+        "install": "npx @seekrit/mcp",
+        "tags": [
+          "seekrit",
+          "zero",
+          "knowledge",
+          "secrets",
+          "manager",
+          "local",
+          "crypto",
+          "plane"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-20T20:45:36.499424Z",
+          "lastCommitAt": "2026-08-20T20:45:36.499424Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "dev-seekrit-mcp",
+        "name": "seekrit (local crypto plane)",
+        "description": "Zero-knowledge secrets manager — local crypto-plane MCP server: decrypts and injects secrets.",
+        "category": "agent-tools",
+        "homepage": "https://github.com/mileszim/seekrit",
+        "repository": "https://github.com/mileszim/seekrit",
+        "packageName": "@seekrit/mcp",
+        "packageRegistry": "npm",
+        "version": "0.8.0",
+        "install": "npx @seekrit/mcp",
+        "tags": [
+          "seekrit",
+          "zero",
+          "knowledge",
+          "secrets",
+          "manager",
+          "local",
+          "crypto",
+          "plane"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T05:01:26.367706Z",
+          "lastCommitAt": "2026-08-23T05:01:26.367706Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-mattijsmoens-sovereign-mcp-gateway",
+        "name": "Sovereign Gateway",
+        "description": "Gating proxy for MCP servers: policy, verification and one audit trail across upstreams.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/mattijsmoens/sovereign-mcp-gateway",
+        "repository": "https://github.com/mattijsmoens/sovereign-mcp-gateway",
+        "packageName": "sovereign-mcp-gateway",
+        "packageRegistry": "pypi",
+        "version": "0.1.3",
+        "install": "uvx sovereign-mcp-gateway",
+        "tags": [
+          "github",
+          "mattijsmoens",
+          "sovereign",
+          "gateway",
+          "gating",
+          "proxy",
+          "servers",
+          "policy"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T17:58:30.362162Z",
+          "lastCommitAt": "2026-08-22T17:58:30.362162Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-mattijsmoens-sovereign-mcp-gateway",
+        "name": "Sovereign Gateway",
+        "description": "Gating proxy for MCP servers: policy, verification and one audit trail across upstreams.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/mattijsmoens/sovereign-mcp-gateway",
+        "repository": "https://github.com/mattijsmoens/sovereign-mcp-gateway",
+        "packageName": "sovereign-mcp-gateway",
+        "packageRegistry": "pypi",
+        "version": "0.2.1",
+        "install": "uvx sovereign-mcp-gateway",
+        "tags": [
+          "github",
+          "mattijsmoens",
+          "sovereign",
+          "gateway",
+          "gating",
+          "proxy",
+          "servers",
+          "policy"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T06:57:40.192604Z",
+          "lastCommitAt": "2026-08-23T06:57:40.192604Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
         "id": "com-sssnack-sssnack",
         "name": "SSSNACK — AI agent design network",
         "description": "Public feed for agent-made visual work. Self-register through MCP to publish, browse, and respond.",
@@ -6481,9 +8753,9 @@
         "category": "browser-automation",
         "homepage": "https://github.com/psyb0t/docker-stealthy-auto-browse",
         "repository": "https://github.com/psyb0t/docker-stealthy-auto-browse",
-        "packageName": "docker.io/psyb0t/stealthy-auto-browse:v2.6.0",
+        "packageName": "docker.io/psyb0t/stealthy-auto-browse:v2.6.7",
         "packageRegistry": "other",
-        "version": "2.6.0",
+        "version": "2.6.7",
         "tags": [
           "github",
           "psyb0t",
@@ -6495,8 +8767,8 @@
           "stealth"
         ],
         "signals": {
-          "lastPublishedAt": "2026-08-23T03:01:48.19829Z",
-          "lastCommitAt": "2026-08-23T03:01:48.19829Z",
+          "lastPublishedAt": "2026-08-23T07:19:46.405763Z",
+          "lastCommitAt": "2026-08-23T07:19:46.405763Z",
           "hasReadme": true,
           "hasExamples": false,
           "hasLicense": false
@@ -6562,6 +8834,132 @@
       "fields": [
         "version",
         "repository"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-thang1710-subagent-mcp",
+        "name": "Subagent MCP",
+        "description": "Let Codex orchestrate external coding agents through their native harnesses.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/Thang1710/subagent-mcp",
+        "repository": "https://github.com/Thang1710/subagent-mcp",
+        "packageName": "subagent-harness-mcp",
+        "packageRegistry": "pypi",
+        "version": "1.0.2",
+        "install": "uvx subagent-harness-mcp",
+        "tags": [
+          "github",
+          "thang1710",
+          "subagent",
+          "codex",
+          "orchestrate",
+          "external",
+          "coding",
+          "agents"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T19:16:20.412989Z",
+          "lastCommitAt": "2026-08-22T19:16:20.412989Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-thang1710-subagent-mcp",
+        "name": "Subagent MCP",
+        "description": "Let Codex orchestrate external coding agents through their native harnesses.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/Thang1710/subagent-mcp",
+        "repository": "https://github.com/Thang1710/subagent-mcp",
+        "packageName": "subagent-harness-mcp",
+        "packageRegistry": "pypi",
+        "version": "1.0.3",
+        "install": "uvx subagent-harness-mcp",
+        "tags": [
+          "github",
+          "thang1710",
+          "subagent",
+          "codex",
+          "orchestrate",
+          "external",
+          "coding",
+          "agents"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T07:12:38.31653Z",
+          "lastCommitAt": "2026-08-23T07:12:38.31653Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "com-svgrid-svgrid",
+        "name": "SvGrid",
+        "description": "Version-pinned Svelte 5 data grid APIs, 373 demo sources, and SvelteKit app scaffolding.",
+        "category": "agent-tools",
+        "homepage": "https://svgrid.com/docs/help/mcp-server/",
+        "repository": "https://github.com/sv-grid/sv-grid",
+        "packageName": "@svgrid/mcp",
+        "packageRegistry": "npm",
+        "version": "2.3.3",
+        "install": "npx @svgrid/mcp",
+        "tags": [
+          "svgrid",
+          "version",
+          "pinned",
+          "svelte",
+          "data",
+          "grid",
+          "apis",
+          "demo"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-19T17:17:57.78985Z",
+          "lastCommitAt": "2026-08-19T17:17:57.78985Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "com-svgrid-svgrid",
+        "name": "SvGrid",
+        "description": "Version-pinned Svelte 5 data grid APIs, 373 demo sources, and SvelteKit app scaffolding.",
+        "category": "agent-tools",
+        "homepage": "https://svgrid.com/docs/help/mcp-server/",
+        "repository": "https://github.com/sv-grid/sv-grid",
+        "packageName": "@svgrid/mcp",
+        "packageRegistry": "npm",
+        "version": "2.6.1",
+        "install": "npx @svgrid/mcp",
+        "tags": [
+          "svgrid",
+          "version",
+          "pinned",
+          "svelte",
+          "data",
+          "grid",
+          "apis",
+          "demo"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T07:13:18.056079Z",
+          "lastCommitAt": "2026-08-23T07:13:18.056079Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
       ]
     },
     {
@@ -6747,6 +9145,242 @@
     },
     {
       "before": {
+        "id": "io-github-trusgent-trusgent-mcp",
+        "name": "Trusgent MCP",
+        "description": "Trusgent MCP — Trust Layer for AI agents. HK registry + Agent Cards. Default: get_merged_profile.",
+        "category": "developer-tools",
+        "homepage": "https://www.trusgent.com/en/developers",
+        "repository": "https://github.com/Trusgent/trusgent-mcp",
+        "version": "1.0.0",
+        "tags": [
+          "github",
+          "trusgent",
+          "trust",
+          "layer",
+          "agents",
+          "registry",
+          "agent",
+          "cards"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T14:11:08.316047Z",
+          "lastCommitAt": "2026-08-22T14:11:08.316047Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-trusgent-trusgent-mcp",
+        "name": "Trusgent MCP",
+        "description": "Trusgent MCP — Trust Layer for AI agents. HK registry + Agent Cards. Default: get_merged_profile.",
+        "category": "developer-tools",
+        "homepage": "https://www.trusgent.com/en/developers",
+        "repository": "https://github.com/Trusgent/trusgent-mcp",
+        "version": "1.1.0",
+        "tags": [
+          "github",
+          "trusgent",
+          "trust",
+          "layer",
+          "agents",
+          "registry",
+          "agent",
+          "cards"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T05:10:40.777734Z",
+          "lastCommitAt": "2026-08-23T05:10:40.777734Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-tseha-tseha",
+        "name": "Tseha",
+        "description": "Serves your design system and coding standards to coding agents, so they stop guessing.",
+        "category": "agent-tools",
+        "homepage": "https://tseha.io",
+        "version": "1.0.0",
+        "tags": [
+          "tseha",
+          "serves",
+          "your",
+          "design",
+          "system",
+          "coding",
+          "standards",
+          "agents"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T14:32:07.782464Z",
+          "lastCommitAt": "2026-08-22T14:32:07.782464Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-tseha-tseha",
+        "name": "Tseha",
+        "description": "Serves your design system and coding standards to coding agents, so they stop guessing.",
+        "category": "agent-tools",
+        "homepage": "https://tseha.io",
+        "version": "1.0.1",
+        "tags": [
+          "tseha",
+          "serves",
+          "your",
+          "design",
+          "system",
+          "coding",
+          "standards",
+          "agents"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T08:04:58.359755Z",
+          "lastCommitAt": "2026-08-23T08:04:58.359755Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-tyler-mitchell-type-atlas",
+        "name": "Type Atlas",
+        "description": "Editor-grade TypeScript, Markdown, and JSON intelligence for coding agents.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/tyler-mitchell/type-atlas",
+        "repository": "https://github.com/tyler-mitchell/type-atlas",
+        "packageName": "@type-atlas/mcp",
+        "packageRegistry": "npm",
+        "version": "0.5.1",
+        "install": "npx @type-atlas/mcp",
+        "tags": [
+          "github",
+          "tyler",
+          "mitchell",
+          "type",
+          "atlas",
+          "editor",
+          "grade",
+          "typescript"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T07:37:38.869036Z",
+          "lastCommitAt": "2026-08-22T07:37:38.869036Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-tyler-mitchell-type-atlas",
+        "name": "Type Atlas",
+        "description": "Editor-grade TypeScript, Markdown, and JSON intelligence for coding agents.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/tyler-mitchell/type-atlas",
+        "repository": "https://github.com/tyler-mitchell/type-atlas",
+        "packageName": "@type-atlas/mcp",
+        "packageRegistry": "npm",
+        "version": "0.6.0",
+        "install": "npx @type-atlas/mcp",
+        "tags": [
+          "github",
+          "tyler",
+          "mitchell",
+          "type",
+          "atlas",
+          "editor",
+          "grade",
+          "typescript"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T06:21:37.177217Z",
+          "lastCommitAt": "2026-08-23T06:21:37.177217Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-usemycontext-usemycontext",
+        "name": "UseMyContext",
+        "description": "The personal context layer for AI: your profile and files, read by any MCP client over OAuth.",
+        "category": "developer-tools",
+        "homepage": "https://usemycontext.ai",
+        "repository": "https://github.com/usemycontext/claude-code-plugin",
+        "version": "1.0.0",
+        "tags": [
+          "github",
+          "usemycontext",
+          "personal",
+          "layer",
+          "your",
+          "profile",
+          "files",
+          "read"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-07-19T08:38:24.791056Z",
+          "lastCommitAt": "2026-07-19T08:38:24.791056Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-usemycontext-usemycontext",
+        "name": "UseMyContext.ai",
+        "description": "Personal context for AI, written by you and never scraped: your profile and files, any MCP client.",
+        "category": "developer-tools",
+        "homepage": "https://usemycontext.ai",
+        "repository": "https://github.com/usemycontext/usemycontext",
+        "version": "1.1.0",
+        "tags": [
+          "github",
+          "usemycontext",
+          "personal",
+          "written",
+          "never",
+          "scraped",
+          "your",
+          "profile"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T08:46:27.408583Z",
+          "lastCommitAt": "2026-08-23T08:46:27.408583Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "name",
+        "description",
+        "repository",
+        "version",
+        "tags"
+      ]
+    },
+    {
+      "before": {
         "id": "io-github-vantioai-vantio-optics",
         "name": "Vantio Optics",
         "description": "Vantio Optics — read-only Sight Loop observe for agents. Proofs, hosts, upgrade path.",
@@ -6811,6 +9445,68 @@
     },
     {
       "before": {
+        "id": "io-github-aliasunder-vault-cortex",
+        "name": "Vault Cortex",
+        "description": "Standalone MCP server for Obsidian vaults — hybrid search, notes & files, memory, tasks, OAuth 2.1",
+        "category": "developer-tools",
+        "homepage": "https://github.com/aliasunder/vault-cortex",
+        "repository": "https://github.com/aliasunder/vault-cortex",
+        "packageName": "ghcr.io/aliasunder/vault-cortex:0.40.1",
+        "packageRegistry": "other",
+        "version": "0.40.1",
+        "tags": [
+          "github",
+          "aliasunder",
+          "vault",
+          "cortex",
+          "standalone",
+          "obsidian",
+          "vaults",
+          "hybrid"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-22T18:54:17.632716Z",
+          "lastCommitAt": "2026-08-22T18:54:17.632716Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-aliasunder-vault-cortex",
+        "name": "Vault Cortex",
+        "description": "Standalone MCP server for Obsidian vaults — hybrid search, notes & files, memory, tasks, OAuth 2.1",
+        "category": "developer-tools",
+        "homepage": "https://github.com/aliasunder/vault-cortex",
+        "repository": "https://github.com/aliasunder/vault-cortex",
+        "packageName": "ghcr.io/aliasunder/vault-cortex:0.41.0",
+        "packageRegistry": "other",
+        "version": "0.41.0",
+        "tags": [
+          "github",
+          "aliasunder",
+          "vault",
+          "cortex",
+          "standalone",
+          "obsidian",
+          "vaults",
+          "hybrid"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T04:56:41.488012Z",
+          "lastCommitAt": "2026-08-23T04:56:41.488012Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
+        "packageName",
+        "version"
+      ]
+    },
+    {
+      "before": {
         "id": "com-vibrai-vibrai",
         "name": "Vibrai — arrangement engine for Ableton Live",
         "description": "Arrange your own clips and instruments into finished song structures in Ableton Live 12.",
@@ -6868,6 +9564,67 @@
       },
       "fields": [
         "packageName",
+        "version"
+      ]
+    },
+    {
+      "before": {
+        "id": "io-github-peopleworks-xaf-logic-explainer",
+        "name": "XAF Logic Explainer",
+        "description": "Query your DevExpress XAF app: entities, controllers, actions, rules, Model Editor.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/peopleworks/XAFLogicExplainer",
+        "repository": "https://github.com/peopleworks/XAFLogicExplainer",
+        "packageName": "XafLogicExplainer.Mcp",
+        "packageRegistry": "other",
+        "version": "0.14.0",
+        "tags": [
+          "github",
+          "peopleworks",
+          "logic",
+          "explainer",
+          "query",
+          "your",
+          "devexpress",
+          "entities"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-17T05:23:28.337651Z",
+          "lastCommitAt": "2026-08-17T05:23:28.337651Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "after": {
+        "id": "io-github-peopleworks-xaf-logic-explainer",
+        "name": "XAF Logic Explainer",
+        "description": "Query your DevExpress XAF app: entities, controllers, actions, rules, Model Editor.",
+        "category": "developer-tools",
+        "homepage": "https://github.com/peopleworks/XAFLogicExplainer",
+        "repository": "https://github.com/peopleworks/XAFLogicExplainer",
+        "packageName": "XafLogicExplainer.Mcp",
+        "packageRegistry": "other",
+        "version": "0.15.0",
+        "tags": [
+          "github",
+          "peopleworks",
+          "logic",
+          "explainer",
+          "query",
+          "your",
+          "devexpress",
+          "entities"
+        ],
+        "signals": {
+          "lastPublishedAt": "2026-08-23T06:41:55.530958Z",
+          "lastCommitAt": "2026-08-23T06:41:55.530958Z",
+          "hasReadme": true,
+          "hasExamples": false,
+          "hasLicense": false
+        }
+      },
+      "fields": [
         "version"
       ]
     },
