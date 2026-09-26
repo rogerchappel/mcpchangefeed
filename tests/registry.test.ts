@@ -30,6 +30,36 @@ test("fetchOfficialRegistry follows cursors and deduplicates versions across pag
   assert.equal(new URL(urls[1]).searchParams.get("cursor"), "page-2");
 });
 
+test("fetchOfficialRegistry preserves the package launch arguments", async () => {
+  const { fetcher } = mockFetch({
+    first: {
+      servers: [{
+        server: {
+          name: "io.github.hjqcan/goodmemory",
+          title: "GoodMemory",
+          description: "Durable project memory",
+          version: "0.7.5",
+          packages: [{
+            registryType: "npm",
+            identifier: "goodmemory",
+            runtimeHint: "npx",
+            runtimeArguments: [{ type: "named", name: "-y" }],
+            packageArguments: [
+              { type: "positional", value: "mcp" },
+              { type: "positional", value: "serve" },
+              { type: "named", name: "--standalone" },
+              { type: "named", name: "--user-id", value: "{user_id}" }
+            ]
+          }]
+        }
+      }]
+    }
+  });
+
+  const [server] = await fetchOfficialRegistry("https://registry.example/v0/servers", fetcher);
+  assert.equal(server.install, "npx -y goodmemory mcp serve --standalone --user-id {user_id}");
+});
+
 test("fetchOfficialRegistry stops cursor loops without requesting a page twice", async () => {
   const { fetcher, urls } = mockFetch({
     first: { servers: [record("alpha", "1.0.0")], metadata: { nextCursor: "loop" } },

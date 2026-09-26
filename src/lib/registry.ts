@@ -156,8 +156,10 @@ function normalizeRegistryRecord(record: unknown): McpServer | null {
   const repository = firstRepository(source.repository) ?? firstRepository(source.source);
   const packageInfo = firstPackage(source.packages);
   const homepage = stringValue(source.websiteUrl) ?? stringValue(source.homepage) ?? repository;
-  const packageName = packageInfo?.identifier ?? packageInfo?.packageName;
-  const packageRegistry = registryNameFromPackage(packageInfo?.registryType ?? packageInfo?.registry);
+  const packageName = stringValue(packageInfo?.identifier) ?? stringValue(packageInfo?.packageName);
+  const packageRegistry = registryNameFromPackage(
+    stringValue(packageInfo?.registryType) ?? stringValue(packageInfo?.registry)
+  );
 
   return {
     id: slugify(registryName),
@@ -170,7 +172,7 @@ function normalizeRegistryRecord(record: unknown): McpServer | null {
     packageRegistry,
     version: stringValue(source.version),
     license: stringValue(source.license),
-    install: installCommand(packageRegistry, packageName),
+    install: installCommand(packageRegistry, packageName, packageInfo),
     tags: inferTags(registryName, description),
     signals: {
       lastPublishedAt: stringValue(official?.publishedAt),
@@ -191,11 +193,10 @@ function firstRepository(value: unknown) {
   return undefined;
 }
 
-function firstPackage(value: unknown): Record<string, string> | undefined {
+function firstPackage(value: unknown): Record<string, unknown> | undefined {
   if (!Array.isArray(value)) return undefined;
   const first = value.find((entry) => entry && typeof entry === "object") as Record<string, unknown> | undefined;
-  if (!first) return undefined;
-  return Object.fromEntries(Object.entries(first).filter(([, item]) => typeof item === "string")) as Record<string, string>;
+  return first;
 }
 
 function registryNameFromPackage(value: string | undefined): McpServer["packageRegistry"] | undefined {
@@ -207,12 +208,49 @@ function registryNameFromPackage(value: string | undefined): McpServer["packageR
   return "other";
 }
 
-function installCommand(registry: McpServer["packageRegistry"] | undefined, packageName: string | undefined) {
-  if (!registry || !packageName) return undefined;
-  if (registry === "npm") return `npx ${packageName}`;
-  if (registry === "pypi") return `uvx ${packageName}`;
-  if (registry === "docker") return `docker run ${packageName}`;
+function installCommand(
+  registry: McpServer["packageRegistry"] | undefined,
+  packageName: string | undefined,
+  packageInfo: Record<string, unknown> | undefined
+) {
+  if (!packageName) return undefined;
+  const runtime = stringValue(packageInfo?.runtimeHint);
+  const command = runtime ? [runtime] : defaultRuntime(registry);
+  if (!command) return undefined;
+  return [
+    ...command,
+    ...argumentTokens(packageInfo?.runtimeArguments),
+    packageName,
+    ...argumentTokens(packageInfo?.packageArguments)
+  ].join(" ");
+}
+
+function defaultRuntime(registry: McpServer["packageRegistry"] | undefined) {
+  if (registry === "npm") return ["npx"];
+  if (registry === "pypi") return ["uvx"];
+  if (registry === "docker") return ["docker", "run"];
   return undefined;
+}
+
+function argumentTokens(value: unknown) {
+  if (!Array.isArray(value)) return [];
+  return value.flatMap((entry) => {
+    if (!entry || typeof entry !== "object") return [];
+    const argument = entry as Record<string, unknown>;
+    const type = stringValue(argument.type);
+    const argumentValue = stringValue(argument.value) ?? stringValue(argument.default);
+    if (type === "positional") {
+      const valueHint = stringValue(argument.valueHint);
+      if (argumentValue) return [argumentValue];
+      return valueHint ? [`{${valueHint}}`] : [];
+    }
+    if (type === "named") {
+      const name = stringValue(argument.name);
+      if (!name) return [];
+      return argumentValue ? [name, argumentValue] : [name];
+    }
+    return [];
+  });
 }
 
 function inferCategory(name: string, description: string) {
